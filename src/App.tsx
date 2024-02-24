@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Router from "./Router";
 import { ShoppingCart, addProduct, removeProduct } from "./types";
 
@@ -12,13 +12,30 @@ export default function App() {
   const removeProduct: removeProduct = (product) => {
     setShoppingCart((prevState) =>
       prevState.filter(
-        (cartItem) =>
-          product.categoryId !== cartItem.product.categoryId &&
-          product.subCategoryId !== cartItem.product.subCategoryId &&
-          product.name !== cartItem.product.name
+        // We use the imagePath property because it's unique for each product
+        (cartItem) => product.imagesPath !== cartItem.product.imagesPath
       )
     );
   };
+
+  const firstRender = useRef(true);
+  useEffect(() => {
+    if (!Storage) return;
+
+    if (firstRender.current) {
+      const shoppingCart = localStorage.getItem("shoppingCart");
+
+      if (shoppingCart) {
+        setShoppingCart(JSON.parse(shoppingCart) as ShoppingCart);
+      }
+
+      return () => {
+        firstRender.current = false;
+      };
+    }
+
+    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+  }, [shoppingCart.length]);
 
   return (
     <Router
