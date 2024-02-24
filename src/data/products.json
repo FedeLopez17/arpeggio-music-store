@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Fender Player Series Tele PF 3TS",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "electric",
+    "brand": "fender",
+    "slug": "fender-player-tele-pf-3ts",
+    "imagesPath": "products/guitars_basses/electric/fender-player-tele-pf-3ts",
+    "rating": 4,
+    "price": 675,
+    "attributes": {
+      "Pickups": "SS",
+      "Tremolo": "None",
+      "Top": "None",
+      "Frets": "22",
+      "Incl. Case": "No",
+      "Color": "Sunburst",
+      "Fretboard": "Pau Ferro",
+      "Body": "Alder",
+      "Neck": "Maple",
+      "Scale": "648 mm",
+      "Incl. Bag": "No"
+    }
+  },
+  {
+    "name": "Gibson ES-335 Figured 60s Cherry",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "electric",
+    "brand": "gibson",
+    "slug": "gibson-es335-figured-60s-cherry",
+    "imagesPath": "products/guitars_basses/electric/gibson-es335-figured-60s-cherry",
+    "rating": 5,
+    "price": 3390,
+    "attributes": {
+      "Pickups": "HH",
+      "Tremolo": "None",
+      "Top": "Maple",
+      "Frets": "22",
+      "Incl. Case": "Yes",
+      "Color": "Red",
+      "Fretboard": "Rosewood",
+      "Body": "Maple",
+      "Neck": "Mahogany",
+      "Scale": "628 mm ",
+      "Incl. Bag": "No"
+    }
+  },
+  {
+    "name": "Taylor GS Mini Mahogany",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "acoustic",
+    "brand": "talyor",
+    "slug": "taylor-gs-mini-mahogany",
+    "imagesPath": "products/guitars_basses/acoustic/taylor-gs-mini-mahogany",
+    "rating": 5,
+    "price": 539,
+    "attributes": {
+      "Pickups": "No",
+      "Cutaway": "No",
+      "Nut width": "42.8 mm",
+      "Back and Sides": "Sapele",
+      "Top": "Solid Mahogany",
+      "Frets": "20",
+      "Incl. Case": "No",
+      "Color": "Natural",
+      "Fretboard": "Ebony",
+      "Incl. Bag": "Yes"
+    }
+  },
+  {
+    "name": "Yamaha PSR-E373",
+    "categoryId": "keys",
+    "subCategoryId": "keyboards",
+    "brand": "yamaha",
+    "slug": "yamaha-psr-e373",
+    "imagesPath": "products/keys/keyboards/yamaha-psr-e373",
+    "rating": 4.5,
+    "price": 215,
+    "attributes": {
+      "Illuminated Push-Button": "No",
+      "Aftertouch": "No",
+      "Lyrics Function": "No",
+      "Vocal Harmony": "No",
+      "MIDI Interface": "1x USB",
+      "USB": "Yes",
+      "Speaker": "2x 2.5 W",
+      "Weight": "4.6 kg",
+      "Keys": "61",
+      "Touch-Sensitive": "Yes",
+      "Storage Medium": "Internal",
+      "Score Function": "No",
+      "USB Audiorecorder": "No",
+      "Microphone input": "No",
+      "Polyphony": "48",
+      "Dimensions in mm": "945 x 369 x 118"
+    }
+  },
+  {
+    "name": "Yamaha Genos 2",
+    "categoryId": "keys",
+    "subCategoryId": "keyboards",
+    "brand": "yamaha",
+    "slug": "yamaha-genos-2",
+    "imagesPath": "products/keys/keyboards/yamaha-genos-2",
+    "rating": 5,
+    "price": 3777,
+    "attributes": {
+      "Keys": "76",
+      "Touch Sensitive": "Yes",
+      "Aftertouch": "Yes",
+      "Storage Medium": "SSD, USB to Device",
+      "Sample Player": "Yes",
+      "Loop Function": "Yes",
+      "Line Outputs": "6",
+      "Video Output": "Yes",
+      "MIDI interface": "Yes",
+      "Speakers": "Optional",
+      "Width": "1234 mm"
+    }
+  }
+]
