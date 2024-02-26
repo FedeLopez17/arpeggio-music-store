@@ -18,9 +18,7 @@ interface NameAndId {
 }
 
 export type CategoryType = NameAndId & {
-  name: string;
-  id: string;
-  subCategories: { [key: string]: NameAndId | undefined };
+  subCategories: NameAndId[];
 };
 
 export type ShoppingCartItem = {
