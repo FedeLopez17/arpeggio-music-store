@@ -15,9 +15,13 @@ export default function ProductsPage() {
 
   return (
     <section className="grid gap-3">
-      {products.map((product) => (
-        <ProductCard key={product.imagesPath} product={product} />
-      ))}
+      {!products.length ? (
+        <h4>No matching products</h4>
+      ) : (
+        products.map((product) => (
+          <ProductCard key={product.imagesPath} product={product} />
+        ))
+      )}
     </section>
   );
 }
