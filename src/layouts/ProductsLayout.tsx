@@ -1,22 +1,23 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import categories from "../data/categories.json";
 import { CategoryType } from "../types";
+import CategoryListItem from "../components/CategoryListItem";
 
 export default function ProductsLayout() {
   return (
-    <>
-      <nav>
-        <ul className="flex justify-start items-center gap-3">
-          {categories.map((category: CategoryType) => (
-            <li key={category.id}>
-              <NavLink to={`/products/${category.id}`}>{category.name}</NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
+    <section className="flex">
+      <aside>
+        <nav className="">
+          <ul className="flex  flex-col justify-start items-start gap-3">
+            {categories.map((category: CategoryType) => (
+              <CategoryListItem category={category} key={category.id} />
+            ))}
+          </ul>
+        </nav>
+      </aside>
       <main>
         <Outlet />
       </main>
-    </>
+    </section>
   );
 }
