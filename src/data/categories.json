@@ -2,73 +2,74 @@
   {
     "name": "Guitars and Basses",
     "id": "guitars_basses",
-    "subCategories": {
-      "electric": {
+    "subCategories": [
+      {
         "id": "electric",
         "name": "Electric Guitars"
       },
-      "acoustic": {
+      {
         "id": "acoustic",
         "name": "Acoustic Guitars"
       },
-      "classical": {
+      {
         "id": "classical",
         "name": "Classical Guitars"
       },
-      "electricBasses": {
+      {
         "id": "electric_basses",
         "name": "Electric Basses"
       },
-      "acousticBasses": {
+      {
         "id": "acoustic_basses",
         "name": "Acoustic Basses"
       },
-      "electricGuitarAmps": {
+      {
         "id": "electric_guitar_amps",
         "name": "Electric Guitar Amps"
       },
-      "acousticGuitarAmps": {
+      {
         "id": "acoustic_guitar_amps",
         "name": "Acoustic Guitar Amps"
       },
-      "bassAmps": {
+      {
         "id": "bass_amps",
         "name": "Bass Amps"
       }
-    }
+    ]
   },
+
   {
     "name": "Keys",
     "id": "keys",
-    "subCategories": {
-      "keyboards": {
+    "subCategories": [
+      {
         "id": "keyboards",
         "name": "Keyboards"
       },
-      "synthesizers": {
+      {
         "id": "synthesizers",
         "name": "Synthesizers"
       },
-      "midiKeyboards": {
+      {
         "id": "midi_keyboards",
         "name": "MIDI Keyboards"
       },
-      "pianos": {
+      {
         "id": "pianos",
         "name": "Pianos"
       },
-      "stagePianos": {
+      {
         "id": "stage_pianos",
         "name": "Stage Pianos"
       },
-      "digitalPianos": {
+      {
         "id": "digital_pianos",
         "name": "Digital Pianos"
       },
-      "grandPianos": {
+      {
         "id": "grand_pianos",
         "name": "Grand Pianos"
       }
-    }
+    ]
   }
 ]
