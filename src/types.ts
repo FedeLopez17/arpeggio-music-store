@@ -37,3 +37,13 @@ export type AddProduct = ({
 }) => void;
 
 export type RemoveProduct = (product: ProductType) => void;
+
+export type OrderByOption =
+  | "Price: low to high"
+  | "Price: high to low"
+  | "Best rated first"
+  | "Brand"
+  | "Alphabet (A-Z)"
+  | "Alphabet (Z-A)";
+
+export type SetOrderByOption = (orderBy: OrderByOption) => void;

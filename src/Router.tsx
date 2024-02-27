@@ -5,7 +5,13 @@ import CatalogPage from "./pages/CatalogPage";
 import AboutPage from "./pages/AboutPage";
 import ProductPage from "./pages/ProductPage";
 import CatalogLayout from "./layouts/CatalogLayout";
-import { AddProduct, RemoveProduct, ShoppingCart } from "./types";
+import {
+  AddProduct,
+  OrderByOption,
+  RemoveProduct,
+  SetOrderByOption,
+  ShoppingCart,
+} from "./types";
 import CartPage from "./pages/CartPage";
 import ErrorPage from "./pages/ErrorPage";
 
@@ -13,11 +19,23 @@ const Router = ({
   addProduct,
   removeProduct,
   shoppingCart,
+  currentOrderByOption,
+  setCurrentOrderByOption,
 }: {
   addProduct: AddProduct;
   removeProduct: RemoveProduct;
   shoppingCart: ShoppingCart;
+  currentOrderByOption: OrderByOption;
+  setCurrentOrderByOption: SetOrderByOption;
 }) => {
+  // This method is created to avoid redundancy
+  const renderCatalogPage = () => (
+    <CatalogPage
+      currentOrderByOption={currentOrderByOption}
+      setCurrentOrderByOption={setCurrentOrderByOption}
+    />
+  );
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -39,11 +57,17 @@ const Router = ({
           path: "catalog",
           element: <CatalogLayout />,
           children: [
-            { index: true, element: <CatalogPage /> },
-            { path: ":category", element: <CatalogPage /> },
+            {
+              index: true,
+              element: renderCatalogPage(),
+            },
+            {
+              path: ":category",
+              element: renderCatalogPage(),
+            },
             {
               path: ":category/:subcategory",
-              element: <CatalogPage />,
+              element: renderCatalogPage(),
             },
             {
               path: ":category/:subcategory/:product",

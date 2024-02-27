@@ -15,7 +15,7 @@ export default function ProductsLayout() {
           </ul>
         </nav>
       </aside>
-      <main>
+      <main className="w-full">
         <Outlet />
       </main>
     </section>

@@ -1,8 +1,29 @@
 import productsJson from "./data/products.json";
-import { ProductType } from "./types";
+import { OrderByOption, ProductType } from "./types";
 
-export function getCatalog(): ProductType[] {
-  return productsJson;
+function orderCatalog(orderBy: OrderByOption, catalog: ProductType[]) {
+  catalog.sort((productA, productB) => {
+    switch (orderBy) {
+      case "Price: low to high":
+        return productA.price - productB.price;
+      case "Price: high to low":
+        return productB.price - productA.price;
+      case "Best rated first":
+        return productB.rating - productA.rating;
+      case "Brand":
+        return productA.brand.localeCompare(productB.brand);
+      case "Alphabet (A-Z)":
+        return productA.name.localeCompare(productB.name);
+      default:
+        return productB.name.localeCompare(productA.name);
+    }
+  });
+
+  return catalog;
+}
+
+export function getCatalog(orderBy: OrderByOption): ProductType[] {
+  return orderCatalog(orderBy, productsJson);
 }
 
 export function getProductBySlug(slug: string): ProductType | null {
@@ -16,15 +37,11 @@ export function getProductBySlug(slug: string): ProductType | null {
 export function getFilteredProducts({
   category,
   subCategory,
-  brand,
   orderBy,
-  order,
 }: {
-  category?: string;
+  category: string;
+  orderBy: OrderByOption;
   subCategory?: string;
-  brand?: string;
-  orderBy?: "name" | "rating" | "price";
-  order?: "ascending" | "descending";
 }): ProductType[] {
   if (subCategory && !category) {
     throw new Error("Subcategory requires category");
@@ -33,23 +50,8 @@ export function getFilteredProducts({
   const filteredProducts = productsJson.filter(
     (product) =>
       (!category || category === product.categoryId) &&
-      (!subCategory || subCategory === product.subCategoryId) &&
-      (!brand || brand === product.brand)
+      (!subCategory || subCategory === product.subCategoryId)
   );
 
-  if (orderBy && order) {
-    filteredProducts.sort((productA, productB) => {
-      let comparison = 0;
-      if (orderBy === "name") {
-        comparison = productA.name.localeCompare(productB.name);
-      } else if (orderBy === "rating") {
-        comparison = productB.rating - productA.rating;
-      } else {
-        comparison = productA.price - productB.price;
-      }
-      return order === "descending" ? -comparison : comparison;
-    });
-  }
-
-  return filteredProducts;
+  return orderCatalog(orderBy, filteredProducts);
 }

@@ -1,9 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import Router from "./Router";
-import { ShoppingCart, AddProduct, RemoveProduct } from "./types";
+import {
+  ShoppingCart,
+  AddProduct,
+  RemoveProduct,
+  OrderByOption,
+} from "./types";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function App() {
+  const [currentOrderByOption, setCurrentOrderByOption] =
+    useState<OrderByOption>("Price: high to low");
+
   const [shoppingCart, setShoppingCart] = useState<ShoppingCart>([]);
 
   const addProduct: AddProduct = ({ product, quantity }) => {
@@ -46,6 +54,8 @@ export default function App() {
         addProduct={addProduct}
         removeProduct={removeProduct}
         shoppingCart={shoppingCart}
+        currentOrderByOption={currentOrderByOption}
+        setCurrentOrderByOption={setCurrentOrderByOption}
       />
       <Toaster />
     </>
