@@ -1,17 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import Router from "./Router";
-import { ShoppingCart, addProduct, removeProduct } from "./types";
+import { ShoppingCart, AddProduct, RemoveProduct } from "./types";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function App() {
   const [shoppingCart, setShoppingCart] = useState<ShoppingCart>([]);
 
-  const addProduct: addProduct = ({ product, quantity }) => {
+  const addProduct: AddProduct = ({ product, quantity }) => {
     setShoppingCart((prevState) => [...prevState, { product, quantity }]);
     toast.success("Added to Cart");
   };
 
-  const removeProduct: removeProduct = (product) => {
+  const removeProduct: RemoveProduct = (product) => {
     setShoppingCart((prevState) =>
       prevState.filter(
         // We use the imagePath property because it's unique for each product
