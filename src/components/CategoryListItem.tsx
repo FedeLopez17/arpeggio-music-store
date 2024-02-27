@@ -9,24 +9,13 @@ export default function CategoryListItem({
   category: CategoryType;
 }) {
   const [visibleSubcategories, setvisibleSubcategories] = useState(false);
-  const [outerNavLinkActive, setOuterNavLinkActive] = useState(false);
-
-  // This method returns a string so that it can be called when setting the className
-  const updateActiveStateReturnString = (isActive: boolean) => {
-    setOuterNavLinkActive(isActive);
-    return "";
-  };
 
   return (
     <li className="w-full">
-      <section
-        className={`flex items-center justify-between ${
-          outerNavLinkActive ? "bg-red-500" : ""
-        }`}
-      >
+      <section className="flex items-center justify-between">
         <NavLink
           to={`/catalog/${category.id}`}
-          className={({ isActive }) => updateActiveStateReturnString(isActive)}
+          className={({ isActive }) => (isActive ? "font-bold" : "")}
         >
           {category.name}
         </NavLink>
@@ -42,7 +31,7 @@ export default function CategoryListItem({
             <li key={subCategory.id}>
               <NavLink
                 to={`/catalog/${category.id}/${subCategory.id}`}
-                className={({ isActive }) => (isActive ? "bg-red-500" : "")}
+                className={({ isActive }) => (isActive ? "font-bold" : "")}
               >
                 {subCategory.name}
               </NavLink>
