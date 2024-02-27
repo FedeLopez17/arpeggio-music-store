@@ -5,7 +5,7 @@ import CatalogPage from "./pages/CatalogPage";
 import AboutPage from "./pages/AboutPage";
 import ProductPage from "./pages/ProductPage";
 import CatalogLayout from "./layouts/CatalogLayout";
-import { addProduct, removeProduct, ShoppingCart } from "./types";
+import { AddProduct, RemoveProduct, ShoppingCart } from "./types";
 import CartPage from "./pages/CartPage";
 import ErrorPage from "./pages/ErrorPage";
 
@@ -14,8 +14,8 @@ const Router = ({
   removeProduct,
   shoppingCart,
 }: {
-  addProduct: addProduct;
-  removeProduct: removeProduct;
+  addProduct: AddProduct;
+  removeProduct: RemoveProduct;
   shoppingCart: ShoppingCart;
 }) => {
   const router = createBrowserRouter([

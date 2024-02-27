@@ -28,7 +28,7 @@ export type ShoppingCartItem = {
 
 export type ShoppingCart = ShoppingCartItem[];
 
-export type addProduct = ({
+export type AddProduct = ({
   product,
   quantity,
 }: {
@@ -36,4 +36,4 @@ export type addProduct = ({
   quantity: number;
 }) => void;
 
-export type removeProduct = (product: ProductType) => void;
+export type RemoveProduct = (product: ProductType) => void;

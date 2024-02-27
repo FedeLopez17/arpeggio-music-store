@@ -5,7 +5,7 @@ import RatingStars from "../components/RatingStars";
 import Slideshow from "../components/Slideshow";
 import { getProductImageUrls } from "../utils";
 import AttributesTable from "../components/AttributesTable";
-import { ShoppingCart, addProduct, removeProduct } from "../types";
+import { ShoppingCart, AddProduct, RemoveProduct } from "../types";
 import AddToCartButton from "../components/AddToCartButton";
 
 export default function ProductPage({
@@ -13,8 +13,8 @@ export default function ProductPage({
   removeProduct,
   shoppingCart,
 }: {
-  addProduct: addProduct;
-  removeProduct: removeProduct;
+  addProduct: AddProduct;
+  removeProduct: RemoveProduct;
   shoppingCart: ShoppingCart;
 }) {
   const { category, subcategory, product } = useParams();

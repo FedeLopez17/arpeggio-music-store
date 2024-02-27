@@ -1,11 +1,11 @@
 import CartItem from "../components/CartItem";
-import { ShoppingCart, removeProduct } from "../types";
+import { ShoppingCart, RemoveProduct } from "../types";
 
 export default function CartPage({
   removeProduct,
   shoppingCart,
 }: {
-  removeProduct: removeProduct;
+  removeProduct: RemoveProduct;
   shoppingCart: ShoppingCart;
 }) {
   return !shoppingCart.length ? (
