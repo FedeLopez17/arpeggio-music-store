@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ProductType } from "../types";
 import { getImageUrl } from "../utils";
+import RatingStars from "./RatingStars";
 
 export default function Product({ product }: { product: ProductType }) {
   const imagePath = getImageUrl(`${product.imagesPath}/1.jpg`);
@@ -12,6 +13,7 @@ export default function Product({ product }: { product: ProductType }) {
         <p>
           {product.name} - ${product.price}
         </p>
+        <RatingStars rating={product.rating} />
       </div>
     </Link>
   );
