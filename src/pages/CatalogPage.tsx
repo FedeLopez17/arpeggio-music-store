@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
-import { getAllProducts, getFilteredProducts } from "../productsManager";
+import { getCatalog, getFilteredProducts } from "../catalogManager";
 
 export default function ProductsPage() {
   const { category, subcategory } = useParams();
 
   const noParams = !category && !subcategory;
-  const products = noParams
-    ? getAllProducts()
+  const catalog = noParams
+    ? getCatalog()
     : getFilteredProducts({
         category,
         subCategory: subcategory ? subcategory : undefined,
@@ -15,10 +15,10 @@ export default function ProductsPage() {
 
   return (
     <section className="grid gap-3">
-      {!products.length ? (
+      {!catalog.length ? (
         <h4>No matching products</h4>
       ) : (
-        products.map((product) => (
+        catalog.map((product) => (
           <ProductCard key={product.imagesPath} product={product} />
         ))
       )}

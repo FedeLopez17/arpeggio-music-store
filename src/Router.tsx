@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import HomePage from "./pages/HomePage";
-import ProductsPage from "./pages/ProductsPage";
+import CatalogPage from "./pages/CatalogPage";
 import AboutPage from "./pages/AboutPage";
 import ProductPage from "./pages/ProductPage";
-import ProductsLayout from "./layouts/ProductsLayout";
+import CatalogLayout from "./layouts/CatalogLayout";
 import { addProduct, removeProduct, ShoppingCart } from "./types";
 import CartPage from "./pages/CartPage";
 import ErrorPage from "./pages/ErrorPage";
@@ -36,14 +36,14 @@ const Router = ({
           ),
         },
         {
-          path: "products",
-          element: <ProductsLayout />,
+          path: "catalog",
+          element: <CatalogLayout />,
           children: [
-            { index: true, element: <ProductsPage /> },
-            { path: ":category", element: <ProductsPage /> },
+            { index: true, element: <CatalogPage /> },
+            { path: ":category", element: <CatalogPage /> },
             {
               path: ":category/:subcategory",
-              element: <ProductsPage />,
+              element: <CatalogPage />,
             },
             {
               path: ":category/:subcategory/:product",

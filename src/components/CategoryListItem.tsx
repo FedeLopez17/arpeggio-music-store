@@ -9,11 +9,27 @@ export default function CategoryListItem({
   category: CategoryType;
 }) {
   const [visibleSubcategories, setvisibleSubcategories] = useState(false);
+  const [outerNavLinkActive, setOuterNavLinkActive] = useState(false);
+
+  // This method returns a string so that it can be called when setting the className
+  const updateActiveStateReturnString = (isActive: boolean) => {
+    setOuterNavLinkActive(isActive);
+    return "";
+  };
 
   return (
     <li className="w-full">
-      <section className="flex items-center justify-between">
-        <NavLink to={`/products/${category.id}`}>{category.name}</NavLink>
+      <section
+        className={`flex items-center justify-between ${
+          outerNavLinkActive ? "bg-red-500" : ""
+        }`}
+      >
+        <NavLink
+          to={`/catalog/${category.id}`}
+          className={({ isActive }) => updateActiveStateReturnString(isActive)}
+        >
+          {category.name}
+        </NavLink>
         {visibleSubcategories ? (
           <FaAngleUp onClick={() => setvisibleSubcategories(false)} />
         ) : (
@@ -24,7 +40,10 @@ export default function CategoryListItem({
         <ul>
           {category.subCategories.map((subCategory) => (
             <li key={subCategory.id}>
-              <NavLink to={`/products/${category.id}/${subCategory.id}`}>
+              <NavLink
+                to={`/catalog/${category.id}/${subCategory.id}`}
+                className={({ isActive }) => (isActive ? "bg-red-500" : "")}
+              >
                 {subCategory.name}
               </NavLink>
             </li>

@@ -11,11 +11,11 @@ export function getProductImageUrls(
     // Here I import all product images and then filter out the ones I don't need.
     // This isn't ideal, but it's the only way it would work, as dinamically importing assets isn't possible with Vite.
     // See this GitHub issue for more information: https://github.com/vitejs/vite/issues/5478
-    import.meta.glob("./assets/images/products/*/*/*/*", {
+    import.meta.glob("./assets/images/catalog/*/*/*/*", {
       eager: true,
       as: "url",
     })
   ).filter((url) =>
-    url.includes(`products/${category}/${subcategory}/${product}`)
+    url.includes(`catalog/${category}/${subcategory}/${product}`)
   );
 }

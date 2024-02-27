@@ -1,7 +1,7 @@
 import productsJson from "./data/products.json";
 import { ProductType } from "./types";
 
-export function getAllProducts(): ProductType[] {
+export function getCatalog(): ProductType[] {
   return productsJson;
 }
 

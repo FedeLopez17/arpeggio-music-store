@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { getProductBySlug } from "../productsManager";
+import { getProductBySlug } from "../catalogManager";
 import ProductNotFound from "../components/ProductNotFound";
 import RatingStars from "../components/RatingStars";
 import Slideshow from "../components/Slideshow";

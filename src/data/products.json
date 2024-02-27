@@ -5,7 +5,7 @@
     "subCategoryId": "electric",
     "brand": "fender",
     "slug": "fender-player-tele-pf-3ts",
-    "imagesPath": "products/guitars_basses/electric/fender-player-tele-pf-3ts",
+    "imagesPath": "catalog/guitars_basses/electric/fender-player-tele-pf-3ts",
     "rating": 4,
     "price": 675,
     "attributes": {
@@ -28,7 +28,7 @@
     "subCategoryId": "electric",
     "brand": "gibson",
     "slug": "gibson-es335-figured-60s-cherry",
-    "imagesPath": "products/guitars_basses/electric/gibson-es335-figured-60s-cherry",
+    "imagesPath": "catalog/guitars_basses/electric/gibson-es335-figured-60s-cherry",
     "rating": 5,
     "price": 3390,
     "attributes": {
@@ -51,7 +51,7 @@
     "subCategoryId": "acoustic",
     "brand": "talyor",
     "slug": "taylor-gs-mini-mahogany",
-    "imagesPath": "products/guitars_basses/acoustic/taylor-gs-mini-mahogany",
+    "imagesPath": "catalog/guitars_basses/acoustic/taylor-gs-mini-mahogany",
     "rating": 5,
     "price": 539,
     "attributes": {
@@ -73,7 +73,7 @@
     "subCategoryId": "keyboards",
     "brand": "yamaha",
     "slug": "yamaha-psr-e373",
-    "imagesPath": "products/keys/keyboards/yamaha-psr-e373",
+    "imagesPath": "catalog/keys/keyboards/yamaha-psr-e373",
     "rating": 4.5,
     "price": 215,
     "attributes": {
@@ -101,7 +101,7 @@
     "subCategoryId": "keyboards",
     "brand": "yamaha",
     "slug": "yamaha-genos-2",
-    "imagesPath": "products/keys/keyboards/yamaha-genos-2",
+    "imagesPath": "catalog/keys/keyboards/yamaha-genos-2",
     "rating": 5,
     "price": 3777,
     "attributes": {
