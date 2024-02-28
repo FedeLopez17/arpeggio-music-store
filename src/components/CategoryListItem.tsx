@@ -14,7 +14,7 @@ export default function CategoryListItem({
     <li className="w-full">
       <section className="flex items-center justify-between">
         <NavLink
-          to={`/catalog/${category.id}`}
+          to={`/catalog/${category.id}/1`}
           className={({ isActive }) => (isActive ? "font-bold" : "")}
         >
           {category.name}
@@ -30,7 +30,7 @@ export default function CategoryListItem({
           {category.subCategories.map((subCategory) => (
             <li key={subCategory.id}>
               <NavLink
-                to={`/catalog/${category.id}/${subCategory.id}`}
+                to={`/catalog/${category.id}/${subCategory.id}/1`}
                 className={({ isActive }) => (isActive ? "font-bold" : "")}
               >
                 {subCategory.name}

@@ -53,33 +53,34 @@ const Router = ({
             />
           ),
         },
+
         {
           path: "catalog",
           element: <CatalogLayout />,
           children: [
             {
-              index: true,
+              path: ":page",
               element: renderCatalogPage(),
             },
             {
-              path: ":category",
+              path: ":category/:page",
               element: renderCatalogPage(),
             },
             {
-              path: ":category/:subcategory",
+              path: ":category/:subcategory/:page",
               element: renderCatalogPage(),
-            },
-            {
-              path: ":category/:subcategory/:product",
-              element: (
-                <ProductPage
-                  addProduct={addProduct}
-                  removeProduct={removeProduct}
-                  shoppingCart={shoppingCart}
-                />
-              ),
             },
           ],
+        },
+        {
+          path: "product/:category/:subcategory/:product",
+          element: (
+            <ProductPage
+              addProduct={addProduct}
+              removeProduct={removeProduct}
+              shoppingCart={shoppingCart}
+            />
+          ),
         },
       ],
     },

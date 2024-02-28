@@ -1,6 +1,8 @@
 import productsJson from "./data/products.json";
 import { OrderByOption, ProductType } from "./types";
 
+const MAX_PRODUCTS_PER_PAGE = 1; // Set to 1 only for debugging purposes
+
 function orderCatalog(orderBy: OrderByOption, catalog: ProductType[]) {
   catalog.sort((productA, productB) => {
     switch (orderBy) {
@@ -22,8 +24,47 @@ function orderCatalog(orderBy: OrderByOption, catalog: ProductType[]) {
   return catalog;
 }
 
-export function getCatalog(orderBy: OrderByOption): ProductType[] {
-  return orderCatalog(orderBy, productsJson);
+function filterCatalog(category: string, subCategory?: string) {
+  return productsJson.filter(
+    (product) =>
+      (!category || category === product.categoryId) &&
+      (!subCategory || subCategory === product.subCategoryId)
+  );
+}
+
+function getCatalogPageContent(page: number, products: ProductType[]) {
+  const startingIndex = MAX_PRODUCTS_PER_PAGE * (page - 1);
+  const endingIndex = startingIndex + MAX_PRODUCTS_PER_PAGE;
+
+  return page <= getNumberOfPages({ products })
+    ? products.slice(startingIndex, endingIndex)
+    : [];
+}
+
+export function getNumberOfPages({
+  products,
+  category,
+  subCategory,
+}: {
+  products?: ProductType[];
+  category?: string;
+  subCategory?: string;
+}) {
+  const productsArr = products
+    ? products
+    : category
+    ? filterCatalog(category, subCategory)
+    : productsJson;
+
+  return Math.ceil(productsArr.length / MAX_PRODUCTS_PER_PAGE);
+}
+
+export function getCatalog(
+  page: number,
+  orderBy?: OrderByOption
+): ProductType[] {
+  const products = orderBy ? orderCatalog(orderBy, productsJson) : productsJson;
+  return getCatalogPageContent(page, products);
 }
 
 export function getProductBySlug(slug: string): ProductType | null {
@@ -38,20 +79,20 @@ export function getFilteredProducts({
   category,
   subCategory,
   orderBy,
+  page,
 }: {
   category: string;
   orderBy: OrderByOption;
   subCategory?: string;
+  page: number;
 }): ProductType[] {
   if (subCategory && !category) {
     throw new Error("Subcategory requires category");
   }
 
-  const filteredProducts = productsJson.filter(
-    (product) =>
-      (!category || category === product.categoryId) &&
-      (!subCategory || subCategory === product.subCategoryId)
-  );
+  const filteredProducts = filterCatalog(category, subCategory);
 
-  return orderCatalog(orderBy, filteredProducts);
+  orderCatalog(orderBy, filteredProducts);
+
+  return getCatalogPageContent(page, filteredProducts);
 }

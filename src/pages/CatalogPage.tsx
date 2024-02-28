@@ -1,8 +1,13 @@
 import { useParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
-import { getCatalog, getFilteredProducts } from "../catalogManager";
+import {
+  getCatalog,
+  getFilteredProducts,
+  getNumberOfPages,
+} from "../catalogManager";
 import OrderBySelector from "../components/OrderBySelector";
 import { OrderByOption, SetOrderByOption } from "../types";
+import PageSelector from "../components/PageSelector";
 
 export default function ProductsPage({
   currentOrderByOption,
@@ -11,15 +16,21 @@ export default function ProductsPage({
   currentOrderByOption: OrderByOption;
   setCurrentOrderByOption: SetOrderByOption;
 }) {
-  const { category, subcategory } = useParams();
+  const { category, subcategory, page = 1 } = useParams();
+
+  const numberOfPages = getNumberOfPages({
+    category,
+    subCategory: subcategory,
+  });
 
   const noParams = !category && !subcategory;
   const catalog = noParams
-    ? getCatalog(currentOrderByOption)
+    ? getCatalog(Number(page), currentOrderByOption)
     : getFilteredProducts({
-        category: category as string,
+        category: category || "",
         subCategory: subcategory ? subcategory : undefined,
         orderBy: currentOrderByOption,
+        page: Number(page),
       });
 
   return (
@@ -39,6 +50,14 @@ export default function ProductsPage({
               <ProductCard key={product.imagesPath} product={product} />
             ))}
           </section>
+          {numberOfPages > 1 && (
+            <PageSelector
+              numberOfPages={numberOfPages}
+              category={category}
+              subCategory={subcategory}
+              currentPage={Number(page)}
+            />
+          )}
         </>
       )}
     </section>
