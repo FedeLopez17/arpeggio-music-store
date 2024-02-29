@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { CategoryType } from "../types";
 import { useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import SubCategoryListItem from "./SubCategoryListItem";
 
 export default function CategoryListItem({
   category,
@@ -9,16 +10,20 @@ export default function CategoryListItem({
   category: CategoryType;
 }) {
   const [visibleSubcategories, setvisibleSubcategories] = useState(false);
+  const { pathname } = useLocation();
+
+  const categoryLinkTo = `/catalog/${category.id}/1`;
+  const categoryLinkActive = pathname.includes(`/catalog/${category.id}/`);
 
   return (
     <li className="w-full">
       <section className="flex items-center justify-between">
-        <NavLink
-          to={`/catalog/${category.id}/1`}
-          className={({ isActive }) => (isActive ? "font-bold" : "")}
+        <Link
+          to={categoryLinkTo}
+          className={`${categoryLinkActive ? "font-bold" : ""}`}
         >
           {category.name}
-        </NavLink>
+        </Link>
         {visibleSubcategories ? (
           <FaAngleUp onClick={() => setvisibleSubcategories(false)} />
         ) : (
@@ -28,14 +33,12 @@ export default function CategoryListItem({
       {visibleSubcategories && (
         <ul>
           {category.subCategories.map((subCategory) => (
-            <li key={subCategory.id}>
-              <NavLink
-                to={`/catalog/${category.id}/${subCategory.id}/1`}
-                className={({ isActive }) => (isActive ? "font-bold" : "")}
-              >
-                {subCategory.name}
-              </NavLink>
-            </li>
+            <SubCategoryListItem
+              key={subCategory.id}
+              subCategory={subCategory}
+              categoryId={category.id}
+              pathname={pathname}
+            />
           ))}
         </ul>
       )}
