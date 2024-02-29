@@ -12,7 +12,13 @@ export default function PageSelector({
   category?: string;
   subCategory?: string;
 }) {
-  const getPageLink = (page: "previous" | "next", pageNumber?: number) => {
+  const getPageLink = ({
+    page,
+    pageNumber,
+  }: {
+    page?: "previous" | "next";
+    pageNumber?: number;
+  }) => {
     const rootPath = `/catalog/${
       category ? category + "/" + (subCategory ? subCategory + "/" : "") : ""
     }`;
@@ -23,8 +29,22 @@ export default function PageSelector({
     return rootPath + newPage;
   };
 
+  const specificPageSelectors: JSX.Element[] = [];
+  const startingIndex = currentPage - 5 > 0 ? currentPage - 5 : 1;
+
+  for (let i = startingIndex; i < currentPage + 5 && i <= numberOfPages; i++) {
+    const pageLink = getPageLink({ pageNumber: i });
+    const isActive = currentPage === i;
+
+    specificPageSelectors.push(
+      <Link key={i} to={pageLink}>
+        <section className={`${isActive ? "bg-blue-400" : ""}`}>{i}</section>
+      </Link>
+    );
+  }
+
   const PreviousPageLink = () => (
-    <Link to={getPageLink("previous")}>
+    <Link to={getPageLink({ page: "previous" })}>
       <section className="flex cursor-pointer  justify-center items-center">
         <FaAngleLeft />
         <h6>Previous</h6>
@@ -33,7 +53,7 @@ export default function PageSelector({
   );
 
   const NextPageLink = () => (
-    <Link to={getPageLink("next")}>
+    <Link to={getPageLink({ page: "next" })}>
       <section className="flex cursor-pointer justify-center items-center">
         <h6>Next</h6>
         <FaAngleRight />
@@ -44,7 +64,7 @@ export default function PageSelector({
   return (
     <section className="flex mb-40 gap-3">
       {currentPage > 1 && <PreviousPageLink />}
-      {/*TODO: Specific page selectors should be here */}
+      {specificPageSelectors}
       {currentPage < numberOfPages && <NextPageLink />}
     </section>
   );
