@@ -1,4 +1,5 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import MainNavBarLink from "../components/MainNavBarLink";
 
 export default function RootLayout() {
   return (
@@ -6,16 +7,20 @@ export default function RootLayout() {
       <nav>
         <ul className="flex justify-start items-center gap-3">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <MainNavBarLink path="/" innerText="Home" />
           </li>
           <li>
-            <NavLink to="/catalog/1">Catalog</NavLink>
+            <MainNavBarLink
+              path="/catalog/1"
+              innerText="Catalog"
+              pathToMatch="/catalog/"
+            />
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <MainNavBarLink path="/about" innerText="About" />
           </li>
           <li>
-            <NavLink to="/cart">Cart</NavLink>
+            <MainNavBarLink path="/cart" innerText="Cart" />
           </li>
         </ul>
       </nav>
