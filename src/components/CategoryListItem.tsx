@@ -9,7 +9,7 @@ export default function CategoryListItem({
 }: {
   category: CategoryType;
 }) {
-  const [visibleSubcategories, setvisibleSubcategories] = useState(false);
+  const [visibleSubCategories, setVisibleSubCategories] = useState(false);
   const { pathname } = useLocation();
 
   const categoryLinkTo = `/catalog/${category.id}/1`;
@@ -24,13 +24,13 @@ export default function CategoryListItem({
         >
           {category.name}
         </Link>
-        {visibleSubcategories ? (
-          <FaAngleUp onClick={() => setvisibleSubcategories(false)} />
+        {visibleSubCategories ? (
+          <FaAngleUp onClick={() => setVisibleSubCategories(false)} />
         ) : (
-          <FaAngleDown onClick={() => setvisibleSubcategories(true)} />
+          <FaAngleDown onClick={() => setVisibleSubCategories(true)} />
         )}
       </section>
-      {visibleSubcategories && (
+      {visibleSubCategories && (
         <ul>
           {category.subCategories.map((subCategory) => (
             <SubCategoryListItem
