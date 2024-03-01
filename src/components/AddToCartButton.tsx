@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { ProductType, addProduct } from "../types";
+import { ProductType, AddProduct } from "../types";
 
 export default function AddToCartButton({
   addProduct,
   product,
 }: {
-  addProduct: addProduct;
+  addProduct: AddProduct;
   product: ProductType;
 }) {
   const [quantity, setQuantity] = useState(1);
