@@ -1,12 +1,12 @@
 import { FaRegTrashAlt } from "react-icons/fa";
-import { ShoppingCartItem, removeProduct } from "../types";
+import { ShoppingCartItem, RemoveProduct } from "../types";
 import { getImageUrl } from "../utils";
 
 export default function CartItem({
   removeProduct,
   cartItem: { product, quantity },
 }: {
-  removeProduct: removeProduct;
+  removeProduct: RemoveProduct;
   cartItem: ShoppingCartItem;
 }) {
   const productImage = getImageUrl(`${product.imagesPath}/1.jpg`);
