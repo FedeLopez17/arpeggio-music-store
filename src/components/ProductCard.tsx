@@ -3,21 +3,36 @@ import { ProductType } from "../types";
 import RatingStars from "./RatingStars";
 import { useEffect, useState } from "react";
 import { getProductImage } from "../utils";
+import ImageLoadingSkeleton from "./ImageLoadingSkeleton";
 
 export default function Product({ product }: { product: ProductType }) {
   const [productImage, setProductImage] = useState<string>();
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   useEffect(() => {
-    getProductImage(product.imagesPath).then((imageResponse) =>
-      setProductImage(imageResponse)
-    );
-  }, []);
+    const preloadImage = async () => {
+      try {
+        const imageUrl = await getProductImage(product.imagesPath);
+        const img = new Image();
+        img.src = imageUrl;
+        img.onload = () => {
+          setProductImage(imageUrl);
+          setImageLoaded(true);
+        };
+      } catch (error) {
+        console.error("Error loading image:", error);
+      }
+    };
+
+    preloadImage();
+  }, [product.imagesPath]);
 
   return (
     <Link
       to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
     >
       <section className="flex flex-col bg-red-500 p-2 aspect-[9/12]">
-        <img src={productImage} />
+        {imageLoaded ? <img src={productImage} /> : <ImageLoadingSkeleton />}
         <p>{product.name}</p>
         <p>${product.price}</p>
         <RatingStars rating={product.rating} />
