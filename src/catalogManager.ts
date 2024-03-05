@@ -1,7 +1,7 @@
 import productsJson from "./data/products.json";
 import { OrderByOption, ProductType } from "./types";
 
-const MAX_PRODUCTS_PER_PAGE = 1; // Set to 1 only for debugging purposes
+const MAX_PRODUCTS_PER_PAGE = 24;
 
 function orderCatalog(orderBy: OrderByOption, catalog: ProductType[]) {
   catalog.sort((productA, productB) => {
