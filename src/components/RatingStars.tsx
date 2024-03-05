@@ -6,13 +6,6 @@ export default function RatingStars({ rating }: { rating: number }) {
   const ratingIsDecimal = roundedDownRating !== rating;
   const stars: JSX.Element[] = [];
 
-  //   if (!rating || rating >= MAX_RATING) {
-  //     const Icon = !rating ? BsStar : BsStarFill;
-  //     for (let i = 0; i < MAX_RATING; i++) {
-  //       stars.push(<Icon key={stars.length} />);
-  //     }
-  //   } else {
-
   let filledStarsCompleted = false;
   for (let i = 0; i < MAX_RATING; i++) {
     if (i < roundedDownRating) {
@@ -37,7 +30,6 @@ export default function RatingStars({ rating }: { rating: number }) {
       break;
     }
   }
-  //   }
 
   return <section className="flex gap-2">{stars}</section>;
 }
