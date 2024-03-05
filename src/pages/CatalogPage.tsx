@@ -34,32 +34,34 @@ export default function ProductsPage({
       });
 
   return (
-    <section className="">
+    <>
       {!catalog.length ? (
         <h4>No matching products</h4>
       ) : (
         <>
-          <section className="flex justify-end items-center">
+          <section className="w-full flex justify-end mb-3">
             <OrderBySelector
               currentSelection={currentOrderByOption}
               setOrderOption={setCurrentOrderByOption}
             />
           </section>
-          <section className="grid gap-3">
+          <section className="w-full grid gap-3 grid-cols-catalog justify-center">
             {catalog.map((product) => (
               <ProductCard key={product.imagesPath} product={product} />
             ))}
           </section>
           {numberOfPages > 1 && (
-            <PageSelector
-              numberOfPages={numberOfPages}
-              category={category}
-              subCategory={subcategory}
-              currentPage={Number(page)}
-            />
+            <section className="w-full flex justify-center mt-2">
+              <PageSelector
+                numberOfPages={numberOfPages}
+                category={category}
+                subCategory={subcategory}
+                currentPage={Number(page)}
+              />
+            </section>
           )}
         </>
       )}
-    </section>
+    </>
   );
 }

@@ -16,13 +16,12 @@ export default function Product({ product }: { product: ProductType }) {
     <Link
       to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
     >
-      <div className="flex flex-col max-w-sm bg-red-500 p-3">
+      <section className="flex flex-col bg-red-500 p-2 aspect-[9/12]">
         <img src={productImage} />
-        <p>
-          {product.name} - ${product.price}
-        </p>
+        <p>{product.name}</p>
+        <p>${product.price}</p>
         <RatingStars rating={product.rating} />
-      </div>
+      </section>
     </Link>
   );
 }
