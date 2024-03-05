@@ -3,10 +3,11 @@ import { getProductBySlug } from "../catalogManager";
 import ProductNotFound from "../components/ProductNotFound";
 import RatingStars from "../components/RatingStars";
 import Slideshow from "../components/Slideshow";
-import { getProductImageUrls } from "../utils";
+import { getProductImageURLs } from "../utils";
 import AttributesTable from "../components/AttributesTable";
 import { ShoppingCart, AddProduct, RemoveProduct } from "../types";
 import AddToCartButton from "../components/AddToCartButton";
+import { useEffect, useState } from "react";
 
 export default function ProductPage({
   addProduct,
@@ -21,12 +22,6 @@ export default function ProductPage({
 
   const productData = getProductBySlug(product as string);
 
-  const imageUrls = getProductImageUrls(
-    category as string,
-    subcategory as string,
-    product as string
-  );
-
   const productInCart =
     shoppingCart.find(
       (cartItem) =>
@@ -35,6 +30,16 @@ export default function ProductPage({
         cartItem.product.slug === product
     ) != undefined;
 
+  const [imageURLs, setImageURLs] = useState<string[]>([]);
+
+  useEffect(() => {
+    getProductImageURLs(
+      category as string,
+      subcategory as string,
+      product as string
+    ).then((imagesArr) => setImageURLs(imagesArr));
+  }, []);
+
   return !productData ? (
     <ProductNotFound />
   ) : (
@@ -42,7 +47,7 @@ export default function ProductPage({
       <section>
         <h1>{productData.name}</h1>
         <RatingStars rating={productData.rating} />
-        <Slideshow imageUrls={imageUrls} />
+        <Slideshow imageUrls={imageURLs} />
         <AttributesTable attributes={productData.attributes} />
       </section>
       <section>

@@ -1,7 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
-  const [currentImage, setCurrentImage] = useState(imageUrls[0]);
+  const [currentImage, setCurrentImage] = useState<string>();
+
+  useEffect(() => {
+    if (imageUrls.length) {
+      setCurrentImage(imageUrls[0]);
+    }
+  }, [imageUrls]);
 
   return (
     <section className="flex h-[700px] aspect-video overflow-hidden">

@@ -5,7 +5,7 @@
     "subCategoryId": "electric",
     "brand": "fender",
     "slug": "fender-player-tele-pf-3ts",
-    "imagesPath": "catalog/guitars_basses/electric/fender-player-tele-pf-3ts",
+    "imagesPath": "guitars_basses/electric/fender-player-tele-pf-3ts",
     "rating": 4,
     "price": 675,
     "attributes": {
@@ -28,7 +28,7 @@
     "subCategoryId": "electric",
     "brand": "gibson",
     "slug": "gibson-es335-figured-60s-cherry",
-    "imagesPath": "catalog/guitars_basses/electric/gibson-es335-figured-60s-cherry",
+    "imagesPath": "guitars_basses/electric/gibson-es335-figured-60s-cherry",
     "rating": 5,
     "price": 3390,
     "attributes": {
@@ -51,7 +51,7 @@
     "subCategoryId": "electric",
     "brand": "fender",
     "slug": "fender-cory-wong-strat-sbt",
-    "imagesPath": "catalog/guitars_basses/electric/fender-cory-wong-strat-sbt",
+    "imagesPath": "guitars_basses/electric/fender-cory-wong-strat-sbt",
     "rating": 5,
     "price": 2138,
     "attributes": {
@@ -78,7 +78,7 @@
     "subCategoryId": "electric",
     "brand": "gibson",
     "slug": "gibson-les-paul-custom-eb-gh",
-    "imagesPath": "catalog/guitars_basses/electric/gibson-les-paul-custom-eb-gh",
+    "imagesPath": "guitars_basses/electric/gibson-les-paul-custom-eb-gh",
     "rating": 5,
     "price": 4333,
     "attributes": {
@@ -105,7 +105,7 @@
     "subCategoryId": "electric",
     "brand": "harley-benton",
     "slug": "harley-benton-st-20-bk-standard-series",
-    "imagesPath": "catalog/guitars_basses/electric/harley-benton-st-20-bk-standard-series",
+    "imagesPath": "guitars_basses/electric/harley-benton-st-20-bk-standard-series",
     "rating": 4,
     "price": 79,
     "attributes": {
@@ -129,7 +129,7 @@
     "subCategoryId": "electric",
     "brand": "jackson",
     "slug": "jackson-pro-plus-soloist-sla3-q-fbrst",
-    "imagesPath": "catalog/guitars_basses/electric/jackson-pro-plus-soloist-sla3-q-fbrst",
+    "imagesPath": "guitars_basses/electric/jackson-pro-plus-soloist-sla3-q-fbrst",
     "rating": 4.5,
     "price": 1290,
     "attributes": {
@@ -153,7 +153,7 @@
     "subCategoryId": "electric",
     "brand": "gretsch",
     "slug": "gretsch-emtc-j-gourley-bkstr-ird-blk",
-    "imagesPath": "catalog/guitars_basses/electric/gretsch-emtc-j-gourley-bkstr-ird-blk",
+    "imagesPath": "guitars_basses/electric/gretsch-emtc-j-gourley-bkstr-ird-blk",
     "rating": 4.5,
     "price": 959,
     "attributes": {
@@ -177,7 +177,7 @@
     "subCategoryId": "electric",
     "brand": "squier",
     "slug": "squier-affinity-strat-laurel-sg",
-    "imagesPath": "catalog/guitars_basses/electric/squier-affinity-strat-laurel-sg",
+    "imagesPath": "guitars_basses/electric/squier-affinity-strat-laurel-sg",
     "rating": 4,
     "price": 179,
     "attributes": {
@@ -201,7 +201,7 @@
     "subCategoryId": "electric",
     "brand": "ibanez",
     "slug": "ibanez-gb10se-bs-george-benson",
-    "imagesPath": "catalog/guitars_basses/electric/ibanez-gb10se-bs-george-benson",
+    "imagesPath": "guitars_basses/electric/ibanez-gb10se-bs-george-benson",
     "rating": 5,
     "price": 1269,
     "attributes": {
@@ -225,7 +225,7 @@
     "subCategoryId": "electric",
     "brand": "godin",
     "slug": "godin-5th-ave-cw-kingpin-ii-hb",
-    "imagesPath": "catalog/guitars_basses/electric/godin-5th-ave-cw-kingpin-ii-hb",
+    "imagesPath": "guitars_basses/electric/godin-5th-ave-cw-kingpin-ii-hb",
     "rating": 4.5,
     "price": 999,
     "attributes": {
@@ -249,7 +249,7 @@
     "subCategoryId": "electric",
     "brand": "schecter",
     "slug": "schecter-c-1-sls-elite-fr-afb",
-    "imagesPath": "catalog/guitars_basses/electric/schecter-c-1-sls-elite-fr-afb",
+    "imagesPath": "guitars_basses/electric/schecter-c-1-sls-elite-fr-afb",
     "rating": 5,
     "price": 1090,
     "attributes": {
@@ -276,7 +276,7 @@
     "subCategoryId": "electric",
     "brand": "fender",
     "slug": "fender-am-pro-ii-strat-3tsb",
-    "imagesPath": "catalog/guitars_basses/electric/fender-am-pro-ii-strat-3tsb",
+    "imagesPath": "guitars_basses/electric/fender-am-pro-ii-strat-3tsb",
     "rating": 5,
     "price": 1725,
     "attributes": {
@@ -300,7 +300,7 @@
     "subCategoryId": "electric",
     "brand": "ibanez",
     "slug": "ibanez-rg652ahm-ngb-prestige",
-    "imagesPath": "catalog/guitars_basses/electric/ibanez-rg652ahm-ngb-prestige",
+    "imagesPath": "guitars_basses/electric/ibanez-rg652ahm-ngb-prestige",
     "rating": 5,
     "price": 1399,
     "attributes": {
@@ -324,7 +324,7 @@
     "subCategoryId": "electric",
     "brand": "squier",
     "slug": "squier-sonic-strat-hss-black",
-    "imagesPath": "catalog/guitars_basses/electric/squier-sonic-strat-hss-black",
+    "imagesPath": "guitars_basses/electric/squier-sonic-strat-hss-black",
     "rating": 5,
     "price": 159,
     "attributes": {
@@ -348,7 +348,7 @@
     "subCategoryId": "electric",
     "brand": "esp",
     "slug": "esp-ltd-ec-black-metal-blks",
-    "imagesPath": "catalog/guitars_basses/electric/esp-ltd-ec-black-metal-blks",
+    "imagesPath": "guitars_basses/electric/esp-ltd-ec-black-metal-blks",
     "rating": 5,
     "price": 999,
     "attributes": {
@@ -372,7 +372,7 @@
     "subCategoryId": "electric",
     "brand": "ibanez",
     "slug": "ibanez-rg550-dy",
-    "imagesPath": "catalog/guitars_basses/electric/ibanez-rg550-dy",
+    "imagesPath": "guitars_basses/electric/ibanez-rg550-dy",
     "rating": 5,
     "price": 865,
     "attributes": {
@@ -396,7 +396,7 @@
     "subCategoryId": "electric",
     "brand": "fender",
     "slug": "fender-clapton-strat-signature-blk",
-    "imagesPath": "catalog/guitars_basses/electric/fender-clapton-strat-signature-blk",
+    "imagesPath": "guitars_basses/electric/fender-clapton-strat-signature-blk",
     "rating": 5,
     "price": 2299,
     "attributes": {
@@ -423,7 +423,7 @@
     "subCategoryId": "electric",
     "brand": "esp",
     "slug": "esp-ltd-ec-1000et-qm-dbsb",
-    "imagesPath": "catalog/guitars_basses/electric/esp-ltd-ec-1000et-qm-dbsb",
+    "imagesPath": "guitars_basses/electric/esp-ltd-ec-1000et-qm-dbsb",
     "rating": 5,
     "price": 1269,
     "attributes": {
@@ -447,7 +447,7 @@
     "subCategoryId": "electric",
     "brand": "duesenberg",
     "slug": "duesenberg-starplayer-tv-blue-sparkle",
-    "imagesPath": "catalog/guitars_basses/electric/duesenberg-starplayer-tv-blue-sparkle",
+    "imagesPath": "guitars_basses/electric/duesenberg-starplayer-tv-blue-sparkle",
     "rating": 5,
     "price": 2366,
     "attributes": {
@@ -471,7 +471,7 @@
     "subCategoryId": "electric",
     "brand": "schecter",
     "slug": "schecter-synyster-gates-custom-s-sgb",
-    "imagesPath": "catalog/guitars_basses/electric/schecter-synyster-gates-custom-s-sgb",
+    "imagesPath": "guitars_basses/electric/schecter-synyster-gates-custom-s-sgb",
     "rating": 5,
     "price": 1639,
     "attributes": {
@@ -497,7 +497,7 @@
     "subCategoryId": "electric",
     "brand": "schecter",
     "slug": "schecter-damien-platinum-6-sbk",
-    "imagesPath": "catalog/guitars_basses/electric/schecter-damien-platinum-6-sbk",
+    "imagesPath": "guitars_basses/electric/schecter-damien-platinum-6-sbk",
     "rating": 5,
     "price": 835,
     "attributes": {
@@ -523,7 +523,7 @@
     "subCategoryId": "electric",
     "brand": "epiphone",
     "slug": "epiphone-billie-joe-armstrong-lp-junior",
-    "imagesPath": "catalog/guitars_basses/electric/epiphone-billie-joe-armstrong-lp-junior",
+    "imagesPath": "guitars_basses/electric/epiphone-billie-joe-armstrong-lp-junior",
     "rating": 5,
     "price": 489,
     "attributes": {
@@ -547,7 +547,7 @@
     "subCategoryId": "electric",
     "brand": "duesenberg",
     "slug": "duesenberg-starplayer-tv-lh-bk",
-    "imagesPath": "catalog/guitars_basses/electric/duesenberg-starplayer-tv-lh-bk",
+    "imagesPath": "guitars_basses/electric/duesenberg-starplayer-tv-lh-bk",
     "rating": 5,
     "price": 2444,
     "attributes": {
@@ -573,7 +573,7 @@
     "subCategoryId": "electric",
     "brand": "esp",
     "slug": "esp-e-ii-horizon-iii-fm-rdb",
-    "imagesPath": "catalog/guitars_basses/electric/esp-e-ii-horizon-iii-fm-rdb",
+    "imagesPath": "guitars_basses/electric/esp-e-ii-horizon-iii-fm-rdb",
     "rating": 5,
     "price": 2180,
     "attributes": {
@@ -599,7 +599,7 @@
     "subCategoryId": "electric",
     "brand": "solar-guitars",
     "slug": "solar-guitars-v2.6c-g2",
-    "imagesPath": "catalog/guitars_basses/electric/solar-guitars-v2.6c-g2",
+    "imagesPath": "guitars_basses/electric/solar-guitars-v2.6c-g2",
     "rating": 5,
     "price": 815,
     "attributes": {
@@ -625,7 +625,7 @@
     "subCategoryId": "electric",
     "brand": "ibanez",
     "slug": "ibanez-rg652ahmfx-rpb",
-    "imagesPath": "catalog/guitars_basses/electric/ibanez-rg652ahmfx-rpb",
+    "imagesPath": "guitars_basses/electric/ibanez-rg652ahmfx-rpb",
     "rating": 5,
     "price": 1318,
     "attributes": {
@@ -649,7 +649,7 @@
     "subCategoryId": "electric",
     "brand": "yamaha",
     "slug": "yamaha-revstar-rss20-sunset-burst",
-    "imagesPath": "catalog/guitars_basses/electric/yamaha-revstar-rss20-sunset-burst",
+    "imagesPath": "guitars_basses/electric/yamaha-revstar-rss20-sunset-burst",
     "rating": 5,
     "price": 725,
     "attributes": {
@@ -673,7 +673,7 @@
     "subCategoryId": "electric",
     "brand": "ibanez",
     "slug": "ibanez-rg5320-csw-prestige",
-    "imagesPath": "catalog/guitars_basses/electric/ibanez-rg5320-csw-prestige",
+    "imagesPath": "guitars_basses/electric/ibanez-rg5320-csw-prestige",
     "rating": 5,
     "price": 1890,
     "attributes": {
@@ -702,7 +702,7 @@
     "subCategoryId": "electric",
     "brand": "gibson",
     "slug": "gibson-les-paul-slash-standard-nb",
-    "imagesPath": "catalog/guitars_basses/electric/gibson-les-paul-slash-standard-nb",
+    "imagesPath": "guitars_basses/electric/gibson-les-paul-slash-standard-nb",
     "rating": 5,
     "price": 2699,
     "attributes": {
@@ -727,8 +727,8 @@
     "categoryId": "guitars_basses",
     "subCategoryId": "electric",
     "brand": "prs",
-    "slug": "prs-se-standard-24/08-ts",
-    "imagesPath": "catalog/guitars_basses/electric/prs-se-standard-24/08-ts",
+    "slug": "prs-se-standard-24-08-ts",
+    "imagesPath": "guitars_basses/electric/prs-se-standard-24-08-ts",
     "rating": 5,
     "price": 544,
     "attributes": {
@@ -752,7 +752,7 @@
     "subCategoryId": "electric",
     "brand": "fender",
     "slug": "fender-am-pro-ii-strat-mn-myst-sfg",
-    "imagesPath": "catalog/guitars_basses/electric/fender-am-pro-ii-strat-mn-myst-sfg",
+    "imagesPath": "guitars_basses/electric/fender-am-pro-ii-strat-mn-myst-sfg",
     "rating": 5,
     "price": 1745,
     "attributes": {
@@ -776,7 +776,7 @@
     "subCategoryId": "electric",
     "brand": "ibanez",
     "slug": "ibanez-gb10-bs",
-    "imagesPath": "catalog/guitars_basses/electric/ibanez-gb10-bs",
+    "imagesPath": "guitars_basses/electric/ibanez-gb10-bs",
     "rating": 5,
     "price": 2699,
     "attributes": {
@@ -800,7 +800,7 @@
     "subCategoryId": "electric",
     "brand": "fender",
     "slug": "fender-clapton-custom-shop-mdb",
-    "imagesPath": "catalog/guitars_basses/electric/fender-clapton-custom-shop-mdb",
+    "imagesPath": "guitars_basses/electric/fender-clapton-custom-shop-mdb",
     "rating": 5,
     "price": 3799,
     "attributes": {
@@ -830,7 +830,7 @@
     "subCategoryId": "electric",
     "brand": "schecter",
     "slug": "schecter-c-1-exotic-ebony-ns",
-    "imagesPath": "catalog/guitars_basses/electric/schecter-c-1-exotic-ebony-ns",
+    "imagesPath": "guitars_basses/electric/schecter-c-1-exotic-ebony-ns",
     "rating": 5,
     "price": 999,
     "attributes": {
@@ -854,7 +854,7 @@
     "subCategoryId": "electric",
     "brand": "jackson",
     "slug": "jackson-demmelition-fury-pd-rtf",
-    "imagesPath": "catalog/guitars_basses/electric/jackson-demmelition-fury-pd-rtf",
+    "imagesPath": "guitars_basses/electric/jackson-demmelition-fury-pd-rtf",
     "rating": 5,
     "price": 745,
     "attributes": {
@@ -883,7 +883,7 @@
     "subCategoryId": "electric",
     "brand": "esp",
     "slug": "esp-ltd-gh-600-blk",
-    "imagesPath": "catalog/guitars_basses/electric/esp-ltd-gh-600-blk",
+    "imagesPath": "guitars_basses/electric/esp-ltd-gh-600-blk",
     "rating": 5,
     "price": 1545,
     "attributes": {
@@ -909,7 +909,7 @@
     "subCategoryId": "electric",
     "brand": "gibson",
     "slug": "gibson-sg-standard-64-maestro-ch-vos",
-    "imagesPath": "catalog/guitars_basses/electric/gibson-sg-standard-64-maestro-ch-vos",
+    "imagesPath": "guitars_basses/electric/gibson-sg-standard-64-maestro-ch-vos",
     "rating": 5,
     "price": 3999,
     "attributes": {
@@ -937,7 +937,7 @@
     "subCategoryId": "electric",
     "brand": "ibanez",
     "slug": "ibanez-s6570q-nbl-prestige",
-    "imagesPath": "catalog/guitars_basses/electric/ibanez-s6570q-nbl-prestige",
+    "imagesPath": "guitars_basses/electric/ibanez-s6570q-nbl-prestige",
     "rating": 5,
     "price": 2048,
     "attributes": {
@@ -961,7 +961,7 @@
     "subCategoryId": "electric",
     "brand": "charvel",
     "slug": "charvel-guthrie-govan-mj-sd24-cm-3ts",
-    "imagesPath": "catalog/guitars_basses/electric/charvel-guthrie-govan-mj-sd24-cm-3ts",
+    "imagesPath": "guitars_basses/electric/charvel-guthrie-govan-mj-sd24-cm-3ts",
     "rating": 5,
     "price": 2090,
     "attributes": {
@@ -988,7 +988,7 @@
     "subCategoryId": "electric",
     "brand": "esp",
     "slug": "esp-ltd-ec-1000fr-see-thru-black",
-    "imagesPath": "catalog/guitars_basses/electric/esp-ltd-ec-1000fr-see-thru-black",
+    "imagesPath": "guitars_basses/electric/esp-ltd-ec-1000fr-see-thru-black",
     "rating": 5,
     "price": 1269,
     "attributes": {
@@ -1012,7 +1012,7 @@
     "subCategoryId": "electric",
     "brand": "yamaha",
     "slug": "yamaha-pacifica-112v-ovs-rl",
-    "imagesPath": "catalog/guitars_basses/electric/yamaha-pacifica-112v-ovs-rl",
+    "imagesPath": "guitars_basses/electric/yamaha-pacifica-112v-ovs-rl",
     "rating": 5,
     "price": 299,
     "attributes": {
@@ -1036,7 +1036,7 @@
     "subCategoryId": "electric",
     "brand": "rickenbacker",
     "slug": "rickenbacker-330-jg",
-    "imagesPath": "catalog/guitars_basses/electric/rickenbacker-330-jg",
+    "imagesPath": "guitars_basses/electric/rickenbacker-330-jg",
     "rating": 5,
     "price": 2299,
     "attributes": {
@@ -1061,7 +1061,7 @@
     "subCategoryId": "electric",
     "brand": "esp",
     "slug": "esp-ltd-sh-7etfm-stp",
-    "imagesPath": "catalog/guitars_basses/electric/esp-ltd-sh-7etfm-stp",
+    "imagesPath": "guitars_basses/electric/esp-ltd-sh-7etfm-stp",
     "rating": 5,
     "price": 1999,
     "attributes": {
@@ -1088,7 +1088,7 @@
     "subCategoryId": "electric",
     "brand": "schecter",
     "slug": "schecter-e-1-fr-s-special-edition-tpb",
-    "imagesPath": "catalog/guitars_basses/electric/schecter-e-1-fr-s-special-edition-tpb",
+    "imagesPath": "guitars_basses/electric/schecter-e-1-fr-s-special-edition-tpb",
     "rating": 5,
     "price": 1638,
     "attributes": {
@@ -1114,7 +1114,7 @@
     "subCategoryId": "electric",
     "brand": "gretsch",
     "slug": "gretsch-g6119t-62vs-chet-atkins",
-    "imagesPath": "catalog/guitars_basses/electric/gretsch-g6119t-62vs-chet-atkins",
+    "imagesPath": "guitars_basses/electric/gretsch-g6119t-62vs-chet-atkins",
     "rating": 5,
     "price": 2444,
     "attributes": {
@@ -1140,7 +1140,7 @@
     "subCategoryId": "electric",
     "brand": "solar-guitars",
     "slug": "solar-guitars-e2.7c",
-    "imagesPath": "catalog/guitars_basses/electric/solar-guitars-e2.7c",
+    "imagesPath": "guitars_basses/electric/solar-guitars-e2.7c",
     "rating": 5,
     "price": 815,
     "attributes": {
@@ -1164,7 +1164,7 @@
     "subCategoryId": "electric",
     "brand": "esp",
     "slug": "esp-e-ii-arrow-blk",
-    "imagesPath": "catalog/guitars_basses/electric/esp-e-ii-arrow-blk",
+    "imagesPath": "guitars_basses/electric/esp-e-ii-arrow-blk",
     "rating": 5,
     "price": 2333,
     "attributes": {
@@ -1190,7 +1190,7 @@
     "subCategoryId": "electric",
     "brand": "esp",
     "slug": "esp-ltd-m-ht-arctic-metal-sws",
-    "imagesPath": "catalog/guitars_basses/electric/esp-ltd-m-ht-arctic-metal-sws",
+    "imagesPath": "guitars_basses/electric/esp-ltd-m-ht-arctic-metal-sws",
     "rating": 5,
     "price": 1069,
     "attributes": {
@@ -1217,7 +1217,7 @@
     "subCategoryId": "electric",
     "brand": "fender",
     "slug": "fender-am-ultra-luxe-tele-mn-2csb",
-    "imagesPath": "catalog/guitars_basses/electric/fender-am-ultra-luxe-tele-mn-2csb",
+    "imagesPath": "guitars_basses/electric/fender-am-ultra-luxe-tele-mn-2csb",
     "rating": 5,
     "price": 2222,
     "attributes": {
@@ -1240,8 +1240,8 @@
     "categoryId": "guitars_basses",
     "subCategoryId": "electric",
     "brand": "rickenbacker",
-    "slug": "rickenbacker-360/12-fg",
-    "imagesPath": "catalog/guitars_basses/electric/rickenbacker-360/12-fg",
+    "slug": "rickenbacker-360-12-fg",
+    "imagesPath": "guitars_basses/electric/rickenbacker-360-12-fg",
     "rating": 5,
     "price": 3399,
     "attributes": {
@@ -1263,36 +1263,12 @@
     }
   },
   {
-    "name": "Ibanez RG5121-DBF",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
-    "brand": "ibanez",
-    "slug": "ibanez-rg5121-dbf",
-    "imagesPath": "catalog/guitars_basses/electric/ibanez-rg5121-dbf",
-    "rating": 5,
-    "price": 1599,
-    "attributes": {
-      "Available since": "January 2019",
-      "Colour": "Blue",
-      "Body": "Mahogany",
-      "Top": "None",
-      "Neck": "Maple, Wenge",
-      "Fretboard": "Ebony",
-      "Frets": "24",
-      "Scale": "648 mm",
-      "Pickups": "HH",
-      "Tremolo": "None",
-      "incl. Bag": "No",
-      "incl. Case": "Yes"
-    }
-  },
-  {
     "name": "Taylor GS Mini Mahogany",
     "categoryId": "guitars_basses",
     "subCategoryId": "acoustic",
     "brand": "talyor",
     "slug": "taylor-gs-mini-mahogany",
-    "imagesPath": "catalog/guitars_basses/acoustic/taylor-gs-mini-mahogany",
+    "imagesPath": "guitars_basses/acoustic/taylor-gs-mini-mahogany",
     "rating": 5,
     "price": 539,
     "attributes": {
@@ -1309,12 +1285,230 @@
     }
   },
   {
+    "name": "Taylor 114ce Special Edition Gloss",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "acoustic",
+    "brand": "taylor",
+    "slug": "taylor-114ce-special-edition-gloss",
+    "imagesPath": "guitars_basses/acoustic/taylor-114ce-special-edition-gloss",
+    "rating": 4.5,
+    "price": 725,
+    "attributes": {
+      "Available since": "August 2023",
+      "Design": "Grand Auditorium",
+      "Top": "Solid Spruce",
+      "Back And Sides": "Walnut",
+      "Cutaway": "Yes",
+      "Fretboard": "Ebony",
+      "Nut width in mm": "42,80 mm",
+      "Frets": "20",
+      "Pickups": "Yes",
+      "Colour": "Natural, High Gloss",
+      "Case": "No",
+      "Incl. Gigbag": "Yes"
+    }
+  },
+  {
+    "name": "Taylor 214ce-SB DLX",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "acoustic",
+    "brand": "taylor",
+    "slug": "taylor-214ce-sb-dlx",
+    "imagesPath": "guitars_basses/acoustic/taylor-214ce-sb-dlx",
+    "rating": 5,
+    "price": 1090,
+    "attributes": {
+      "Available since": "August 2016",
+      "Design": "Grand Auditorium",
+      "Top": "Solid Spruce",
+      "Back And Sides": "Rosewood",
+      "Cutaway": "Yes",
+      "Fretboard": "Ebony",
+      "Nut width in mm": "42,80 mm",
+      "Frets": "20",
+      "Pickups": "Yes",
+      "Colour": "Sunburst",
+      "Case": "Yes",
+      "Incl. Gigbag": "No"
+    }
+  },
+  {
+    "name": "Taylor Baby Taylor BTe Koa",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "acoustic",
+    "brand": "taylor",
+    "slug": "taylor-baby-taylor-bte-koa",
+    "imagesPath": "guitars_basses/acoustic/taylor-baby-taylor-bte-koa",
+    "rating": 5,
+    "price": 589,
+    "attributes": {
+      "Available since": "October 2016",
+      "Design": "Baby Taylor",
+      "Top": "Koa, Solid",
+      "Back And Sides": "Koa",
+      "Cutaway": "No",
+      "Fretboard": "Ebony",
+      "Nut width in mm": "42,80 mm",
+      "Frets": "19",
+      "Pickups": "Yes",
+      "Colour": "Natural",
+      "Case": "No",
+      "Incl. Gigbag": "Yes",
+      "Acoustic Guitar": "1",
+      "Body": "Koa",
+      "Neck": "Sapele",
+      "Scale": "578 mm",
+      "Saddle Width": "42,8 mm",
+      "Pickup Configuration": "Yes"
+    }
+  },
+  {
+    "name": "Gibson L-00 Standard VSB",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "acoustic",
+    "brand": "gibson",
+    "slug": "gibson-l-00-standard-vsb",
+    "imagesPath": "guitars_basses/acoustic/gibson-l-00-standard-vsb",
+    "rating": 5,
+    "price": 1999,
+    "attributes": {
+      "Available since": "March 2019",
+      "Model": "00",
+      "Top": "Solid Spruce",
+      "Back and Sides": "Solid Mahogany",
+      "Cutaway": "No",
+      "Fretboard": "Rosewood",
+      "Nut width in mm": "43,80 mm",
+      "Frets": "19",
+      "Pickup": "Yes",
+      "Colour": "Sunburst",
+      "Incl. Case": "Yes",
+      "Incl. Gigbag": "No"
+    }
+  },
+  {
+    "name": "Harley Benton Custom Line CLA-15MCE NS",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "acoustic",
+    "brand": "harley-benton",
+    "slug": "harley-benton-custom-line-cla-15mce-ns",
+    "imagesPath": "guitars_basses/acoustic/harley-benton-custom-line-cla-15mce-ns",
+    "rating": 5,
+    "price": 215,
+    "attributes": {
+      "Available since": "July 2014",
+      "Model": "000",
+      "Top": "Solid Okume",
+      "Back and Sides": "Sapele, Mahogany",
+      "Cutaway": "Yes",
+      "Fretboard": "Pau Ferro",
+      "Nut width in mm": "43,00 mm",
+      "Frets": "20",
+      "Pickup": "Yes",
+      "Colour": "Natural",
+      "Incl. Case": "No",
+      "Incl. Gigbag": "No"
+    }
+  },
+  {
+    "name": "Harley Benton CLD-15MCE SolidWood Bundle",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "acoustic",
+    "brand": "harley-benton",
+    "slug": "harley-benton-cld-15mce-solidwood-bundle",
+    "imagesPath": "guitars_basses/acoustic/harley-benton-cld-15mce-solidwood-bundle",
+    "rating": 5,
+    "price": 289,
+    "attributes": {
+      "Available since": "June 2022",
+      "Top": "Mahogany, Solid",
+      "Back and Sides": "Solid Mahogany",
+      "Cutaway": "Yes",
+      "Fretboard": "Pau Ferro",
+      "Nut width in mm": "43,00 mm",
+      "Frets": "643",
+      "Pickups": "Yes",
+      "Colour": "Natural",
+      "Case": "No",
+      "Incl. Gigbag": "Yes"
+    }
+  },
+  {
+    "name": "Yamaha A5R ARE VN",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "acoustic",
+    "brand": "yamaha",
+    "slug": "yamaha-a5r-are-vn",
+    "imagesPath": "guitars_basses/acoustic/yamaha-a5r-are-vn",
+    "rating": 5,
+    "price": 1545,
+    "attributes": {
+      "Available since": "November 2018",
+      "Top": "Spruce, Solid",
+      "Back and Sides": "Solid Rosewood",
+      "Cutaway": "Yes",
+      "Fretboard": "Ebony",
+      "Nut width in mm": "43,00 mm",
+      "Frets": "20",
+      "Pickups": "Yes",
+      "Colour": "Natural",
+      "Case": "Yes",
+      "Incl. Gigbag": "No"
+    }
+  },
+  {
+    "name": "Takamine GD11MCENS",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "acoustic",
+    "brand": "takamine",
+    "slug": "takamine-gd11mcens",
+    "imagesPath": "guitars_basses/acoustic/takamine-gd11mcens",
+    "rating": 5,
+    "price": 315,
+    "attributes": {
+      "Available since": "November 2018",
+      "Top": "Mahogany",
+      "Back and Sides": "Mahogany",
+      "Cutaway": "Yes",
+      "Fretboard": "Laurel",
+      "Nut width in mm": "43,00 mm",
+      "Frets": "20",
+      "Pickups": "Yes",
+      "Colour": "Natural",
+      "Case": "No",
+      "Incl. Gigbag": "No"
+    }
+  },
+  {
+    "name": "Epiphone J-45 AVS",
+    "categoryId": "guitars_basses",
+    "subCategoryId": "acoustic",
+    "brand": "epiphone",
+    "slug": "epiphone-j-45-avs",
+    "imagesPath": "guitars_basses/acoustic/epiphone-j-45-avs",
+    "rating": 5,
+    "price": 666,
+    "attributes": {
+      "Available since": "November 2020",
+      "Top": "Spruce, Solid",
+      "Back and Sides": "Solid Mahogany",
+      "Cutaway": "No",
+      "Fretboard": "indian Laurel",
+      "Nut width in mm": "43,00 mm",
+      "Frets": "20",
+      "Pickups": "Yes",
+      "Colour": "Sunburst",
+      "Case": "No",
+      "Incl. Gigbag": "No"
+    }
+  },
+  {
     "name": "Yamaha C40",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "yamaha",
     "slug": "yamaha-c40",
-    "imagesPath": "catalog/guitars_basses/classical/yamaha-c40",
+    "imagesPath": "guitars_basses/classical/yamaha-c40",
     "rating": 4.5,
     "price": 109,
     "attributes": {
@@ -1331,14 +1525,13 @@
       "Incl. Gigbag": "No"
     }
   },
-
   {
     "name": "Yamaha C40 BL",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "yamaha",
     "slug": "yamaha-c40-bl",
-    "imagesPath": "catalog/guitars_basses/classical/yamaha-c40-bl",
+    "imagesPath": "guitars_basses/classical/yamaha-c40-bl",
     "rating": 4.5,
     "price": 109,
     "attributes": {
@@ -1355,14 +1548,13 @@
       "Incl. Gigbag": "No"
     }
   },
-
   {
     "name": "Startone CG851 1/4",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "startone",
-    "slug": "startone-cg851-1/4",
-    "imagesPath": "catalog/guitars_basses/classical/startone-cg851-1/4",
+    "slug": "startone-cg851-1-4",
+    "imagesPath": "guitars_basses/classical/startone-cg851-1-4",
     "rating": 4,
     "price": 35,
     "attributes": {
@@ -1379,14 +1571,13 @@
       "Hardcase": "No"
     }
   },
-
   {
     "name": "Harley Benton Hybrid Nylon NT",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "harley-benton",
     "slug": "harley-benton-hybrid-nylon-nt",
-    "imagesPath": "catalog/guitars_basses/classical/harley-benton-hybrid-nylon-nt",
+    "imagesPath": "guitars_basses/classical/harley-benton-hybrid-nylon-nt",
     "rating": 4,
     "price": 359,
     "attributes": {
@@ -1402,14 +1593,13 @@
       "Case or Gigbag": "No"
     }
   },
-
   {
     "name": "Startone CG 851 1/8",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "startone",
-    "slug": "startone-cg-851-1/8",
-    "imagesPath": "catalog/guitars_basses/classical/startone-cg-851-1/8",
+    "slug": "startone-cg-851-1-8",
+    "imagesPath": "guitars_basses/classical/startone-cg-851-1-8",
     "rating": 4,
     "price": 33,
     "attributes": {
@@ -1426,14 +1616,13 @@
       "Case": "No"
     }
   },
-
   {
     "name": "Cort Sunset Nylectric DLX",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "cort",
     "slug": "cort-sunset-nylectric-dlx",
-    "imagesPath": "catalog/guitars_basses/classical/cort-sunset-nylectric-dlx",
+    "imagesPath": "guitars_basses/classical/cort-sunset-nylectric-dlx",
     "rating": 4,
     "price": 615,
     "attributes": {
@@ -1451,14 +1640,13 @@
       "Case or Gigbag": "1"
     }
   },
-
   {
     "name": "Harley Benton HBO-850 Classic Black",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "harley-benton",
     "slug": "harley-benton-hbo-850-classic-black",
-    "imagesPath": "catalog/guitars_basses/classical/harley-benton-hbo-850-classic-black",
+    "imagesPath": "guitars_basses/classical/harley-benton-hbo-850-classic-black",
     "rating": 4.5,
     "price": 118,
     "attributes": {
@@ -1478,14 +1666,13 @@
       "Pickup System": "1"
     }
   },
-
   {
     "name": "Startone CG-851 7/8",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "startone",
-    "slug": "startone-cg-851-7/8",
-    "imagesPath": "catalog/guitars_basses/classical/startone-cg-851-7/8",
+    "slug": "startone-cg-851-7-8",
+    "imagesPath": "guitars_basses/classical/startone-cg-851-7-8",
     "rating": 4.5,
     "price": 42,
     "attributes": {
@@ -1502,14 +1689,13 @@
       "Hardcase": "No"
     }
   },
-
   {
     "name": "Cordoba F7 Flamenco Iberia",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "cordoba",
     "slug": "cordoba-f7-flamenco-iberia",
-    "imagesPath": "catalog/guitars_basses/classical/cordoba-f7-flamenco-iberia",
+    "imagesPath": "guitars_basses/classical/cordoba-f7-flamenco-iberia",
     "rating": 4.5,
     "price": 469,
     "attributes": {
@@ -1527,14 +1713,13 @@
       "Back and sides": "Cypress"
     }
   },
-
   {
     "name": "Harley Benton CG200-BK",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "harley-benton",
     "slug": "harley-benton-cg200-bk",
-    "imagesPath": "catalog/guitars_basses/classical/harley-benton-cg200-bk",
+    "imagesPath": "guitars_basses/classical/harley-benton-cg200-bk",
     "rating": 4,
     "price": 62,
     "attributes": {
@@ -1551,14 +1736,13 @@
       "Incl. Gigbag": "No"
     }
   },
-
   {
     "name": "Takamine GC5CE Natur",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "takamine",
     "slug": "takamine-gc5ce-natur",
-    "imagesPath": "catalog/guitars_basses/classical/takamine-gc5ce-natur",
+    "imagesPath": "guitars_basses/classical/takamine-gc5ce-natur",
     "rating": 5,
     "price": 399,
     "attributes": {
@@ -1575,14 +1759,13 @@
       "Incl. Gigbag": "No"
     }
   },
-
   {
     "name": "Harley Benton Nashville Nylon NT",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "harley-benton",
     "slug": "harley-benton-nashville-nylon-nt",
-    "imagesPath": "catalog/guitars_basses/classical/harley-benton-nashville-nylon-nt",
+    "imagesPath": "guitars_basses/classical/harley-benton-nashville-nylon-nt",
     "rating": 4,
     "price": 269,
     "attributes": {
@@ -1598,14 +1781,13 @@
       "Case or Gigbag": "No"
     }
   },
-
   {
     "name": "Furch GNc4-CR",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "furch",
     "slug": "furch-gnc4-cr",
-    "imagesPath": "catalog/guitars_basses/classical/furch-gnc4-cr",
+    "imagesPath": "guitars_basses/classical/furch-gnc4-cr",
     "rating": 5,
     "price": 1799,
     "attributes": {
@@ -1622,14 +1804,13 @@
       "Incl. Gigbag": "No"
     }
   },
-
   {
     "name": "Cordoba Stage Guitar Traditional NA",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "cordoba",
     "slug": "cordoba-stage-guitar-traditional-na",
-    "imagesPath": "catalog/guitars_basses/classical/cordoba-stage-guitar-traditional-na",
+    "imagesPath": "guitars_basses/classical/cordoba-stage-guitar-traditional-na",
     "rating": 4,
     "price": 725,
     "attributes": {
@@ -1645,14 +1826,13 @@
       "Case or Gigbag": "Yes"
     }
   },
-
   {
     "name": "Cordoba Stage Guitar Natural Amber w/B",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "cordoba",
-    "slug": "cordoba-stage-guitar-natural-amber-w/b",
-    "imagesPath": "catalog/guitars_basses/classical/cordoba-stage-guitar-natural-amber-w/b",
+    "slug": "cordoba-stage-guitar-natural-amber-w-b",
+    "imagesPath": "guitars_basses/classical/cordoba-stage-guitar-natural-amber-w-b",
     "rating": 5,
     "price": 635,
     "attributes": {
@@ -1668,14 +1848,13 @@
       "Case or Gigbag": "Yes"
     }
   },
-
   {
     "name": "Harley Benton GL-2NT Guitarlele",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "harley-benton",
     "slug": "harley-benton-gl-2nt-guitarlele",
-    "imagesPath": "catalog/guitars_basses/classical/harley-benton-gl-2nt-guitarlele",
+    "imagesPath": "guitars_basses/classical/harley-benton-gl-2nt-guitarlele",
     "rating": 4,
     "price": 53,
     "attributes": {
@@ -1694,14 +1873,13 @@
       "scale-length": "475 mm"
     }
   },
-
   {
     "name": "Startone CG 851 3/4",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "startone",
-    "slug": "startone-cg-851-3/4",
-    "imagesPath": "catalog/guitars_basses/classical/startone-cg-851-3/4",
+    "slug": "startone-cg-851-3-4",
+    "imagesPath": "guitars_basses/classical/startone-cg-851-3-4",
     "rating": 4,
     "price": 44,
     "attributes": {
@@ -1718,14 +1896,13 @@
       "Hardcase": "No"
     }
   },
-
   {
     "name": "Harley Benton CG200CE-BK",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "harley-benton",
     "slug": "harley-benton-cg200ce-bk",
-    "imagesPath": "catalog/guitars_basses/classical/harley-benton-cg200ce-bk",
+    "imagesPath": "guitars_basses/classical/harley-benton-cg200ce-bk",
     "rating": 4,
     "price": 72,
     "attributes": {
@@ -1742,14 +1919,13 @@
       "Incl. Gigbag": "No"
     }
   },
-
   {
     "name": "Taylor 214ce-N Black Dlx Special Ed",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "taylor",
     "slug": "taylor-214ce-n-black-dlx-special-ed",
-    "imagesPath": "catalog/guitars_basses/classical/taylor-214ce-n-black-dlx-special-ed",
+    "imagesPath": "guitars_basses/classical/taylor-214ce-n-black-dlx-special-ed",
     "rating": 5,
     "price": 1499,
     "attributes": {
@@ -1768,14 +1944,13 @@
       "Case or Gigbag": "1"
     }
   },
-
   {
     "name": "Fender CN-140SCE Thinline Natural",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "fender",
     "slug": "fender-cn-140sce-thinline-natural",
-    "imagesPath": "catalog/guitars_basses/classical/fender-cn-140sce-thinline-natural",
+    "imagesPath": "guitars_basses/classical/fender-cn-140sce-thinline-natural",
     "rating": 4,
     "price": 315,
     "attributes": {
@@ -1792,14 +1967,13 @@
       "Incl. Gigbag": "No"
     }
   },
-
   {
     "name": "Alhambra 1C HT incl. Gigbag",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "alhambra",
     "slug": "alhambra-1c-ht-incl.-gigbag",
-    "imagesPath": "catalog/guitars_basses/classical/alhambra-1c-ht-incl.-gigbag",
+    "imagesPath": "guitars_basses/classical/alhambra-1c-ht-incl.-gigbag",
     "rating": 4,
     "price": 325,
     "attributes": {
@@ -1816,14 +1990,13 @@
       "Incl. Gigbag": "Yes"
     }
   },
-
   {
     "name": "Fender ESC110 Educational 4/4 WN",
     "categoryId": "guitars_basses",
     "subCategoryId": "classical",
     "brand": "fender",
-    "slug": "fender-esc110-educational-4/4-wn",
-    "imagesPath": "catalog/guitars_basses/classical/fender-esc110-educational-4/4-wn",
+    "slug": "fender-esc110-educational-4-4-wn",
+    "imagesPath": "guitars_basses/classical/fender-esc110-educational-4-4-wn",
     "rating": 4.5,
     "price": 109,
     "attributes": {
@@ -1840,14 +2013,13 @@
       "Incl. Gigbag": "Yes"
     }
   },
-
   {
     "name": "Yamaha PSR-E373",
     "categoryId": "keys",
     "subCategoryId": "keyboards",
     "brand": "yamaha",
     "slug": "yamaha-psr-e373",
-    "imagesPath": "catalog/keys/keyboards/yamaha-psr-e373",
+    "imagesPath": "keys/keyboards/yamaha-psr-e373",
     "rating": 4.5,
     "price": 215,
     "attributes": {
@@ -1875,7 +2047,7 @@
     "subCategoryId": "keyboards",
     "brand": "yamaha",
     "slug": "yamaha-genos-2",
-    "imagesPath": "catalog/keys/keyboards/yamaha-genos-2",
+    "imagesPath": "keys/keyboards/yamaha-genos-2",
     "rating": 5,
     "price": 3777,
     "attributes": {

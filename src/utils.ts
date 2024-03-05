@@ -1,21 +1,47 @@
-export function getImageUrl(path: string) {
-  return new URL(`./assets/images/${path}`, import.meta.url).href;
+import { Octokit } from "@octokit/core";
+import { GitHubFile } from "./types";
+
+const TOKEN = import.meta.env.VITE_GITHUB_ACCESS_TOKEN;
+const octokit = new Octokit({ auth: TOKEN });
+
+export async function getProductImage(productPath: string) {
+  try {
+    const response = await octokit.request(
+      "GET /repos/FedeLopez17/shopping-cart/contents/src/assets/images/catalog/{productPath}/1.jpg",
+      {
+        productPath,
+      }
+    );
+
+    const responseData: GitHubFile = response.data as GitHubFile;
+    const imageUrl = responseData.download_url as string;
+    return imageUrl;
+  } catch (error) {
+    console.error("Error fetching image:", error);
+    return "";
+  }
 }
 
-export function getProductImageUrls(
+export async function getProductImageURLs(
   category: string,
-  subcategory: string,
+  subCategory: string,
   product: string
-): string[] {
-  return Object.values(
-    // Here I import all product images and then filter out the ones I don't need.
-    // This isn't ideal, but it's the only way it would work, as dinamically importing assets isn't possible with Vite.
-    // See this GitHub issue for more information: https://github.com/vitejs/vite/issues/5478
-    import.meta.glob("./assets/images/catalog/*/*/*/*", {
-      eager: true,
-      as: "url",
-    })
-  ).filter((url) =>
-    url.includes(`catalog/${category}/${subcategory}/${product}`)
-  );
+) {
+  try {
+    const response = await octokit.request(
+      "GET /repos/FedeLopez17/shopping-cart/contents/src/assets/images/catalog/{category}/{subCategory}/{product}",
+      {
+        category,
+        subCategory,
+        product,
+      }
+    );
+
+    const responseData: GitHubFile[] = response.data as GitHubFile[];
+    const imageUrls = responseData.map((file) => file.download_url as string);
+    return imageUrls;
+  } catch (error) {
+    console.error("Error fetching images:", error);
+    return [];
+  }
 }

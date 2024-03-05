@@ -1,6 +1,7 @@
 import { FaRegTrashAlt } from "react-icons/fa";
 import { ShoppingCartItem, RemoveProduct } from "../types";
-import { getImageUrl } from "../utils";
+import { useEffect, useState } from "react";
+import { getProductImage } from "../utils";
 
 export default function CartItem({
   removeProduct,
@@ -9,7 +10,14 @@ export default function CartItem({
   removeProduct: RemoveProduct;
   cartItem: ShoppingCartItem;
 }) {
-  const productImage = getImageUrl(`${product.imagesPath}/1.jpg`);
+  const [productImage, setProductImage] = useState<string>();
+
+  useEffect(() => {
+    getProductImage(product.imagesPath).then((imageResponse) =>
+      setProductImage(imageResponse)
+    );
+  }, []);
+
   const totalPrice = product.price * quantity;
 
   return (
