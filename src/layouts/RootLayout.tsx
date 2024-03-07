@@ -1,7 +1,9 @@
 import { Outlet, useLocation } from "react-router-dom";
 import MainNavBarLink from "../components/MainNavBarLink";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaInfoCircle, FaShoppingCart } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
+import { GoHomeFill } from "react-icons/go";
+import { PiGuitarFill } from "react-icons/pi";
 
 export default function RootLayout({
   openSideBar,
@@ -17,10 +19,10 @@ export default function RootLayout({
 
   return (
     <section className="min-h-screen flex flex-col">
-      <nav>
-        <ul className="flex justify-start items-center gap-3">
+      <nav className="p-3 bg-pink-400">
+        <ul className="flex justify-center items-center gap-8 relative">
           {isCatalogPage && (
-            <li className="xl:hidden cursor-pointer">
+            <li className="xl:hidden cursor-pointer absolute left-0">
               {sideBarActive ? (
                 <FaXmark onClick={closeSideBar} />
               ) : (
@@ -29,20 +31,29 @@ export default function RootLayout({
             </li>
           )}
           <li>
-            <MainNavBarLink path="/" innerText="Home" />
+            <MainNavBarLink path="/" innerText="Home" icon={GoHomeFill} />
           </li>
           <li>
             <MainNavBarLink
               path="/catalog/1"
               innerText="Catalog"
               pathToMatch="/catalog/"
+              icon={PiGuitarFill}
             />
           </li>
           <li>
-            <MainNavBarLink path="/about" innerText="About" />
+            <MainNavBarLink
+              path="/about"
+              innerText="About"
+              icon={FaInfoCircle}
+            />
           </li>
           <li>
-            <MainNavBarLink path="/cart" innerText="Cart" />
+            <MainNavBarLink
+              path="/cart"
+              innerText="Cart"
+              icon={FaShoppingCart}
+            />
           </li>
         </ul>
       </nav>
