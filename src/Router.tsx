@@ -50,6 +50,7 @@ const Router = ({
           openSideBar={openSideBar}
           closeSideBar={closeSideBar}
           sideBarActive={sideBarActive}
+          shoppingCart={shoppingCart}
         />
       ),
       errorElement: <ErrorPage />,

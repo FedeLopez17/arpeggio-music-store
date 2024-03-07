@@ -4,18 +4,23 @@ import { FaBars, FaInfoCircle, FaShoppingCart } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 import { GoHomeFill } from "react-icons/go";
 import { PiGuitarFill } from "react-icons/pi";
+import { ShoppingCart } from "../types";
 
 export default function RootLayout({
   openSideBar,
   closeSideBar,
   sideBarActive,
+  shoppingCart,
 }: {
   openSideBar: () => void;
   closeSideBar: () => void;
   sideBarActive: boolean;
+  shoppingCart: ShoppingCart;
 }) {
   const { pathname } = useLocation();
   const isCatalogPage = pathname.includes("catalog");
+
+  const cartHasItems = shoppingCart.length > 0;
 
   return (
     <section className="min-h-screen flex flex-col">
@@ -53,6 +58,7 @@ export default function RootLayout({
               path="/cart"
               innerText="Cart"
               icon={FaShoppingCart}
+              addNotification={cartHasItems}
             />
           </li>
         </ul>
