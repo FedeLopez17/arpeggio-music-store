@@ -62,7 +62,7 @@ export default function App() {
         closeSideBar={() => setSideBarActive(false)}
         sideBarActive={sideBarActive}
       />
-      <Toaster />
+      <Toaster position="bottom-center" />
     </>
   );
 }
