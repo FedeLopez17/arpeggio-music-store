@@ -9,6 +9,8 @@ import {
 import toast, { Toaster } from "react-hot-toast";
 
 export default function App() {
+  const [sideBarActive, setSideBarActive] = useState(false);
+
   const [currentOrderByOption, setCurrentOrderByOption] =
     useState<OrderByOption>("Price: high to low");
 
@@ -56,6 +58,9 @@ export default function App() {
         shoppingCart={shoppingCart}
         currentOrderByOption={currentOrderByOption}
         setCurrentOrderByOption={setCurrentOrderByOption}
+        openSideBar={() => setSideBarActive(true)}
+        closeSideBar={() => setSideBarActive(false)}
+        sideBarActive={sideBarActive}
       />
       <Toaster />
     </>

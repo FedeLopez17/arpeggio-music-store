@@ -21,12 +21,18 @@ const Router = ({
   shoppingCart,
   currentOrderByOption,
   setCurrentOrderByOption,
+  openSideBar,
+  closeSideBar,
+  sideBarActive,
 }: {
   addProduct: AddProduct;
   removeProduct: RemoveProduct;
   shoppingCart: ShoppingCart;
   currentOrderByOption: OrderByOption;
   setCurrentOrderByOption: SetOrderByOption;
+  openSideBar: () => void;
+  closeSideBar: () => void;
+  sideBarActive: boolean;
 }) => {
   // This method is created to avoid redundancy
   const renderCatalogPage = () => (
@@ -39,7 +45,13 @@ const Router = ({
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <RootLayout />,
+      element: (
+        <RootLayout
+          openSideBar={openSideBar}
+          closeSideBar={closeSideBar}
+          sideBarActive={sideBarActive}
+        />
+      ),
       errorElement: <ErrorPage />,
       children: [
         { index: true, element: <HomePage /> },
@@ -56,7 +68,12 @@ const Router = ({
 
         {
           path: "catalog",
-          element: <CatalogLayout />,
+          element: (
+            <CatalogLayout
+              closeSideBar={closeSideBar}
+              sideBarActive={sideBarActive}
+            />
+          ),
           children: [
             {
               path: ":page",
