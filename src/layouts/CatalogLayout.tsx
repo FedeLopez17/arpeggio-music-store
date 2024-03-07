@@ -11,8 +11,8 @@ export default function ProductsLayout({
   sideBarActive: boolean;
 }) {
   return (
-    <section className="flex justify-center bg-blue-400">
-      <section className="w-full xl:w-[1200px] bg-green-300 flex">
+    <section className="flex justify-center bg-blue-400 flex-grow">
+      <section className="w-full xl:w-[1280px] bg-green-300 flex">
         {/* The following section is a backdrop which can be clicked to deactivate the sidebar menu */}
         <section
           className={`${
@@ -22,8 +22,8 @@ export default function ProductsLayout({
         ></section>
         <aside
           className={`bg-red-400 text-nowrap absolute h-full overflow-hidden ${
-            sideBarActive ? "w-[min(300px,_100%)]" : "w-0"
-          } xl:w-[300px] xl:static z-30 transition-all duration-200 ease-in`}
+            sideBarActive ? "w-[min(280px,_100%)]" : "w-0"
+          } xl:w-[280px] xl:static z-30 transition-all duration-200 ease-in`}
         >
           <nav className="">
             <ul className="flex flex-col justify-start items-start gap-3">
@@ -33,7 +33,7 @@ export default function ProductsLayout({
             </ul>
           </nav>
         </aside>
-        <main className="w-full">
+        <main className="w-full h-min-full">
           <Outlet />
         </main>
       </section>

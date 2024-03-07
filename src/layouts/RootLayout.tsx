@@ -16,7 +16,7 @@ export default function RootLayout({
   const isCatalogPage = pathname.includes("catalog");
 
   return (
-    <>
+    <section className="min-h-screen flex flex-col">
       <nav>
         <ul className="flex justify-start items-center gap-3">
           {isCatalogPage && (
@@ -46,10 +46,10 @@ export default function RootLayout({
           </li>
         </ul>
       </nav>
-      <main>
+      <main className="flex-grow flex flex-col">
         <Outlet />
       </main>
-      <footer></footer>
-    </>
+      <footer className="bg-yellow-500 h-8"></footer>
+    </section>
   );
 }

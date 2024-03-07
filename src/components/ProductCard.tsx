@@ -31,7 +31,7 @@ export default function Product({ product }: { product: ProductType }) {
     <Link
       to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
     >
-      <section className="flex flex-col bg-red-500 p-2 aspect-[9/12]">
+      <section className="flex flex-col bg-red-500 p-2 box-border w-[290px] aspect-[9/12]">
         {imageLoaded ? <img src={productImage} /> : <ImageLoadingSkeleton />}
         <p>{product.name}</p>
         <p>${product.price}</p>
