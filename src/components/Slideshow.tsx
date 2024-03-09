@@ -22,7 +22,7 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
   }, [currentImage]);
 
   return (
-    <section className="flex flex-col w-[min(600px,100%)]">
+    <section className="flex flex-col w-full">
       <main className="flex justify-center items-center">
         {currentImageLoaded ? (
           <img src={currentImage} alt="Product image" />

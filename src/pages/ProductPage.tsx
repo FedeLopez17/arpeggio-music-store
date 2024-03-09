@@ -69,47 +69,53 @@ export default function ProductPage({
   return !productData ? (
     <ProductNotFound />
   ) : (
-    <section className="flex flex-col md:flex-row bg-green-500 w-full xl:w-[1280px]">
-      <section className="flex-1 bg-blue-400">
-        <NameAndPrice
-          name={productData.name}
-          price={productData.price}
-          classes="md:hidden"
-        />
-        <Slideshow imageUrls={imageURLs} />
-        <RatingStars rating={productData.rating} />
-        <AttributesTable attributes={productData.attributes} />
-      </section>
-      <section className="md:w-1/3 flex flex-col items-center">
-        <section className="w-full md:w-fit flex flex-col gap-4 mt-9 sticky top-9">
-          <NameAndPrice
-            name={productData.name}
-            price={productData.price}
-            classes="hidden md:block"
-          />
-          {productInCart ? (
-            <CartButton
-              innerText={"REMOVE FROM CART"}
-              callBack={() => removeProduct(productData)}
-              classes="self-center w-11/12 md:w-[200px] mb-10"
+    <section className="flex justify-center">
+      <section className="flex flex-col lg:flex-row bg-slate-500 w-full xl:w-[1280px] justify-center gap-6">
+        <section className="bg-blue-400 flex flex-col items-center">
+          <section className="w-full md:w-[600px] flex flex-col gap-4">
+            <NameAndPrice
+              name={productData.name}
+              price={productData.price}
+              classes="lg:hidden"
             />
-          ) : (
-            <section className="flex gap-1 justify-center items-stretch w-11/12 md:w-[200px] self-center mb-10">
-              <select
-                className="w-1/4"
-                id="quantity-select"
-                value={quantity}
-                onChange={(e) => setQuantity(Number(e.target.value))}
-              >
-                {selectOptions}
-              </select>
+            <Slideshow imageUrls={imageURLs} />
+            <RatingStars rating={productData.rating} classes="text-lg" />
+            <AttributesTable attributes={productData.attributes} />
+          </section>
+        </section>
+        <section className=" bg-green-500 flex flex-col items-center">
+          <section className="w-full md:w-fit flex flex-col gap-4 mt-10 sticky top-10">
+            <NameAndPrice
+              name={productData.name}
+              price={productData.price}
+              classes="hidden lg:block"
+            />
+            {productInCart ? (
               <CartButton
-                innerText={"ADD TO CART"}
-                callBack={() => addProduct({ product: productData, quantity })}
-                classes="flex-1"
+                innerText={"REMOVE FROM CART"}
+                callBack={() => removeProduct(productData)}
+                classes="self-center w-11/12 md:w-[200px] mb-10"
               />
-            </section>
-          )}
+            ) : (
+              <section className="flex gap-1 justify-center items-stretch w-11/12 md:w-[200px] self-center mb-10">
+                <select
+                  className="w-1/4"
+                  id="quantity-select"
+                  value={quantity}
+                  onChange={(e) => setQuantity(Number(e.target.value))}
+                >
+                  {selectOptions}
+                </select>
+                <CartButton
+                  innerText={"ADD TO CART"}
+                  callBack={() =>
+                    addProduct({ product: productData, quantity })
+                  }
+                  classes="flex-1"
+                />
+              </section>
+            )}
+          </section>
         </section>
       </section>
     </section>

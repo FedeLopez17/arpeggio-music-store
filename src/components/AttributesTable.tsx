@@ -7,11 +7,14 @@ export default function AttributesTable({
 }) {
   const attributesArr: JSX.Element[] = [];
 
-  Object.keys(attributes).forEach((attributeKey) => {
+  Object.keys(attributes).forEach((attributeKey, index) => {
     if (attributes[attributeKey]) {
       attributesArr.push(
-        <tr key={attributeKey}>
-          <td>{attributeKey}</td>
+        <tr
+          key={attributeKey}
+          className={`${index % 2 === 0 ? "bg-white" : "bg-slate-200"}`}
+        >
+          <th>{attributeKey}</th>
           <td>{attributes[attributeKey]}</td>
         </tr>
       );
@@ -19,7 +22,8 @@ export default function AttributesTable({
   });
 
   return (
-    <table className=" w-56">
+    <table className="w-full table-fixed bg-white text-left">
+      <caption className="caption-top mb-2 text-left">Specifications</caption>
       <tbody>{attributesArr}</tbody>
     </table>
   );
