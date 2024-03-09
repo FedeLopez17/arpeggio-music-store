@@ -71,7 +71,7 @@ export default function ProductPage({
   ) : (
     <section className="flex justify-center">
       <section className="flex flex-col lg:flex-row bg-slate-500 w-full xl:w-[1280px] justify-center gap-6">
-        <section className="bg-blue-400 flex flex-col items-center">
+        <section className="bg-blue-400 flex flex-col items-center px-6">
           <section className="w-full md:w-[600px] flex flex-col gap-4">
             <NameAndPrice
               name={productData.name}
