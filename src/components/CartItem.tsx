@@ -1,7 +1,7 @@
 import { FaRegTrashAlt } from "react-icons/fa";
 import { ShoppingCartItem, RemoveProduct } from "../types";
 import { useEffect, useState } from "react";
-import { getProductImage } from "../utils";
+import { formatPrice, getProductImage } from "../utils";
 
 export default function CartItem({
   removeProduct,
@@ -21,16 +21,19 @@ export default function CartItem({
   const totalPrice = product.price * quantity;
 
   return (
-    <section>
-      <section>
+    <section className="flex gap-4 bg-red-400 w-full lg:w-[500px] p-2 pr-4 items-center justify-center">
+      <section className="flex w-24 h-24">
         <img src={productImage} alt="Product Image" />
       </section>
-      <section>
+      <section className="bg-lime-300 flex-1">
         <p>{product.name}</p>
-        {quantity > 1 && <p>{`$${product.price} per unit`}</p>}
-        <p>{`$${totalPrice}`}</p>
-        <FaRegTrashAlt onClick={() => removeProduct(product)} />
+        {quantity > 1 && <p>{`${formatPrice(product.price)} per unit`}</p>}
+        <p className="font-bold">{formatPrice(totalPrice)}</p>
       </section>
+      <FaRegTrashAlt
+        className="cursor-pointer"
+        onClick={() => removeProduct(product)}
+      />
     </section>
   );
 }
