@@ -45,7 +45,7 @@ export default function ProductsPage({
               setOrderOption={setCurrentOrderByOption}
             />
           </section>
-          <section className="w-full grid gap-3 grid-cols-catalog justify-center">
+          <section className="w-full grid gap-3 grid-cols-catalog justify-center justify-items-center">
             {catalog.map((product) => (
               <ProductCard key={product.imagesPath} product={product} />
             ))}
