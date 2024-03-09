@@ -22,21 +22,25 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
   }, [currentImage]);
 
   return (
-    <section className="flex flex-col w-[600px]">
+    <section className="flex flex-col w-[min(600px,100%)]">
       <main className="flex justify-center items-center">
         {currentImageLoaded ? (
           <img src={currentImage} alt="Product image" />
         ) : (
-          <ImageLoadingSkeleton classes="w-[600px] h-[670px]" />
+          <ImageLoadingSkeleton classes="w-full h-[680px]" />
         )}
       </main>
-      <footer className="flex gap-1 overflow-auto">
+      <footer className="flex gap-1 overflow-auto mt-[10px]">
         {imageUrls.map((imageUrl) => (
           <img
             src={imageUrl}
             key={imageUrl}
             onClick={() => setCurrentImage(imageUrl)}
-            className="w-[70px] aspect-square cursor-pointer"
+            className={`w-[70px] aspect-square cursor-pointer border-2 ${
+              currentImage === imageUrl
+                ? "border-red-600 border-"
+                : "border-transparent"
+            }`}
           />
         ))}
       </footer>
