@@ -8,6 +8,7 @@ import AttributesTable from "../components/AttributesTable";
 import { ShoppingCart, AddProduct, RemoveProduct } from "../types";
 import { useEffect, useState } from "react";
 import CartButton from "../components/CartButton";
+import NumericSelectOptions from "../components/NumericSelectOptions";
 
 export default function ProductPage({
   addProduct,
@@ -21,15 +22,6 @@ export default function ProductPage({
   const { category, subcategory, product } = useParams();
 
   const [quantity, setQuantity] = useState(1);
-
-  const selectOptions = [];
-  for (let i = 1; i <= 10; i++) {
-    selectOptions.push(
-      <option value={i} key={i}>
-        {i}
-      </option>
-    );
-  }
 
   const productData = getProductBySlug(product as string);
 
@@ -104,7 +96,7 @@ export default function ProductPage({
                   value={quantity}
                   onChange={(e) => setQuantity(Number(e.target.value))}
                 >
-                  {selectOptions}
+                  <NumericSelectOptions />
                 </select>
                 <CartButton
                   innerText={"ADD TO CART"}

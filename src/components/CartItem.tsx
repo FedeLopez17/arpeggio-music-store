@@ -1,15 +1,22 @@
 import { FaRegTrashAlt } from "react-icons/fa";
-import { ShoppingCartItem, RemoveProduct } from "../types";
+import {
+  ShoppingCartItem,
+  RemoveProduct,
+  UpdateProductQuantity,
+} from "../types";
 import { useEffect, useState } from "react";
 import { formatPrice, getProductImage } from "../utils";
 import { Link } from "react-router-dom";
 import ImageLoadingSkeleton from "./ImageLoadingSkeleton";
+import NumericSelectOptions from "./NumericSelectOptions";
 
 export default function CartItem({
   removeProduct,
+  updateProductQuantity,
   cartItem: { product, quantity },
 }: {
   removeProduct: RemoveProduct;
+  updateProductQuantity: UpdateProductQuantity;
   cartItem: ShoppingCartItem;
 }) {
   const [productImage, setProductImage] = useState<string>();
@@ -51,7 +58,15 @@ export default function CartItem({
         <section className="bg-lime-300 flex-1">
           <p>{product.name}</p>
           <p>
-            <span className="font-bold">Quantity:</span> {quantity}
+            <span className="font-bold">Quantity:</span>
+            <select
+              value={quantity}
+              onChange={(e) =>
+                updateProductQuantity(product.slug, Number(e.target.value))
+              }
+            >
+              <NumericSelectOptions />
+            </select>
           </p>
           {quantity > 1 && <p>{`${formatPrice(product.price)} per unit`}</p>}
           <p className="font-bold">{formatPrice(totalPrice)}</p>

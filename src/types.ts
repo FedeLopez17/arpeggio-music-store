@@ -38,6 +38,11 @@ export type AddProduct = ({
 
 export type RemoveProduct = (product: ProductType) => void;
 
+export type UpdateProductQuantity = (
+  productSlug: string,
+  quantity: number
+) => void;
+
 export type OrderByOption =
   | "Price: low to high"
   | "Price: high to low"

@@ -5,6 +5,7 @@ import {
   AddProduct,
   RemoveProduct,
   OrderByOption,
+  UpdateProductQuantity,
 } from "./types";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -19,6 +20,17 @@ export default function App() {
   const addProduct: AddProduct = ({ product, quantity }) => {
     setShoppingCart((prevState) => [...prevState, { product, quantity }]);
     toast.success("Added to Cart");
+  };
+
+  const updateProductQuantity: UpdateProductQuantity = (
+    productSlug: string,
+    quantity: number
+  ) => {
+    setShoppingCart((prevState) =>
+      prevState.map((item) =>
+        item.product.slug === productSlug ? { ...item, quantity } : item
+      )
+    );
   };
 
   const removeProduct: RemoveProduct = (product) => {
@@ -55,6 +67,7 @@ export default function App() {
       <Router
         addProduct={addProduct}
         removeProduct={removeProduct}
+        updateProductQuantity={updateProductQuantity}
         shoppingCart={shoppingCart}
         currentOrderByOption={currentOrderByOption}
         setCurrentOrderByOption={setCurrentOrderByOption}

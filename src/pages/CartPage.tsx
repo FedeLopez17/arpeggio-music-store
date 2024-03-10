@@ -1,13 +1,15 @@
 import { FaArrowRight } from "react-icons/fa";
 import CartItem from "../components/CartItem";
-import { ShoppingCart, RemoveProduct } from "../types";
+import { ShoppingCart, RemoveProduct, UpdateProductQuantity } from "../types";
 import { formatPrice } from "../utils";
 
 export default function CartPage({
   removeProduct,
+  updateProductQuantity,
   shoppingCart,
 }: {
   removeProduct: RemoveProduct;
+  updateProductQuantity: UpdateProductQuantity;
   shoppingCart: ShoppingCart;
 }) {
   const totalPrice = shoppingCart.reduce(
@@ -24,6 +26,7 @@ export default function CartPage({
           {shoppingCart.map((item) => (
             <CartItem
               removeProduct={removeProduct}
+              updateProductQuantity={updateProductQuantity}
               cartItem={item}
               key={item.product.name}
             />

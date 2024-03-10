@@ -11,6 +11,7 @@ import {
   RemoveProduct,
   SetOrderByOption,
   ShoppingCart,
+  UpdateProductQuantity,
 } from "./types";
 import CartPage from "./pages/CartPage";
 import ErrorPage from "./pages/ErrorPage";
@@ -18,6 +19,7 @@ import ErrorPage from "./pages/ErrorPage";
 const Router = ({
   addProduct,
   removeProduct,
+  updateProductQuantity,
   shoppingCart,
   currentOrderByOption,
   setCurrentOrderByOption,
@@ -27,6 +29,7 @@ const Router = ({
 }: {
   addProduct: AddProduct;
   removeProduct: RemoveProduct;
+  updateProductQuantity: UpdateProductQuantity;
   shoppingCart: ShoppingCart;
   currentOrderByOption: OrderByOption;
   setCurrentOrderByOption: SetOrderByOption;
@@ -62,6 +65,7 @@ const Router = ({
           element: (
             <CartPage
               removeProduct={removeProduct}
+              updateProductQuantity={updateProductQuantity}
               shoppingCart={shoppingCart}
             />
           ),
