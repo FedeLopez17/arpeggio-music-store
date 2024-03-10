@@ -36,10 +36,11 @@ export default function CartItem({
   const totalPrice = product.price * quantity;
 
   return (
-    <Link
-      to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
-    >
-      <section className="flex gap-4 bg-red-400 w-full lg:w-[500px] p-2 pr-4 items-center justify-center">
+    <section className="flex gap-4 bg-red-400 w-full lg:w-[500px] p-2 pr-4 items-center justify-center">
+      <Link
+        className="flex-1 flex gap-2"
+        to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
+      >
         <section className="flex w-24 h-24">
           {imageLoaded ? (
             <img src={productImage} alt="Product Image" />
@@ -55,11 +56,11 @@ export default function CartItem({
           {quantity > 1 && <p>{`${formatPrice(product.price)} per unit`}</p>}
           <p className="font-bold">{formatPrice(totalPrice)}</p>
         </section>
-        <FaRegTrashAlt
-          className="cursor-pointer"
-          onClick={() => removeProduct(product)}
-        />
-      </section>
-    </Link>
+      </Link>
+      <FaRegTrashAlt
+        className="cursor-pointer"
+        onClick={() => removeProduct(product)}
+      />
+    </section>
   );
 }
