@@ -36,7 +36,7 @@ export default function CartItem({
   const totalPrice = product.price * quantity;
 
   return (
-    <section className="flex gap-4 bg-red-400 w-full lg:w-[500px] p-2 pr-4 items-center justify-center">
+    <section className="flex gap-4 bg-red-400 w-full md:w-[500px] p-2 pr-4 items-center justify-center">
       <Link
         className="flex-1 flex gap-2"
         to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
