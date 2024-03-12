@@ -4,12 +4,16 @@ import { GitHubFile } from "./types";
 const TOKEN = import.meta.env.VITE_GITHUB_ACCESS_TOKEN;
 const octokit = new Octokit({ auth: TOKEN });
 
-export async function getProductImage(productPath: string) {
+export async function getProductImage(
+  productPath: string,
+  imageNumber?: number
+) {
   try {
     const response = await octokit.request(
-      "GET /repos/FedeLopez17/shopping-cart/contents/src/assets/images/catalog/{productPath}/1.jpg",
+      "GET /repos/FedeLopez17/shopping-cart/contents/src/assets/images/catalog/{productPath}/{imageNumber}.jpg",
       {
         productPath,
+        imageNumber: imageNumber !== undefined ? imageNumber : 1,
       }
     );
 

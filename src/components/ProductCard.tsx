@@ -6,17 +6,18 @@ import { getProductImage } from "../utils";
 import ImageLoadingSkeleton from "./ImageLoadingSkeleton";
 
 export default function Product({ product }: { product: ProductType }) {
-  const [productImage, setProductImage] = useState<string>();
+  const [firstProductImage, setFirstProductImage] = useState<string>();
+  const [secondProductImage, setSecondProductImage] = useState<string>();
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
-    const preloadImage = async () => {
+    const preloadFirstImage = async () => {
       try {
         const imageUrl = await getProductImage(product.imagesPath);
         const img = new Image();
         img.src = imageUrl;
         img.onload = () => {
-          setProductImage(imageUrl);
+          setFirstProductImage(imageUrl);
           setImageLoaded(true);
         };
       } catch (error) {
@@ -24,7 +25,10 @@ export default function Product({ product }: { product: ProductType }) {
       }
     };
 
-    preloadImage();
+    preloadFirstImage();
+    getProductImage(product.imagesPath, 2).then((imagePath) =>
+      setSecondProductImage(imagePath)
+    );
   }, [product.imagesPath]);
 
   return (
@@ -32,7 +36,27 @@ export default function Product({ product }: { product: ProductType }) {
       to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
     >
       <section className="flex flex-col bg-red-500 p-2 box-border w-[290px] h-[380px] overflow-auto">
-        {imageLoaded ? <img src={productImage} /> : <ImageLoadingSkeleton />}
+        <section
+          className={`w-[274px] h-[274px] flex overflow-hidden ${
+            secondProductImage ? "relative" : ""
+          }`}
+        >
+          {imageLoaded ? (
+            !secondProductImage ? (
+              <img src={firstProductImage} />
+            ) : (
+              <>
+                <img
+                  src={firstProductImage}
+                  className="absolute z-10 hover:opacity-0"
+                />
+                <img src={secondProductImage} className="absolute" />
+              </>
+            )
+          ) : (
+            <ImageLoadingSkeleton />
+          )}
+        </section>
         <p>{product.name}</p>
         <section className="flex justify-between mt-auto">
           <section className="flex items-center gap-2 text-xs">
