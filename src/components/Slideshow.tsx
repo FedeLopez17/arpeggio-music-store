@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import ImageLoadingSkeleton from "./ImageLoadingSkeleton";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { checkVisibility } from "../utils";
 
 export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>();
@@ -20,6 +21,26 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
     img.onload = () => {
       setCurrentImageLoaded(true);
     };
+  }, [currentImageIndex]);
+
+  const imagesSelector = useRef<HTMLElement>(null);
+  useEffect(() => {
+    if (
+      !imagesSelector.current ||
+      !imagesSelector.current.hasChildNodes() ||
+      currentImageIndex === undefined
+    )
+      return;
+
+    const image = imagesSelector.current.children[currentImageIndex];
+    checkVisibility(image).then(
+      (isVisible) =>
+        !isVisible &&
+        image.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+        })
+    );
   }, [currentImageIndex]);
 
   const notFirstImage =
@@ -90,7 +111,10 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
           </section>
         )}
       </main>
-      <footer className="flex gap-1 overflow-auto mt-[10px]">
+      <footer
+        className="flex gap-1 overflow-auto mt-[10px]"
+        ref={imagesSelector}
+      >
         {imageUrls.map((imageUrl, index) => (
           <img
             src={imageUrl}

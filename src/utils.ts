@@ -55,3 +55,13 @@ export function formatPrice(number: number) {
     }) + " USD"
   );
 }
+
+export function checkVisibility(domElement: Element) {
+  return new Promise((resolve) => {
+    const observer = new IntersectionObserver(([entry]) => {
+      resolve(entry.intersectionRatio === 1);
+      observer.disconnect();
+    });
+    observer.observe(domElement);
+  });
+}
