@@ -75,7 +75,7 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
   };
 
   return (
-    <section className="flex flex-col w-full">
+    <section className="flex flex-col w-full select-none">
       <main
         className="flex justify-center items-center relative"
         onTouchStart={onTouchStart}
