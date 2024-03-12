@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ImageLoadingSkeleton from "./ImageLoadingSkeleton";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
@@ -27,9 +27,40 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
   const notLastImage =
     currentImageIndex !== undefined && currentImageIndex < imageUrls.length - 1;
 
+  const touchStart = useRef<number | null>(null);
+  const touchEnd = useRef<number | null>(null);
+
+  const MIN_SWIPE_DISTANCE = 50;
+
+  const onTouchStart = (event: React.TouchEvent) => {
+    touchEnd.current = null;
+    touchStart.current = event.targetTouches[0].clientX;
+  };
+
+  const onTouchMove = (event: React.TouchEvent) => {
+    touchEnd.current = event.targetTouches[0].clientX;
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart.current || !touchEnd.current) return;
+    const distance = touchStart.current - touchEnd.current;
+    const isLeftSwipe = distance > MIN_SWIPE_DISTANCE;
+    const isRightSwipe = distance < -MIN_SWIPE_DISTANCE;
+    if (isLeftSwipe && notLastImage) {
+      setCurrentImageIndex((prevIndex) => (prevIndex as number) + 1);
+    } else if (isRightSwipe && notFirstImage) {
+      setCurrentImageIndex((prevIndex) => (prevIndex as number) - 1);
+    }
+  };
+
   return (
     <section className="flex flex-col w-full">
-      <main className="flex justify-center items-center relative">
+      <main
+        className="flex justify-center items-center relative"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
         {currentImageLoaded ? (
           <img
             src={imageUrls[currentImageIndex as number]}
