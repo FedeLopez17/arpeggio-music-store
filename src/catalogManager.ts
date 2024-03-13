@@ -96,3 +96,17 @@ export function getFilteredProducts({
 
   return getCatalogPageContent(page, filteredProducts);
 }
+
+export function searchCatalog(searchTerm: string) {
+  if (!searchTerm) return [];
+
+  const words = searchTerm.split(/\s+/);
+
+  return productsJson.filter((product) =>
+    words.every(
+      (word) =>
+        product.name.toLocaleLowerCase().includes(word.toLocaleLowerCase()) ||
+        product.brand.toLocaleLowerCase().includes(word.toLocaleLowerCase())
+    )
+  );
+}
