@@ -5,6 +5,7 @@ import { FaXmark } from "react-icons/fa6";
 import { GoHomeFill } from "react-icons/go";
 import { PiGuitarFill } from "react-icons/pi";
 import { ShoppingCart } from "../types";
+import SearchBar from "../components/SearchBar";
 
 export default function RootLayout({
   openSideBar,
@@ -24,10 +25,10 @@ export default function RootLayout({
 
   return (
     <section className="min-h-screen flex flex-col">
-      <nav className="p-3 bg-pink-400">
-        <ul className="flex justify-center items-center gap-8 relative">
+      <nav className="p-3 bg-pink-400 flex flex-col items-center gap-4 relative">
+        <ul className="flex justify-center items-center gap-8">
           {isCatalogPage && (
-            <li className="xl:hidden cursor-pointer absolute left-0">
+            <li className="xl:hidden cursor-pointer absolute left-2">
               {sideBarActive ? (
                 <FaXmark onClick={closeSideBar} />
               ) : (
@@ -46,6 +47,9 @@ export default function RootLayout({
               icon={PiGuitarFill}
             />
           </li>
+          <li className="hidden md:block">
+            <SearchBar />
+          </li>
           <li>
             <MainNavBarLink
               path="/about"
@@ -62,6 +66,9 @@ export default function RootLayout({
             />
           </li>
         </ul>
+        <section className="md:hidden">
+          <SearchBar />
+        </section>
       </nav>
       <main className="flex-grow flex flex-col">
         <Outlet />
