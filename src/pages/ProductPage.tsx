@@ -41,7 +41,7 @@ export default function ProductPage({
       subcategory as string,
       product as string
     ).then((imagesArr) => setImageURLs(imagesArr));
-  }, []);
+  }, [category, subcategory, product]);
 
   const NameAndPrice = ({
     name,
