@@ -26,6 +26,8 @@ const Router = ({
   openSideBar,
   closeSideBar,
   sideBarActive,
+  searchBarValue,
+  setSearch,
 }: {
   addProduct: AddProduct;
   removeProduct: RemoveProduct;
@@ -36,12 +38,15 @@ const Router = ({
   openSideBar: () => void;
   closeSideBar: () => void;
   sideBarActive: boolean;
+  searchBarValue: string;
+  setSearch: (search: string) => void;
 }) => {
   // This method is created to avoid redundancy
   const renderCatalogPage = () => (
     <CatalogPage
       currentOrderByOption={currentOrderByOption}
       setCurrentOrderByOption={setCurrentOrderByOption}
+      clearSearch={() => setSearch("")}
     />
   );
 
@@ -54,6 +59,8 @@ const Router = ({
           closeSideBar={closeSideBar}
           sideBarActive={sideBarActive}
           shoppingCart={shoppingCart}
+          searchBarValue={searchBarValue}
+          setSearch={setSearch}
         />
       ),
       errorElement: <ErrorPage />,
@@ -90,6 +97,10 @@ const Router = ({
             },
             {
               path: ":category/:subcategory/:page",
+              element: renderCatalogPage(),
+            },
+            {
+              path: "?search=:search",
               element: renderCatalogPage(),
             },
           ],

@@ -12,11 +12,15 @@ export default function RootLayout({
   closeSideBar,
   sideBarActive,
   shoppingCart,
+  searchBarValue,
+  setSearch,
 }: {
   openSideBar: () => void;
   closeSideBar: () => void;
   sideBarActive: boolean;
   shoppingCart: ShoppingCart;
+  searchBarValue: string;
+  setSearch: (search: string) => void;
 }) {
   const { pathname } = useLocation();
   const isCatalogPage = pathname.includes("catalog");
@@ -48,7 +52,7 @@ export default function RootLayout({
             />
           </li>
           <li className="hidden md:block">
-            <SearchBar />
+            <SearchBar searchBarValue={searchBarValue} setSearch={setSearch} />
           </li>
           <li>
             <MainNavBarLink
@@ -67,7 +71,7 @@ export default function RootLayout({
           </li>
         </ul>
         <section className="md:hidden">
-          <SearchBar />
+          <SearchBar searchBarValue={searchBarValue} setSearch={setSearch} />
         </section>
       </nav>
       <main className="flex-grow flex flex-col">

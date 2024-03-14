@@ -10,6 +10,9 @@ import {
 import toast, { Toaster } from "react-hot-toast";
 
 export default function App() {
+  const [searchBarValue, setSearchBarValue] = useState("");
+  const setSearch = (search: string) => setSearchBarValue(search);
+
   const [sideBarActive, setSideBarActive] = useState(false);
 
   const [currentOrderByOption, setCurrentOrderByOption] =
@@ -74,6 +77,8 @@ export default function App() {
         openSideBar={() => setSideBarActive(true)}
         closeSideBar={() => setSideBarActive(false)}
         sideBarActive={sideBarActive}
+        searchBarValue={searchBarValue}
+        setSearch={setSearch}
       />
       <Toaster position="bottom-center" />
     </>

@@ -1,20 +1,24 @@
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import {
   getCatalog,
   getFilteredProducts,
   getNumberOfPages,
+  searchCatalog,
 } from "../catalogManager";
 import OrderBySelector from "../components/OrderBySelector";
 import { OrderByOption, SetOrderByOption } from "../types";
 import PageSelector from "../components/PageSelector";
+import { useEffect } from "react";
 
 export default function ProductsPage({
   currentOrderByOption,
   setCurrentOrderByOption,
+  clearSearch,
 }: {
   currentOrderByOption: OrderByOption;
   setCurrentOrderByOption: SetOrderByOption;
+  clearSearch: () => void;
 }) {
   const { category, subcategory, page = 1 } = useParams();
 
@@ -23,8 +27,17 @@ export default function ProductsPage({
     subCategory: subcategory,
   });
 
+  const search = useSearchParams()[0].get("search");
+
+  useEffect(() => {
+    if (!search) clearSearch();
+  }, [search]);
+
   const noParams = !category && !subcategory;
-  const catalog = noParams
+
+  const catalog = search
+    ? searchCatalog(search)
+    : noParams
     ? getCatalog(Number(page), currentOrderByOption)
     : getFilteredProducts({
         category: category || "",

@@ -29,7 +29,7 @@ export default function SearchResultItem({
 
   return (
     <Link
-      className="result-item"
+      className=""
       to={`product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
     >
       <section className="flex gap-2 bg-white hover:bg-gray-200">

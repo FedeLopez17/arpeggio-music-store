@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import { ProductType } from "../types";
 import SearchResultItem from "./SearchResultItem";
 
 export default function SearchResult({
   products,
+  search,
 }: {
   products: ProductType[];
+  search: string;
 }) {
   const searchResultItems: JSX.Element[] = [];
   for (let i = 0; i < (products.length > 3 ? 3 : products.length); i++) {
@@ -18,8 +21,9 @@ export default function SearchResult({
       <section className="flex flex-col gap-1">{searchResultItems}</section>
       {products.length > 3 && (
         <section>
-          {/* TODO: this 'p' tag below should be within a link to a catalog page that shows all matching products */}
-          <p>{products.length} products found</p>
+          <Link to={`/catalog/q?search=${search}`}>
+            <p>{products.length} products found</p>
+          </Link>
         </section>
       )}
     </section>
