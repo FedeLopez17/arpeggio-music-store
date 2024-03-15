@@ -6,11 +6,13 @@ export default function PageSelector({
   currentPage,
   category,
   subCategory,
+  search,
 }: {
   numberOfPages: number;
   currentPage: number;
   category?: string;
   subCategory?: string;
+  search?: string;
 }) {
   const getPageLink = ({
     page,
@@ -19,14 +21,22 @@ export default function PageSelector({
     page?: "previous" | "next";
     pageNumber?: number;
   }) => {
+    const PAGE_PLACEHOLDER = "[PAGE_PLACEHOLDER]";
+
     const rootPath = `/catalog/${
-      category ? category + "/" + (subCategory ? subCategory + "/" : "") : ""
+      search
+        ? `${PAGE_PLACEHOLDER}/?search=${search}`
+        : category
+        ? category + "/" + (subCategory ? subCategory + "/" : "")
+        : ""
     }`;
 
     if (pageNumber) return rootPath + pageNumber;
 
     const newPage = page === "previous" ? currentPage - 1 : currentPage + 1;
-    return rootPath + newPage;
+    return search
+      ? rootPath.replace(PAGE_PLACEHOLDER, newPage.toString())
+      : rootPath + newPage;
   };
 
   const specificPageSelectors: JSX.Element[] = [];

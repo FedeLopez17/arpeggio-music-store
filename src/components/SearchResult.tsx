@@ -21,7 +21,7 @@ export default function SearchResult({
       <section className="flex flex-col gap-1">{searchResultItems}</section>
       {products.length > 3 && (
         <section>
-          <Link to={`/catalog/q?search=${search}`}>
+          <Link to={`/catalog/1/?search=${search}`}>
             <p>{products.length} products found</p>
           </Link>
         </section>

@@ -22,11 +22,6 @@ export default function ProductsPage({
 }) {
   const { category, subcategory, page = 1 } = useParams();
 
-  const numberOfPages = getNumberOfPages({
-    category,
-    subCategory: subcategory,
-  });
-
   const search = useSearchParams()[0].get("search");
 
   useEffect(() => {
@@ -36,7 +31,7 @@ export default function ProductsPage({
   const noParams = !category && !subcategory;
 
   const catalog = search
-    ? searchCatalog(search)
+    ? searchCatalog(search, Number(page))
     : noParams
     ? getCatalog(Number(page), currentOrderByOption)
     : getFilteredProducts({
@@ -44,6 +39,13 @@ export default function ProductsPage({
         subCategory: subcategory ? subcategory : undefined,
         orderBy: currentOrderByOption,
         page: Number(page),
+      });
+
+  const numberOfPages = search
+    ? getNumberOfPages({ products: searchCatalog(search) })
+    : getNumberOfPages({
+        category,
+        subCategory: subcategory,
       });
 
   return (
@@ -70,6 +72,7 @@ export default function ProductsPage({
                 category={category}
                 subCategory={subcategory}
                 currentPage={Number(page)}
+                search={search ? search : undefined}
               />
             </section>
           )}

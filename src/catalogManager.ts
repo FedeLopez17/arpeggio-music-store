@@ -97,16 +97,20 @@ export function getFilteredProducts({
   return getCatalogPageContent(page, filteredProducts);
 }
 
-export function searchCatalog(searchTerm: string) {
+export function searchCatalog(searchTerm: string, page?: number) {
   if (!searchTerm) return [];
 
   const words = searchTerm.split(/\s+/);
 
-  return productsJson.filter((product) =>
+  const matchingProducts = productsJson.filter((product) =>
     words.every(
       (word) =>
         product.name.toLocaleLowerCase().includes(word.toLocaleLowerCase()) ||
         product.brand.toLocaleLowerCase().includes(word.toLocaleLowerCase())
     )
   );
+
+  return page
+    ? getCatalogPageContent(page, matchingProducts)
+    : matchingProducts;
 }

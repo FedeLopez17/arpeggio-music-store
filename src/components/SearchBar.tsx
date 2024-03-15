@@ -30,7 +30,7 @@ export default function SearchBar({
 
   const navigate = useNavigate();
   const handleSearch = () => {
-    navigate(`/catalog/q?search=${searchBarValue}`);
+    navigate(`/catalog/1/?search=${searchBarValue}`);
     setResultSelected(true);
   };
 

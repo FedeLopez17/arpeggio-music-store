@@ -100,7 +100,7 @@ const Router = ({
               element: renderCatalogPage(),
             },
             {
-              path: "?search=:search",
+              path: ":page/?search=:search",
               element: renderCatalogPage(),
             },
           ],
