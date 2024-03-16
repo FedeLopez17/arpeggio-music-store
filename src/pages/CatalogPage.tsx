@@ -4,7 +4,6 @@ import {
   getCatalog,
   getFilteredProducts,
   getNumberOfPages,
-  searchCatalog,
 } from "../catalogManager";
 import OrderBySelector from "../components/OrderBySelector";
 import { OrderByOption, SetOrderByOption } from "../types";
@@ -31,7 +30,11 @@ export default function ProductsPage({
   const noParams = !category && !subcategory;
 
   const catalog = search
-    ? searchCatalog(search, Number(page))
+    ? getFilteredProducts({
+        search,
+        page: Number(page),
+        orderBy: currentOrderByOption,
+      })
     : noParams
     ? getCatalog(Number(page), currentOrderByOption)
     : getFilteredProducts({
@@ -42,7 +45,7 @@ export default function ProductsPage({
       });
 
   const numberOfPages = search
-    ? getNumberOfPages({ products: searchCatalog(search) })
+    ? getNumberOfPages({ search })
     : getNumberOfPages({
         category,
         subCategory: subcategory,

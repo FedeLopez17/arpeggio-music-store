@@ -32,6 +32,20 @@ function filterCatalog(category: string, subCategory?: string) {
   );
 }
 
+export function searchCatalog(searchTerm: string) {
+  if (!searchTerm) return [];
+
+  const words = searchTerm.split(/\s+/);
+
+  return productsJson.filter((product) =>
+    words.every(
+      (word) =>
+        product.name.toLocaleLowerCase().includes(word.toLocaleLowerCase()) ||
+        product.brand.toLocaleLowerCase().includes(word.toLocaleLowerCase())
+    )
+  );
+}
+
 function getCatalogPageContent(page: number, products: ProductType[]) {
   const startingIndex = MAX_PRODUCTS_PER_PAGE * (page - 1);
   const endingIndex = startingIndex + MAX_PRODUCTS_PER_PAGE;
@@ -45,13 +59,17 @@ export function getNumberOfPages({
   products,
   category,
   subCategory,
+  search,
 }: {
   products?: ProductType[];
   category?: string;
   subCategory?: string;
+  search?: string;
 }) {
   const productsArr = products
     ? products
+    : search
+    ? searchCatalog(search)
     : category
     ? filterCatalog(category, subCategory)
     : productsJson;
@@ -76,41 +94,27 @@ export function getProductBySlug(slug: string): ProductType | null {
 }
 
 export function getFilteredProducts({
+  page,
   category,
   subCategory,
+  search,
   orderBy,
-  page,
 }: {
-  category: string;
-  orderBy: OrderByOption;
-  subCategory?: string;
   page: number;
+  category?: string;
+  subCategory?: string;
+  search?: string;
+  orderBy: OrderByOption;
 }): ProductType[] {
-  if (subCategory && !category) {
-    throw new Error("Subcategory requires category");
+  if ((subCategory && !category) || (!category && !search)) {
+    throw new Error("Missing arguments");
   }
 
-  const filteredProducts = filterCatalog(category, subCategory);
+  const filteredProducts = search
+    ? searchCatalog(search)
+    : filterCatalog(category as string, subCategory);
 
   orderCatalog(orderBy, filteredProducts);
 
   return getCatalogPageContent(page, filteredProducts);
-}
-
-export function searchCatalog(searchTerm: string, page?: number) {
-  if (!searchTerm) return [];
-
-  const words = searchTerm.split(/\s+/);
-
-  const matchingProducts = productsJson.filter((product) =>
-    words.every(
-      (word) =>
-        product.name.toLocaleLowerCase().includes(word.toLocaleLowerCase()) ||
-        product.brand.toLocaleLowerCase().includes(word.toLocaleLowerCase())
-    )
-  );
-
-  return page
-    ? getCatalogPageContent(page, matchingProducts)
-    : matchingProducts;
 }
