@@ -6,8 +6,10 @@ import AboutPage from "./pages/AboutPage";
 import ProductPage from "./pages/ProductPage";
 import CatalogLayout from "./layouts/CatalogLayout";
 import {
+  AddFavorite,
   AddProduct,
   OrderByOption,
+  RemoveFavorite,
   RemoveProduct,
   SetOrderByOption,
   ShoppingCart,
@@ -21,6 +23,9 @@ const Router = ({
   removeProduct,
   updateProductQuantity,
   shoppingCart,
+  addFavorite,
+  removeFavorite,
+  favorites,
   currentOrderByOption,
   setCurrentOrderByOption,
   openSideBar,
@@ -33,6 +38,9 @@ const Router = ({
   removeProduct: RemoveProduct;
   updateProductQuantity: UpdateProductQuantity;
   shoppingCart: ShoppingCart;
+  addFavorite: AddFavorite;
+  removeFavorite: RemoveFavorite;
+  favorites: string[];
   currentOrderByOption: OrderByOption;
   setCurrentOrderByOption: SetOrderByOption;
   openSideBar: () => void;
@@ -41,14 +49,14 @@ const Router = ({
   searchBarValue: string;
   setSearch: (search: string) => void;
 }) => {
-  // This method is created to avoid redundancy
-  const renderCatalogPage = () => (
-    <CatalogPage
-      currentOrderByOption={currentOrderByOption}
-      setCurrentOrderByOption={setCurrentOrderByOption}
-      clearSearch={() => setSearch("")}
-    />
-  );
+  const catalogProps = {
+    currentOrderByOption,
+    setCurrentOrderByOption,
+    clearSearch: () => setSearch(""),
+    addFavorite,
+    removeFavorite,
+    favorites,
+  };
 
   const router = createBrowserRouter([
     {
@@ -89,19 +97,25 @@ const Router = ({
           children: [
             {
               path: ":page",
-              element: renderCatalogPage(),
+              element: <CatalogPage {...catalogProps} />,
             },
             {
               path: ":category/:page",
-              element: renderCatalogPage(),
+              element: <CatalogPage {...catalogProps} />,
             },
             {
               path: ":category/:subcategory/:page",
-              element: renderCatalogPage(),
+              element: <CatalogPage {...catalogProps} />,
             },
             {
               path: ":page/?search=:search",
-              element: renderCatalogPage(),
+              element: <CatalogPage {...catalogProps} />,
+            },
+            {
+              path: "favorites/:page",
+              element: (
+                <CatalogPage {...{ ...catalogProps, isFavoritesPage: true }} />
+              ),
             },
           ],
         },
@@ -112,6 +126,9 @@ const Router = ({
               addProduct={addProduct}
               removeProduct={removeProduct}
               shoppingCart={shoppingCart}
+              addFavorite={addFavorite}
+              removeFavorite={removeFavorite}
+              favorites={favorites}
             />
           ),
         },

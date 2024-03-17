@@ -6,6 +6,8 @@ import {
   RemoveProduct,
   OrderByOption,
   UpdateProductQuantity,
+  AddFavorite,
+  RemoveFavorite,
 } from "./types";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -46,15 +48,33 @@ export default function App() {
     toast.success("Removed from Cart");
   };
 
+  const [favorites, setFavorites] = useState<string[]>([]);
+
+  const addFavorite: AddFavorite = (favorite: string) => {
+    setFavorites((prevState) => [...prevState, favorite]);
+    toast.success("Added to Favorites");
+  };
+
+  const removeFavorite: RemoveFavorite = (favorite: string) => {
+    setFavorites((prevState) =>
+      prevState.filter((favoriteItem) => favoriteItem !== favorite)
+    );
+    toast.success("Removed from Favorites");
+  };
+
   const firstRender = useRef(true);
   useEffect(() => {
     if (!Storage) return;
 
     if (firstRender.current) {
       const shoppingCart = localStorage.getItem("shoppingCart");
-
       if (shoppingCart) {
         setShoppingCart(JSON.parse(shoppingCart) as ShoppingCart);
+      }
+
+      const favorites = localStorage.getItem("favorites");
+      if (favorites) {
+        setFavorites(JSON.parse(favorites));
       }
 
       return () => {
@@ -63,7 +83,8 @@ export default function App() {
     }
 
     localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
-  }, [shoppingCart.length]);
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+  }, [shoppingCart.length, favorites.length]);
 
   return (
     <>
@@ -72,6 +93,9 @@ export default function App() {
         removeProduct={removeProduct}
         updateProductQuantity={updateProductQuantity}
         shoppingCart={shoppingCart}
+        addFavorite={addFavorite}
+        removeFavorite={removeFavorite}
+        favorites={favorites}
         currentOrderByOption={currentOrderByOption}
         setCurrentOrderByOption={setCurrentOrderByOption}
         openSideBar={() => setSideBarActive(true)}

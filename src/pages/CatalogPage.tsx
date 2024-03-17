@@ -6,18 +6,31 @@ import {
   getNumberOfPages,
 } from "../catalogManager";
 import OrderBySelector from "../components/OrderBySelector";
-import { OrderByOption, SetOrderByOption } from "../types";
+import {
+  AddFavorite,
+  OrderByOption,
+  RemoveFavorite,
+  SetOrderByOption,
+} from "../types";
 import PageSelector from "../components/PageSelector";
 import { useEffect } from "react";
 
-export default function ProductsPage({
+export default function CatalogPage({
   currentOrderByOption,
   setCurrentOrderByOption,
   clearSearch,
+  addFavorite,
+  removeFavorite,
+  favorites,
+  isFavoritesPage,
 }: {
   currentOrderByOption: OrderByOption;
   setCurrentOrderByOption: SetOrderByOption;
   clearSearch: () => void;
+  addFavorite: AddFavorite;
+  removeFavorite: RemoveFavorite;
+  favorites: string[];
+  isFavoritesPage?: boolean;
 }) {
   const { category, subcategory, page = 1 } = useParams();
 
@@ -27,34 +40,35 @@ export default function ProductsPage({
     if (!search) clearSearch();
   }, [search]);
 
-  const noParams = !category && !subcategory;
+  const getAllItems =
+    !category && !subcategory && !isFavoritesPage && search == undefined;
 
-  const catalog = search
-    ? getFilteredProducts({
-        search,
-        page: Number(page),
-        orderBy: currentOrderByOption,
-      })
-    : noParams
+  const catalog = getAllItems
     ? getCatalog(Number(page), currentOrderByOption)
     : getFilteredProducts({
         category: category || "",
         subCategory: subcategory ? subcategory : undefined,
+        search: search ? search : undefined,
         orderBy: currentOrderByOption,
         page: Number(page),
+        favorites: isFavoritesPage ? favorites : undefined,
       });
 
-  const numberOfPages = search
-    ? getNumberOfPages({ search })
-    : getNumberOfPages({
-        category,
-        subCategory: subcategory,
-      });
+  const numberOfPages = getNumberOfPages({
+    category,
+    subCategory: subcategory,
+    search: search ? search : undefined,
+    favorites: isFavoritesPage ? favorites : undefined,
+  });
 
   return (
     <>
       {!catalog.length ? (
-        <h4>No matching products</h4>
+        isFavoritesPage ? (
+          <h4>No favorites</h4>
+        ) : (
+          <h4>No matching products</h4>
+        )
       ) : (
         <>
           <section className="w-full flex justify-end mb-3">
@@ -65,7 +79,13 @@ export default function ProductsPage({
           </section>
           <section className="w-full grid gap-3 grid-cols-catalog justify-center justify-items-center">
             {catalog.map((product) => (
-              <ProductCard key={product.imagesPath} product={product} />
+              <ProductCard
+                key={product.imagesPath}
+                product={product}
+                addToFavorites={() => addFavorite(product.slug)}
+                removeFromFavorites={() => removeFavorite(product.slug)}
+                isFavorite={favorites.includes(product.slug)}
+              />
             ))}
           </section>
           {numberOfPages > 1 && (
@@ -76,6 +96,7 @@ export default function ProductsPage({
                 subCategory={subcategory}
                 currentPage={Number(page)}
                 search={search ? search : undefined}
+                isFavoritesPage={isFavoritesPage}
               />
             </section>
           )}

@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import categories from "../data/categories.json";
 import { CategoryType } from "../types";
 import CategoryListItem from "../components/CategoryListItem";
@@ -10,6 +10,9 @@ export default function ProductsLayout({
   closeSideBar: () => void;
   sideBarActive: boolean;
 }) {
+  const { pathname } = useLocation();
+  const favoritesLinkActive = pathname.includes(`/catalog/favorites/`);
+
   return (
     <section className="flex justify-center bg-blue-400 flex-grow">
       <section className="w-full xl:w-[1280px] bg-green-300 flex">
@@ -27,6 +30,12 @@ export default function ProductsLayout({
         >
           <nav className="">
             <ul className="flex flex-col justify-start items-start gap-3">
+              <Link
+                to="favorites/1"
+                className={`${favoritesLinkActive ? "font-bold" : ""}`}
+              >
+                Favorites
+              </Link>
               {categories.map((category: CategoryType) => (
                 <CategoryListItem category={category} key={category.id} />
               ))}

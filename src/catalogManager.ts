@@ -24,11 +24,20 @@ function orderCatalog(orderBy: OrderByOption, catalog: ProductType[]) {
   return catalog;
 }
 
-function filterCatalog(category: string, subCategory?: string) {
-  return productsJson.filter(
-    (product) =>
-      (!category || category === product.categoryId) &&
-      (!subCategory || subCategory === product.subCategoryId)
+function filterCatalog({
+  category,
+  subCategory,
+  favorites,
+}: {
+  category?: string;
+  subCategory?: string;
+  favorites?: string[];
+}) {
+  return productsJson.filter((product) =>
+    favorites !== undefined
+      ? favorites.includes(product.slug)
+      : (!category || category === product.categoryId) &&
+        (!subCategory || subCategory === product.subCategoryId)
   );
 }
 
@@ -60,18 +69,20 @@ export function getNumberOfPages({
   category,
   subCategory,
   search,
+  favorites,
 }: {
   products?: ProductType[];
   category?: string;
   subCategory?: string;
   search?: string;
+  favorites?: string[];
 }) {
   const productsArr = products
     ? products
     : search
     ? searchCatalog(search)
-    : category
-    ? filterCatalog(category, subCategory)
+    : category || favorites !== undefined
+    ? filterCatalog({ category, subCategory, favorites })
     : productsJson;
 
   return Math.ceil(productsArr.length / MAX_PRODUCTS_PER_PAGE);
@@ -99,20 +110,27 @@ export function getFilteredProducts({
   subCategory,
   search,
   orderBy,
+  favorites,
 }: {
   page: number;
   category?: string;
   subCategory?: string;
   search?: string;
   orderBy: OrderByOption;
+  favorites?: string[];
 }): ProductType[] {
-  if ((subCategory && !category) || (!category && !search)) {
+  if (
+    (subCategory && !category) ||
+    (!category && !search && favorites == undefined)
+  ) {
     throw new Error("Missing arguments");
   }
 
   const filteredProducts = search
     ? searchCatalog(search)
-    : filterCatalog(category as string, subCategory);
+    : favorites !== undefined
+    ? filterCatalog({ favorites })
+    : filterCatalog({ category: category as string, subCategory });
 
   orderCatalog(orderBy, filteredProducts);
 

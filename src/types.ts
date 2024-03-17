@@ -43,6 +43,10 @@ export type UpdateProductQuantity = (
   quantity: number
 ) => void;
 
+export type AddFavorite = (favorite: string) => void;
+
+export type RemoveFavorite = (favorite: string) => void;
+
 export type OrderByOption =
   | "Price: low to high"
   | "Price: high to low"

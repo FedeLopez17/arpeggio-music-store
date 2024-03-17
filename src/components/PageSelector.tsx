@@ -7,12 +7,14 @@ export default function PageSelector({
   category,
   subCategory,
   search,
+  isFavoritesPage,
 }: {
   numberOfPages: number;
   currentPage: number;
   category?: string;
   subCategory?: string;
   search?: string;
+  isFavoritesPage?: boolean;
 }) {
   const getPageLink = ({
     page,
@@ -26,17 +28,22 @@ export default function PageSelector({
     const rootPath = `/catalog/${
       search
         ? `${PAGE_PLACEHOLDER}/?search=${search}`
+        : isFavoritesPage
+        ? `favorites/${PAGE_PLACEHOLDER}`
         : category
-        ? category + "/" + (subCategory ? subCategory + "/" : "")
+        ? category +
+          "/" +
+          (subCategory
+            ? subCategory + "/" + PAGE_PLACEHOLDER
+            : PAGE_PLACEHOLDER)
         : ""
     }`;
 
-    if (pageNumber) return rootPath + pageNumber;
+    if (pageNumber)
+      return rootPath.replace(PAGE_PLACEHOLDER, pageNumber.toString());
 
     const newPage = page === "previous" ? currentPage - 1 : currentPage + 1;
-    return search
-      ? rootPath.replace(PAGE_PLACEHOLDER, newPage.toString())
-      : rootPath + newPage;
+    return rootPath.replace(PAGE_PLACEHOLDER, newPage.toString());
   };
 
   const specificPageSelectors: JSX.Element[] = [];

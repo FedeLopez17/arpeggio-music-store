@@ -5,19 +5,32 @@ import RatingStars from "../components/RatingStars";
 import Slideshow from "../components/Slideshow";
 import { formatPrice, getProductImageURLs } from "../utils";
 import AttributesTable from "../components/AttributesTable";
-import { ShoppingCart, AddProduct, RemoveProduct } from "../types";
+import {
+  ShoppingCart,
+  AddProduct,
+  RemoveProduct,
+  AddFavorite,
+  RemoveFavorite,
+} from "../types";
 import { useEffect, useState } from "react";
 import CartButton from "../components/CartButton";
 import NumericSelectOptions from "../components/NumericSelectOptions";
+import FavoriteToggle from "../components/FavoriteToggle";
 
 export default function ProductPage({
   addProduct,
   removeProduct,
   shoppingCart,
+  addFavorite,
+  removeFavorite,
+  favorites,
 }: {
   addProduct: AddProduct;
   removeProduct: RemoveProduct;
   shoppingCart: ShoppingCart;
+  addFavorite: AddFavorite;
+  removeFavorite: RemoveFavorite;
+  favorites: string[];
 }) {
   const { category, subcategory, product } = useParams();
 
@@ -58,6 +71,8 @@ export default function ProductPage({
     </section>
   );
 
+  const isFavorite = productData ? favorites.includes(productData.slug) : false;
+
   return !productData ? (
     <ProductNotFound />
   ) : (
@@ -82,31 +97,48 @@ export default function ProductPage({
               price={productData.price}
               classes="hidden lg:block"
             />
-            {productInCart ? (
-              <CartButton
-                innerText={"REMOVE FROM CART"}
-                callBack={() => removeProduct(productData)}
-                classes="self-center w-11/12 md:w-[200px] mb-10"
-              />
-            ) : (
-              <section className="flex gap-1 justify-center items-stretch w-11/12 md:w-[200px] self-center mb-10">
-                <select
-                  className="w-1/4"
-                  id="quantity-select"
-                  value={quantity}
-                  onChange={(e) => setQuantity(Number(e.target.value))}
-                >
-                  <NumericSelectOptions />
-                </select>
-                <CartButton
-                  innerText={"ADD TO CART"}
-                  callBack={() =>
-                    addProduct({ product: productData, quantity })
-                  }
-                  classes="flex-1"
-                />
-              </section>
-            )}
+
+            <section className="flex gap-1 justify-center items-center w-11/12 md:w-[250px] self-center mb-10">
+              {productInCart ? (
+                <>
+                  <FavoriteToggle
+                    addToFavorites={() => addFavorite(productData.slug)}
+                    removeFromFavorites={() => removeFavorite(productData.slug)}
+                    isFavorite={isFavorite}
+                    classes="mr-4"
+                  />
+                  <CartButton
+                    innerText={"REMOVE FROM CART"}
+                    callBack={() => removeProduct(productData)}
+                    classes="flex-1"
+                  />
+                </>
+              ) : (
+                <>
+                  <FavoriteToggle
+                    addToFavorites={() => addFavorite(productData.slug)}
+                    removeFromFavorites={() => removeFavorite(productData.slug)}
+                    isFavorite={isFavorite}
+                    classes="mr-4"
+                  />
+                  <select
+                    className="w-1/4 h-full"
+                    id="quantity-select"
+                    value={quantity}
+                    onChange={(e) => setQuantity(Number(e.target.value))}
+                  >
+                    <NumericSelectOptions />
+                  </select>
+                  <CartButton
+                    innerText={"ADD TO CART"}
+                    callBack={() =>
+                      addProduct({ product: productData, quantity })
+                    }
+                    classes="flex-1"
+                  />
+                </>
+              )}
+            </section>
           </section>
         </section>
       </section>
