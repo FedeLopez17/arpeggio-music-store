@@ -17,7 +17,7 @@ export default function SearchResult({
   }
 
   return (
-    <section className="flex flex-col absolute top-1 z-20 bg-gray-300">
+    <section className="flex flex-col absolute top-1 z-30 bg-gray-300">
       <section className="flex flex-col gap-1">{searchResultItems}</section>
       {products.length > 3 && (
         <section>
