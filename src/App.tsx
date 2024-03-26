@@ -17,6 +17,10 @@ export default function App() {
 
   const [sideBarActive, setSideBarActive] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflowY = sideBarActive ? "hidden" : "initial";
+  }, [sideBarActive]);
+
   const [currentOrderByOption, setCurrentOrderByOption] =
     useState<OrderByOption>("Price: high to low");
 
