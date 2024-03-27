@@ -36,7 +36,7 @@ export default function PageSelector({
           (subCategory
             ? subCategory + "/" + PAGE_PLACEHOLDER
             : PAGE_PLACEHOLDER)
-        : ""
+        : PAGE_PLACEHOLDER
     }`;
 
     if (pageNumber)
