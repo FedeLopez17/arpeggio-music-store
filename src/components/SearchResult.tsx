@@ -17,12 +17,12 @@ export default function SearchResult({
   }
 
   return (
-    <section className="flex flex-col absolute top-1 z-30 bg-gray-300">
-      <section className="flex flex-col gap-1">{searchResultItems}</section>
+    <section className="flex flex-col absolute top-1 z-30 bg-gray-300 text-gray-800 w-full rounded-lg">
+      <section className="flex flex-col gap-[1px]">{searchResultItems}</section>
       {products.length > 3 && (
-        <section>
+        <section className="flex justify-center py-1 text-sm hover:underline">
           <Link to={`/catalog/1/?search=${search}`}>
-            <p>{products.length} products found</p>
+            <p>See all {products.length} matching products</p>
           </Link>
         </section>
       )}

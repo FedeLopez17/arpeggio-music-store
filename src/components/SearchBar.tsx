@@ -43,12 +43,12 @@ export default function SearchBar({
 
   return (
     <section className="flex flex-col w-fit">
-      <section className="flex justify-center items-center gap-2 bg-white border-2 border-transparent focus-within:border-blue-500 px-3 py-1 rounded-2xl w-fit">
+      <section className="flex justify-center items-center gap-2 bg-white text-gray-800 border-2 border-transparent focus-within:border-blue-500 px-3 py-1 rounded-lg w-fit">
         <input
           ref={inputRef}
           type="text"
           placeholder="Search"
-          className="w-[200px] bg-transparent focus-visible:outline-0 text-sm"
+          className="w-full sm:w-[400px] bg-transparent focus-visible:outline-0 text-sm"
           value={searchBarValue}
           onChange={({ target: { value } }) => {
             setSearch(value);
