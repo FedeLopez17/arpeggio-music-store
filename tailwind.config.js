@@ -5,6 +5,7 @@ export default {
     extend: {
       gridTemplateColumns: {
         catalog: "repeat(auto-fit, 320px)",
+        "home-categories": "repeat(auto-fit, 320px)",
       },
       backgroundImage: {
         "radial-gradient-hero-slideshow":
@@ -18,6 +19,9 @@ export default {
       },
       animation: {
         "fade-in": "fade-in 0.3s ease-in forwards",
+      },
+      dropShadow: {
+        "category-instruments": "5px 5px 5px rgba(0, 0, 0, 0.3)",
       },
     },
   },

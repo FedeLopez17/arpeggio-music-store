@@ -70,3 +70,15 @@ export type GitHubFile = {
   download_url: string | null;
   _links: { git: string; html: string; self: string };
 };
+
+export type HeroImage = {
+  src: string;
+  alt: string;
+  linkTo: string;
+};
+
+export type CategoryCard = {
+  image: string;
+  text: string;
+  linkTo: string;
+};
