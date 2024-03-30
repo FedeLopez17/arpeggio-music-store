@@ -82,3 +82,10 @@ export type CategoryCard = {
   text: string;
   linkTo: string;
 };
+
+export type Testimonial = {
+  name: string;
+  role: string;
+  text: string;
+  picture: string;
+};

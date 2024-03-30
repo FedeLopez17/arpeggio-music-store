@@ -13,6 +13,7 @@ import amp from "../assets/images/categories/amp.png";
 import drums from "../assets/images/categories/drums.png";
 import { CategoryCard } from "../types";
 import ProductHighlights from "../components/ProductHighlights";
+import Testimonials from "../components/Testimonials";
 
 const CATEGORIES: CategoryCard[] = [
   { image: drums, linkTo: "/catalog/drums/1", text: "DRUMS" },
@@ -65,6 +66,10 @@ export default function HomePage() {
         <section className="w-full">
           <h1>Product Highlights</h1>
           <ProductHighlights />
+        </section>
+        <section className="w-full">
+          <h1>In Your Own Words</h1>
+          <Testimonials />
         </section>
       </section>
     </section>
