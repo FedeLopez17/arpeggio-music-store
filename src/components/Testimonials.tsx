@@ -2,6 +2,7 @@ import federico from "../assets/images/testimonials/federico-lopez.png";
 import kyra from "../assets/images/testimonials/kyra-best.png";
 import aadya from "../assets/images/testimonials/aadya-dewan.png";
 import clark from "../assets/images/testimonials/clark-sawyer.png";
+
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 import { useEffect, useRef, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
@@ -95,8 +96,14 @@ export default function Testimonials() {
       );
     };
 
+    let firstRender = true;
+    if (firstRender) handleResize();
+
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      firstRender = false;
+      window.removeEventListener("resize", handleResize);
+    };
   }, [scrollSectionRef.current]);
 
   return (
