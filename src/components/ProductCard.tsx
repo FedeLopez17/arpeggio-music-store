@@ -47,7 +47,7 @@ export default function Product({
       to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
     >
       <section className="flex flex-col bg-red-500 p-2 box-border w-[290px] h-[380px] overflow-auto relative">
-        {addToFavorites && removeFromFavorites && isFavorite && (
+        {addToFavorites && removeFromFavorites && isFavorite !== undefined && (
           <FavoriteToggle
             addToFavorites={addToFavorites}
             removeFromFavorites={removeFromFavorites}
