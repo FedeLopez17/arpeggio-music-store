@@ -13,9 +13,9 @@ export default function Product({
   isFavorite,
 }: {
   product: ProductType;
-  addToFavorites: () => void;
-  removeFromFavorites: () => void;
-  isFavorite: boolean;
+  addToFavorites?: () => void;
+  removeFromFavorites?: () => void;
+  isFavorite?: boolean;
 }) {
   const [firstProductImage, setFirstProductImage] = useState<string>();
   const [secondProductImage, setSecondProductImage] = useState<string>();
@@ -47,12 +47,14 @@ export default function Product({
       to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
     >
       <section className="flex flex-col bg-red-500 p-2 box-border w-[290px] h-[380px] overflow-auto relative">
-        <FavoriteToggle
-          addToFavorites={addToFavorites}
-          removeFromFavorites={removeFromFavorites}
-          isFavorite={isFavorite}
-          classes="absolute top-3 right-3 z-20"
-        />
+        {addToFavorites && removeFromFavorites && isFavorite && (
+          <FavoriteToggle
+            addToFavorites={addToFavorites}
+            removeFromFavorites={removeFromFavorites}
+            isFavorite={isFavorite}
+            classes="absolute top-3 right-3 z-20"
+          />
+        )}
 
         <section
           className={`w-[274px] h-[274px] flex overflow-hidden ${

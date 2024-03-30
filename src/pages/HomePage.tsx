@@ -12,6 +12,7 @@ import percussion from "../assets/images/categories/percussion.png";
 import amp from "../assets/images/categories/amp.png";
 import drums from "../assets/images/categories/drums.png";
 import { CategoryCard } from "../types";
+import ProductHighlights from "../components/ProductHighlights";
 
 const CATEGORIES: CategoryCard[] = [
   { image: drums, linkTo: "/catalog/drums/1", text: "DRUMS" },
@@ -47,17 +48,23 @@ export default function HomePage() {
   return (
     <section className="flex flex-col items-center">
       <HeroSlideshow />
-      <section className="w-full xl:w-[1280px]">
-        <h1>Main Categories</h1>
-        <section className="w-full bg-red-500 grid grid-cols-home-categories gap-1 justify-center justify-items-center py-4">
-          {CATEGORIES.map((category) => (
-            <MainCategoryCard
-              key={category.image}
-              image={category.image}
-              linkTo={category.linkTo}
-              text={category.text}
-            />
-          ))}
+      <section className="w-full xl:w-[1280px] flex flex-col gap-4">
+        <section className="w-full">
+          <h1>Main Categories</h1>
+          <section className="w-full bg-red-500 grid grid-cols-home-categories gap-1 justify-center justify-items-center py-4">
+            {CATEGORIES.map((category) => (
+              <MainCategoryCard
+                key={category.image}
+                image={category.image}
+                linkTo={category.linkTo}
+                text={category.text}
+              />
+            ))}
+          </section>
+        </section>
+        <section className="w-full">
+          <h1>Product Highlights</h1>
+          <ProductHighlights />
         </section>
       </section>
     </section>

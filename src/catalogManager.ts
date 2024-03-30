@@ -1,5 +1,6 @@
 import productsJson from "./data/products.json";
 import { OrderByOption, ProductType } from "./types";
+import { shuffleArray } from "./utils";
 
 const MAX_PRODUCTS_PER_PAGE = 24;
 
@@ -135,4 +136,11 @@ export function getFilteredProducts({
   orderCatalog(orderBy, filteredProducts);
 
   return getCatalogPageContent(page, filteredProducts);
+}
+
+export function getHighlitedProducts(limit: number) {
+  const bestRatedProducts = productsJson.filter(
+    (product) => product.rating === 5
+  );
+  return shuffleArray(bestRatedProducts).slice(0, limit);
 }
