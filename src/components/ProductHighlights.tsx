@@ -12,13 +12,13 @@ export default function ProductHighlights() {
 
     scrollSectionRef.current.scrollBy({
       top: 0,
-      left: scrollRight ? 306 : -306,
+      left: scrollRight ? 298 : -298,
       behavior: "smooth",
     });
   };
 
   return (
-    <section className="flex gap-4">
+    <section className="flex justify-between">
       <section className="bg-red-600 flex justify-center items-center">
         <FaAngleLeft
           className="w-[22px] h-[22px] cursor-pointer"
@@ -26,11 +26,11 @@ export default function ProductHighlights() {
         />
       </section>
       <section
-        className="flex overflow-auto gap-2 box-border px-2 bg-green-400"
+        className="flex overflow-auto box-border bg-green-400 sm:w-[596px] lg:w-[894px] xl:w-[1192px]"
         ref={scrollSectionRef}
       >
         {productHighlights.map((product) => (
-          <Product product={product} key={product.slug} />
+          <Product product={product} key={product.slug} classes="mx-1" />
         ))}
       </section>
       <section className="bg-red-600 flex justify-center items-center">

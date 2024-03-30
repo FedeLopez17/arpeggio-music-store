@@ -11,11 +11,13 @@ export default function Product({
   addToFavorites,
   removeFromFavorites,
   isFavorite,
+  classes,
 }: {
   product: ProductType;
   addToFavorites?: () => void;
   removeFromFavorites?: () => void;
   isFavorite?: boolean;
+  classes?: string;
 }) {
   const [firstProductImage, setFirstProductImage] = useState<string>();
   const [secondProductImage, setSecondProductImage] = useState<string>();
@@ -46,7 +48,9 @@ export default function Product({
     <Link
       to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
     >
-      <section className="flex flex-col bg-red-500 p-2 box-border w-[290px] h-[380px] overflow-auto relative">
+      <section
+        className={`flex flex-col bg-red-500 p-2 box-border w-[290px] h-[380px] overflow-auto relative ${classes}`}
+      >
         {addToFavorites && removeFromFavorites && isFavorite !== undefined && (
           <FavoriteToggle
             addToFavorites={addToFavorites}
