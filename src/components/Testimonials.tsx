@@ -2,6 +2,10 @@ import federico from "../assets/images/testimonials/federico-lopez.png";
 import kyra from "../assets/images/testimonials/kyra-best.png";
 import aadya from "../assets/images/testimonials/aadya-dewan.png";
 import clark from "../assets/images/testimonials/clark-sawyer.png";
+import emily from "../assets/images/testimonials/emily-white.png";
+import john from "../assets/images/testimonials/john-smith.png";
+import michael from "../assets/images/testimonials/michael-johnson.png";
+import saul from "../assets/images/testimonials/saul-suarez.png";
 
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 import { useEffect, useRef, useState } from "react";
@@ -31,6 +35,30 @@ const TESTIMONIALS = [
     role: "Drummer",
     text: "A big thank you for the brilliant service you give. My new cymbals arrived to me in the UK in less than a week, packaged perfectly.",
     picture: clark,
+  },
+  {
+    name: "John Smith",
+    role: "Saxophonist",
+    text: "Outstanding service! Arpeggio always delivers top-notch products on time. Highly recommended!",
+    picture: john,
+  },
+  {
+    name: "Michael Johnson",
+    role: "Violinist",
+    text: "I am extremely satisfied with the service provided by Arpeggio. Fast delivery and excellent product quality!",
+    picture: michael,
+  },
+  {
+    name: "Saúl Suárez",
+    role: "Trumpeter",
+    text: "Arpeggio has never disappointed me. Their service is exceptional, and the products are always of the highest quality!",
+    picture: saul,
+  },
+  {
+    name: "Emily White",
+    role: "Cellist",
+    text: "Arpeggio is my go-to place for musical instruments. The service is impeccable, and the staff is always helpful and friendly!",
+    picture: emily,
   },
 ];
 
