@@ -2,6 +2,9 @@ import federico from "../assets/images/testimonials/federico-lopez.png";
 import kyra from "../assets/images/testimonials/kyra-best.png";
 import aadya from "../assets/images/testimonials/aadya-dewan.png";
 import clark from "../assets/images/testimonials/clark-sawyer.png";
+import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
+import { useEffect, useRef, useState } from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const TESTIMONIALS = [
   {
@@ -42,7 +45,7 @@ function Testimonial({
   clientRole: string;
 }) {
   return (
-    <section className="relative w-[300px] bg-blue-300 mt-[50px]">
+    <section className="relative w-[calc(100%-16px)] sm:w-[360px] bg-blue-300 mt-[50px] flex flex-col justify-between mx-2 sm:mx-4 flex-grow-0 flex-shrink-0">
       <section className="bg-red-400 rounded-full w-[100px] h-[100px] absolute top-[-50px] flex items-center overflow-hidden left-[calc(50%-50px)]">
         <img
           src={clientImage}
@@ -50,26 +53,80 @@ function Testimonial({
           className="w-full h-fit"
         />
       </section>
-      <p className="mt-[50px]">{testimonial}</p>
-      <p>
-        <span>{clientName}</span> - <span>{clientRole}</span>
+      <section className="box-border px-8 mt-[60px] flex justify-center">
+        <p className="text-justify">
+          <BiSolidQuoteAltLeft className="inline-block mr-1 relative bottom-2 w-4" />
+          {testimonial}
+          <BiSolidQuoteAltRight className=" inline-block ml-1 relative bottom-2 w-4" />
+        </p>
+      </section>
+      <p className="mr-8 my-4 text-right">
+        <span className="font-bold">{clientName}</span> -{" "}
+        <span>{clientRole}</span>
       </p>
     </section>
   );
 }
 
 export default function Testimonials() {
+  const [scrollIncrement, setScrollIncrement] = useState<number>(0);
+  const scrollSectionRef = useRef<HTMLElement>(null);
+
+  const scrollTestimonials = (scrollRight: boolean) => {
+    if (!scrollSectionRef.current) return;
+
+    scrollSectionRef.current.scrollBy({
+      top: 0,
+      left: scrollRight ? scrollIncrement : -scrollIncrement,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    if (!scrollSectionRef.current) return;
+
+    const handleResize = () => {
+      const firstTestimonialStyle = window.getComputedStyle(
+        (scrollSectionRef.current as Element).firstElementChild as Element
+      );
+      const { width, marginLeft, marginRight } = firstTestimonialStyle;
+      setScrollIncrement(
+        parseInt(width) + parseInt(marginLeft) + parseInt(marginRight)
+      );
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [scrollSectionRef.current]);
+
   return (
-    <section className="flex gap-2">
-      {TESTIMONIALS.map((testimonial) => (
-        <Testimonial
-          key={testimonial.name}
-          clientImage={testimonial.picture}
-          clientName={testimonial.name}
-          clientRole={testimonial.role}
-          testimonial={testimonial.text}
+    <section className="flex justify-between">
+      <section className="bg-red-600 flex justify-center items-center">
+        <FaAngleLeft
+          className="w-[22px] h-[22px] cursor-pointer"
+          onClick={() => scrollTestimonials(false)}
         />
-      ))}
+      </section>
+      <section
+        className="flex sm:w-[392px] lg:w-[784px] xl:w-[1176px] overflow-auto"
+        ref={scrollSectionRef}
+      >
+        {TESTIMONIALS.map((testimonial) => (
+          <Testimonial
+            key={testimonial.name}
+            clientImage={testimonial.picture}
+            clientName={testimonial.name}
+            clientRole={testimonial.role}
+            testimonial={testimonial.text}
+          />
+        ))}
+      </section>
+      <section className="bg-red-600 flex justify-center items-center">
+        <FaAngleRight
+          className="w-[22px] h-[22px] cursor-pointer"
+          onClick={() => scrollTestimonials(true)}
+        />
+      </section>
     </section>
   );
 }
