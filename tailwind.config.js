@@ -23,6 +23,10 @@ export default {
       dropShadow: {
         "category-instruments": "5px 5px 5px rgba(0, 0, 0, 0.3)",
       },
+      backgroundImage: {
+        "shape-1": "url('./src/assets/images/banners/shape-1.png')",
+        "shape-2": "url('./src/assets/images/banners/shape-2.png')",
+      },
     },
   },
   plugins: [],

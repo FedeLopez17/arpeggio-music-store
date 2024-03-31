@@ -14,6 +14,9 @@ import drums from "../assets/images/categories/drums.png";
 import { CategoryCard } from "../types";
 import ProductHighlights from "../components/ProductHighlights";
 import Testimonials from "../components/Testimonials";
+import ProductBanner from "../components/ProductBanner";
+import fenderTwinReverb from "../assets/images/banners/fender-twin-reverb-amp.png";
+import zildjianCymbals from "../assets/images/banners/zildjian-k-cymbals.png";
 
 const CATEGORIES: CategoryCard[] = [
   { image: drums, linkTo: "/catalog/drums/1", text: "DRUMS" },
@@ -63,6 +66,27 @@ export default function HomePage() {
             ))}
           </section>
         </section>
+        <ProductBanner
+          image={fenderTwinReverb}
+          imageClasses="lg:relative lg:top-[25%]"
+          containerClasses="bg-purple-400"
+          title="Fender's '68 Custom Twin Reverb"
+          // LINK MISSING AS THE PRODUCT IS YET TO BE ADDED
+          linkTo="[amp page]"
+          imageOnTheLeft={true}
+          description="Fender's '68 Custom Twin Reverb combo amp brings you everything you love about the classic Twin Reverb with the character of the '60s original. No matter how you look at it, the '68 Custom Twin Reverb was made to play and perform like a classic."
+        />
+
+        <ProductBanner
+          image={zildjianCymbals}
+          containerClasses="bg-slate-300"
+          title="Zildjian K-Custom Darkbox Set"
+          // LINK MISSING AS THE PRODUCT IS YET TO BE ADDED
+          linkTo="[cymbals page]"
+          imageOnTheLeft={false}
+          description="The Zildjian 4-piece K Custom Dark cymbal pack gives you a mellow, dark sound with a fast decay, adding plenty of character to your accents. This 4-piece pack features a traditional finish, making it a fine complement to your kit, both visually and sonically."
+        />
+
         <section className="w-full">
           <h1>Product Highlights</h1>
           <ProductHighlights />
