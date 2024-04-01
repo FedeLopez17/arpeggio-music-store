@@ -10,6 +10,8 @@ export default {
       backgroundImage: {
         "radial-gradient-hero-slideshow":
           "radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 90%,rgba(0,0,0,1) 100%)",
+        "shape-1": "url('./src/assets/images/banners/shape-1.png')",
+        "shape-2": "url('./src/assets/images/banners/shape-2.png')",
       },
       keyframes: {
         "fade-in": {
@@ -22,10 +24,6 @@ export default {
       },
       dropShadow: {
         "category-instruments": "5px 5px 5px rgba(0, 0, 0, 0.3)",
-      },
-      backgroundImage: {
-        "shape-1": "url('./src/assets/images/banners/shape-1.png')",
-        "shape-2": "url('./src/assets/images/banners/shape-2.png')",
       },
     },
   },
