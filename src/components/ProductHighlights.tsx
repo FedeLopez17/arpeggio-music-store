@@ -26,7 +26,7 @@ export default function ProductHighlights() {
         />
       </section>
       <section
-        className="flex overflow-auto box-border bg-green-400 sm:w-[596px] lg:w-[894px] xl:w-[1192px]"
+        className="flex overflow-auto box-border bg-green-400 w-[298px] sm:w-[596px] lg:w-[894px] xl:w-[1192px]"
         ref={scrollSectionRef}
       >
         {productHighlights.map((product) => (
