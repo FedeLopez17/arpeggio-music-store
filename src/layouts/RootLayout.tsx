@@ -5,7 +5,8 @@ import { FaXmark } from "react-icons/fa6";
 import { PiGuitarFill } from "react-icons/pi";
 import { ShoppingCart } from "../types";
 import SearchBar from "../components/SearchBar";
-import navBarLogo from "../assets/images/arpeggio.svg";
+import storeLogo from "../assets/images/arpeggio.svg";
+import Footer from "../components/Footer";
 
 export default function RootLayout({
   openSideBar,
@@ -33,7 +34,7 @@ export default function RootLayout({
         <section className="w-full xl:w-[1280px] flex box-border px-4 items-center">
           <Link to="/">
             <img
-              src={navBarLogo}
+              src={storeLogo}
               alt="Arpeggio Music Store's Logo"
               title="Home"
               className="h-6"
@@ -87,7 +88,7 @@ export default function RootLayout({
       <main className="flex-grow flex flex-col">
         <Outlet />
       </main>
-      <footer className="bg-yellow-500 h-8"></footer>
+      <Footer />
     </section>
   );
 }
