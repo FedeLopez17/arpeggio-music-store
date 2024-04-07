@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function AboutPage() {
   return (
@@ -42,18 +42,37 @@ export default function AboutPage() {
           </ul>
         </article>
         <section>
-          <a
-            href="https://github.com/FedeLopez17/shopping-cart"
-            target="_blank"
-          >
-            <button
-              type="button"
-              className="bg-red-500 flex gap-2 w-44 py-4 justify-center items-center"
-              title="See source code"
+          <section className="flex gap-4">
+            <a
+              href="https://github.com/FedeLopez17/shopping-cart"
+              target="_blank"
             >
-              <FaGithub /> Source Code
-            </button>
-          </a>
+              <button
+                type="button"
+                className="bg-red-500 flex gap-2 w-44 py-4 justify-center items-center"
+                title="See source code"
+              >
+                <FaGithub /> Source Code
+              </button>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/federico-lopez-uy/"
+              target="_blank"
+            >
+              <button
+                type="button"
+                className="bg-blue-500 flex gap-2 w-44 py-4 justify-center items-center"
+                title="Visit LinkedIn profile"
+              >
+                <FaLinkedin /> LinkedIn
+              </button>
+            </a>
+          </section>
+          <p>
+            All feedback is welcome and greatly appreciated! If you have any
+            suggestions on how anything could have been done better, please
+            don't hesitate to reach out!
+          </p>
         </section>
       </section>
     </section>
