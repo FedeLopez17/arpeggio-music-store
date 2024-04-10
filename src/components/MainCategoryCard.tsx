@@ -8,16 +8,16 @@ export default function MainCategoryCard({
   linkTo,
 }: CategoryCard) {
   return (
-    <section className="relative w-[260px] box-border mt-[100px] bg-gray-400 flex flex-col justify-center items-center">
+    <section className="relative w-[300px] box-border mt-[100px] bg-slate-100 flex flex-col justify-center items-center rounded-lg shadow-sm">
       <img
         src={image}
         alt="Main category"
-        className="h-[220px] absolute top-[-110px] left-[20px] drop-shadow-category-instruments"
+        className="h-[220px] absolute top-[-110px] left-[40px] drop-shadow-category-instruments"
       />
       <h2 className="mt-[90px] font-bold">{text}</h2>
       <Link to={linkTo}>
-        <section className="flex gap-1 justify-center items-center text-sm mb-5">
-          <p className="text-gray-800">SHOP</p> <FaAngleRight />
+        <section className="flex gap-1 justify-center items-center text-sm mb-5 text-gray-800 hover:text-purple-800 hover:font-bold">
+          <p>SHOP</p> <FaAngleRight />
         </section>
       </Link>
     </section>

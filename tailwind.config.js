@@ -5,7 +5,7 @@ export default {
     extend: {
       gridTemplateColumns: {
         catalog: "repeat(auto-fit, 320px)",
-        "home-categories": "repeat(auto-fit, 320px)",
+        "home-categories": "repeat(auto-fit, 300px)",
       },
       backgroundImage: {
         "radial-gradient-hero-slideshow":

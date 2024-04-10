@@ -52,10 +52,12 @@ export default function HomePage() {
   return (
     <section className="flex flex-col items-center">
       <HeroSlideshow />
-      <section className="w-full xl:w-[1280px] flex flex-col gap-4">
+      <section className="w-full xl:w-[1280px] flex flex-col gap-[100px]">
         <section className="w-full">
-          <h1>Main Categories</h1>
-          <section className="w-full bg-red-500 grid grid-cols-home-categories gap-1 justify-center justify-items-center py-4">
+          <h1 className="text-2xl font-bold text-center mt-[100px] text-slate-900">
+            Main Categories
+          </h1>
+          <section className="w-full grid grid-cols-home-categories gap-2 justify-center sm:justify-between justify-items-center py-4">
             {CATEGORIES.map((category) => (
               <MainCategoryCard
                 key={category.image}
