@@ -19,21 +19,21 @@ export default function ProductHighlights() {
 
   return (
     <section className="flex justify-between">
-      <section className="bg-red-600 flex justify-center items-center">
+      <section className="flex justify-center items-center">
         <FaAngleLeft
           className="w-[22px] h-[22px] cursor-pointer"
           onClick={() => scrollProducts(false)}
         />
       </section>
       <section
-        className="flex overflow-auto box-border bg-green-400 w-[298px] sm:w-[596px] lg:w-[894px] xl:w-[1192px]"
+        className="flex overflow-auto box-border w-[298px] sm:w-[596px] lg:w-[894px] xl:w-[1192px] pb-2 scrollbar-thin scrollbar-thumb-purple-300 scrollbar-thumb-rounded-lg"
         ref={scrollSectionRef}
       >
         {productHighlights.map((product) => (
           <Product product={product} key={product.slug} classes="mx-1" />
         ))}
       </section>
-      <section className="bg-red-600 flex justify-center items-center">
+      <section className="flex justify-center items-center">
         <FaAngleRight
           className="w-[22px] h-[22px] cursor-pointer"
           onClick={() => scrollProducts(true)}

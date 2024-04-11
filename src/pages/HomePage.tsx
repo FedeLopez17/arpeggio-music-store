@@ -52,7 +52,7 @@ export default function HomePage() {
   return (
     <section className="flex flex-col items-center">
       <HeroSlideshow />
-      <section className="w-full xl:w-[1280px] flex flex-col gap-[100px]">
+      <section className="w-full xl:w-[1280px] flex flex-col">
         <section className="w-full">
           <h1 className="text-2xl font-bold text-center mt-[100px] text-slate-900">
             Main Categories
@@ -71,7 +71,7 @@ export default function HomePage() {
         <ProductBanner
           image={fenderTwinReverb}
           imageClasses="lg:relative lg:top-[25%]"
-          containerClasses="bg-purple-400"
+          containerClasses="mt-[100px]"
           title="Fender's '68 Custom Twin Reverb"
           // LINK MISSING AS THE PRODUCT IS YET TO BE ADDED
           linkTo="[amp page]"
@@ -81,7 +81,7 @@ export default function HomePage() {
 
         <ProductBanner
           image={zildjianCymbals}
-          containerClasses="bg-slate-300"
+          containerClasses="mt-[25px]"
           title="Zildjian K-Custom Darkbox Set"
           // LINK MISSING AS THE PRODUCT IS YET TO BE ADDED
           linkTo="[cymbals page]"
@@ -89,12 +89,16 @@ export default function HomePage() {
           description="The Zildjian 4-piece K Custom Dark cymbal pack gives you a mellow, dark sound with a fast decay, adding plenty of character to your accents. This 4-piece pack features a traditional finish, making it a fine complement to your kit, both visually and sonically."
         />
 
-        <section className="w-full">
-          <h1>Product Highlights</h1>
+        <section className="w-full mt-[100px]">
+          <h1 className="text-2xl font-bold text-center mb-10 text-slate-900">
+            Product Highlights
+          </h1>
           <ProductHighlights />
         </section>
-        <section className="w-full">
-          <h1>In Your Own Words</h1>
+        <section className="w-full mt-[100px] mb-[150px]">
+          <h1 className="text-2xl font-bold text-center mb-10 text-slate-900">
+            In Your Own Words
+          </h1>
           <Testimonials />
         </section>
       </section>

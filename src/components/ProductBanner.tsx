@@ -21,8 +21,8 @@ export default function ProductBanner({
     <section
       className={`md:h-[400px] overflow-hidden flex flex-col justify-evenly items-center bg-no-repeat bg-contain gap-8 md:gap-0 box-border py-14 md:box-content md:py-0 ${
         imageOnTheLeft
-          ? "md:flex-row bg-shape-2 bg-left-bottom"
-          : "md:flex-row-reverse bg-shape-1 bg-right-bottom"
+          ? "md:flex-row bg-banner-shape-left bg-left-bottom"
+          : "md:flex-row-reverse bg-banner-shape-right bg-right-bottom"
       } ${containerClasses || ""}`}
     >
       <img
@@ -36,8 +36,11 @@ export default function ProductBanner({
           {description}
         </p>
         <Link to={linkTo}>
-          <button type="button" className="bg-yellow-500 py-2 px-8 w-fit">
-            See Product
+          <button
+            type="button"
+            className="bg-black text-white font-bold py-2 px-8 w-fit"
+          >
+            SEE PRODUCT
           </button>
         </Link>
       </section>

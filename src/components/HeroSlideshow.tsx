@@ -95,7 +95,7 @@ export default function HeroSlideshow() {
 
   const currentImage = HERO_IMAGES[currentImageIndex];
   return (
-    <section className="md:h-[500px] flex items-end overflow-hidden relative bg-black after:block after:w-full after:h-full after:absolute after:bg-radial-gradient-hero-slideshow after:pointer-events-none select-none">
+    <section className="xl:h-[500px] flex items-end overflow-hidden relative bg-black after:block after:w-full after:h-full after:absolute after:bg-radial-gradient-hero-slideshow after:pointer-events-none select-none">
       <Link to={currentImage.linkTo} className=" cursor-default">
         <img
           src={currentImage.src}

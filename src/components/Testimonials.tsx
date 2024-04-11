@@ -74,8 +74,8 @@ function Testimonial({
   clientRole: string;
 }) {
   return (
-    <section className="relative w-[calc(100%-16px)] sm:w-[360px] bg-blue-300 mt-[50px] flex flex-col justify-between mx-2 sm:mx-4 flex-grow-0 flex-shrink-0">
-      <section className="bg-red-400 rounded-full w-[100px] h-[100px] absolute top-[-50px] flex items-center overflow-hidden left-[calc(50%-50px)]">
+    <section className="relative w-[calc(100%-16px)] sm:w-[360px] bg-slate-200 mt-[50px] flex flex-col justify-between mx-2 sm:mx-4 flex-grow-0 flex-shrink-0 rounded-md">
+      <section className="bg-purple-400 rounded-full w-[100px] h-[100px] absolute top-[-50px] flex items-center overflow-hidden left-[calc(50%-50px)]">
         <img
           src={clientImage}
           alt={`${clientName}'s picture`}
@@ -136,14 +136,14 @@ export default function Testimonials() {
 
   return (
     <section className="flex justify-between">
-      <section className="bg-red-600 flex justify-center items-center">
+      <section className="flex justify-center items-center">
         <FaAngleLeft
           className="w-[22px] h-[22px] cursor-pointer"
           onClick={() => scrollTestimonials(false)}
         />
       </section>
       <section
-        className="flex sm:w-[392px] lg:w-[784px] xl:w-[1176px] overflow-auto"
+        className="flex sm:w-[392px] lg:w-[784px] xl:w-[1176px] overflow-auto box-border pb-2 scrollbar-thin scrollbar-thumb-purple-300 scrollbar-thumb-rounded-lg"
         ref={scrollSectionRef}
       >
         {TESTIMONIALS.map((testimonial) => (
@@ -156,7 +156,7 @@ export default function Testimonials() {
           />
         ))}
       </section>
-      <section className="bg-red-600 flex justify-center items-center">
+      <section className="flex justify-center items-center">
         <FaAngleRight
           className="w-[22px] h-[22px] cursor-pointer"
           onClick={() => scrollTestimonials(true)}
