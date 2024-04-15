@@ -4,8 +4,8 @@ import { FaCircleInfo } from "react-icons/fa6";
 export default function AboutPage() {
   return (
     <section className="flex flex-1 justify-center">
-      <section className="w-full xl:w-[1280px] flex flex-col gap-6 items-center">
-        <article className="max-w-[700px] mt-10">
+      <section className="w-full xl:w-[1280px] flex flex-col gap-6 items-center py-16 px-2">
+        <article className="max-w-[700px]">
           <h2 className="flex gap-2 items-center text-xl font-bold mb-8">
             <FaCircleInfo />
             Disclaimer
