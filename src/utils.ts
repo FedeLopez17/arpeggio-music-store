@@ -78,3 +78,7 @@ export function shuffleArray(arr: any[]) {
 
   return arr;
 }
+
+export function randomArrIndex(arr: any[]) {
+  return Math.floor(Math.random() * arr.length);
+}

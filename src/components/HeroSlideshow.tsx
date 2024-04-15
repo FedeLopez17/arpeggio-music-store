@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from "react";
 import { HeroImage } from "../types";
 import { Link } from "react-router-dom";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { randomArrIndex } from "../utils";
 
 const HERO_IMAGES: HeroImage[] = [
   {
@@ -45,7 +46,9 @@ const HERO_IMAGES: HeroImage[] = [
 ];
 
 export default function HeroSlideshow() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(
+    randomArrIndex(HERO_IMAGES)
+  );
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
