@@ -1,11 +1,15 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaCircleInfo } from "react-icons/fa6";
 
 export default function AboutPage() {
   return (
     <section className="flex flex-1 justify-center">
-      <section className="w-full xl:w-[1280px] bg-pink-300 flex flex-col gap-4">
-        <article>
-          <h2>Disclaimer</h2>
+      <section className="w-full xl:w-[1280px] flex flex-col gap-6 items-center">
+        <article className="max-w-[700px] mt-10">
+          <h2 className="flex gap-2 items-center text-xl font-bold mb-8">
+            <FaCircleInfo />
+            Disclaimer
+          </h2>
           <p>
             <b>Arpeggio is a fictional store.</b> If you are looking for musical
             instruments or related products, please note that all products shown
@@ -16,8 +20,9 @@ export default function AboutPage() {
             , so consider searching for your desired product on their page.
           </p>
         </article>
-        <article>
-          <h2>Credits</h2>
+
+        <article className="max-w-[700px]">
+          <h2 className="font-bold">Credits</h2>
           <ul>
             <li>
               <p>
@@ -32,7 +37,7 @@ export default function AboutPage() {
             <li>
               <p>
                 All none-product images, such as banners and (made-up) customer
-                reviews, are stock images obtained from{" "}
+                review images, are stock images obtained from{" "}
                 <a href="https://www.canva.com/" target="_blank">
                   Canva
                 </a>
@@ -41,18 +46,25 @@ export default function AboutPage() {
             </li>
           </ul>
         </article>
-        <section>
-          <section className="flex gap-4">
+
+        <section className="max-w-[700px]">
+          <h2 className="font-bold">Feedback</h2>
+          <p>
+            All feedback is welcome and greatly appreciated! If you have any
+            suggestions on how anything could have been done better, please
+            don't hesitate to reach out!
+          </p>
+          <section className="flex flex-col sm:flex-row gap-4 mt-5 justify-center items-center">
             <a
               href="https://github.com/FedeLopez17/shopping-cart"
               target="_blank"
             >
               <button
                 type="button"
-                className="bg-red-500 flex gap-2 w-44 py-4 justify-center items-center"
+                className="bg-slate-100 hover:bg-purple-200 flex gap-2 w-48 py-4 justify-center items-center"
                 title="See source code"
               >
-                <FaGithub /> Source Code
+                <FaGithub className="w-5 h-5" /> Source Code
               </button>
             </a>
             <a
@@ -61,18 +73,13 @@ export default function AboutPage() {
             >
               <button
                 type="button"
-                className="bg-blue-500 flex gap-2 w-44 py-4 justify-center items-center"
+                className="bg-slate-100 hover:bg-purple-200 flex gap-2 w-48 py-4 justify-center items-center"
                 title="Visit LinkedIn profile"
               >
-                <FaLinkedin /> LinkedIn
+                <FaLinkedin className="w-5 h-5" /> LinkedIn
               </button>
             </a>
           </section>
-          <p>
-            All feedback is welcome and greatly appreciated! If you have any
-            suggestions on how anything could have been done better, please
-            don't hesitate to reach out!
-          </p>
         </section>
       </section>
     </section>
