@@ -5,32 +5,34 @@ import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-black text-white flex justify-center py-14">
-      <section className="w-full xl:w-[1280px] flex justify-between flex-col md:flex-row sm:box-border sm:px-8 xl:px-0">
+      <section className="w-full xl:w-[1280px] flex items-center justify-between flex-col sm:flex-row sm:box-border sm:px-8 xl:px-0">
         <section className="max-w-[500px]">
           <img
             src={storeLogo}
             alt="Arpeggio Music Store's Logo"
             className="h-6 m-auto sm:m-0"
           />
-          <p className="mt-2 text-center sm:text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            eaque, facere laborum incidunt quod magni mollitia? Quisquam
-            repudiandae harum quod aut eius sunt itaque blanditiis, beatae
-            facilis ipsum id ad?
+          <p className="mt-2 text-left text-sm opacity-70">
+            Arpeggio is your ultimate destination for all things musical. We're
+            a tight-knit group of musicians and instrument aficionados dedicated
+            to enriching your musical journey.
+            <br />
+            At Arpeggio, we don't just sell instruments, we cultivate musical
+            journeys.
           </p>
         </section>
-        <section className="text-center self-center sm:text-right sm:self-end">
+        <section className="text-center mt-4 sm:mt-0 self-center sm:text-right sm:self-end">
           <ul>
-            <li>
+            <li className="hover:text-purple-400">
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className="hover:text-purple-400">
               <Link to="/catalog">Catalog</Link>
             </li>
-            <li>
+            <li className="hover:text-purple-400">
               <Link to="/cart">Cart</Link>
             </li>
-            <li>
+            <li className="hover:text-purple-400">
               <Link to="/about">About</Link>
             </li>
           </ul>
