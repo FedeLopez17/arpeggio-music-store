@@ -115,7 +115,7 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
         </section>
       </main>
       <footer
-        className="bg-red-500 flex gap-1 overflow-auto mt-[10px] pb-2 scrollbar-thin scrollbar-thumb-purple-300 scrollbar-thumb-rounded-lg mx-[30px]"
+        className="flex gap-2 overflow-auto mt-[10px] pb-2 scrollbar-thin scrollbar-thumb-purple-300 scrollbar-thumb-rounded-lg mx-[30px]"
         ref={imagesSelector}
       >
         {imageUrls.map((imageUrl, index) => (
@@ -123,7 +123,7 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
             src={imageUrl}
             key={imageUrl}
             onClick={() => setCurrentImageIndex(index)}
-            className={`w-[70px] aspect-square cursor-pointer border-2 ${
+            className={`w-[70px] aspect-square cursor-pointer border-2 shadow-sm ${
               currentImageIndex === index
                 ? "border-purple-400"
                 : "border-transparent"
