@@ -59,15 +59,21 @@ export default function ProductPage({
   const NameAndPrice = ({
     name,
     price,
+    rating,
     classes,
   }: {
     name: string;
     price: number;
+    rating: number;
     classes?: string;
   }) => (
-    <section className={classes}>
+    <section className={`flex flex-col ${classes}`}>
       <h1 className="text-xl font-bold">{name}</h1>
-      <h3 className="text-lg">{formatPrice(price)}</h3>
+      <span className="flex gap-2 items-center text-sm">
+        <p className="opacity-70">{rating}</p>
+        <RatingStars rating={rating} classes="text-sm text-purple-700" />
+      </span>
+      <h3 className="text-xl mt-2">{formatPrice(price)}</h3>
     </section>
   );
 
@@ -77,28 +83,29 @@ export default function ProductPage({
     <ProductNotFound />
   ) : (
     <section className="flex justify-center">
-      <section className="flex flex-col lg:flex-row bg-slate-500 w-full xl:w-[1280px] justify-center gap-6">
-        <section className="bg-blue-400 flex flex-col items-center px-6">
-          <section className="w-full md:w-[600px] flex flex-col gap-4">
+      <section className="flex flex-col lg:flex-row w-full xl:w-[1280px] justify-center gap-24 pb-32">
+        <section className=" flex flex-col items-center px-6 mt-10">
+          <section className="w-full md:w-[600px] flex flex-col gap-24">
             <NameAndPrice
               name={productData.name}
               price={productData.price}
+              rating={productData.rating}
               classes="lg:hidden"
             />
             <Slideshow imageUrls={imageURLs} />
-            <RatingStars rating={productData.rating} classes="text-lg" />
             <AttributesTable attributes={productData.attributes} />
           </section>
         </section>
-        <section className=" bg-green-500 flex flex-col items-center">
-          <section className="w-full md:w-fit flex flex-col gap-4 mt-10 sticky top-10">
+        <section className="flex flex-col items-center">
+          <section className="w-full md:w-fit flex items-center flex-col gap-4 mt-10 sticky top-10">
             <NameAndPrice
               name={productData.name}
               price={productData.price}
-              classes="hidden lg:block"
+              rating={productData.rating}
+              classes="hidden lg:flex"
             />
 
-            <section className="flex gap-1 justify-center items-center w-11/12 md:w-[250px] self-center mb-10">
+            <section className="flex gap-1 justify-center items-center w-11/12 md:w-[250px] md:self-start mb-44">
               {productInCart ? (
                 <>
                   <FavoriteToggle
@@ -122,7 +129,7 @@ export default function ProductPage({
                     classes="mr-4"
                   />
                   <select
-                    className="w-1/4 h-full"
+                    className="w-1/4 h-full bg-slate-200"
                     id="quantity-select"
                     value={quantity}
                     onChange={(e) => setQuantity(Number(e.target.value))}

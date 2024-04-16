@@ -12,7 +12,7 @@ export default function AttributesTable({
       attributesArr.push(
         <tr
           key={attributeKey}
-          className={`${index % 2 === 0 ? "bg-white" : "bg-slate-200"}`}
+          className={`${index % 2 === 0 ? "bg-slate-100" : "bg-white"} py-2`}
         >
           <th>{attributeKey}</th>
           <td>{attributes[attributeKey]}</td>
@@ -23,7 +23,9 @@ export default function AttributesTable({
 
   return (
     <table className="w-full table-fixed bg-white text-left">
-      <caption className="caption-top mb-2 text-left">Specifications</caption>
+      <caption className="caption-top mb-4 text-left text-2xl">
+        Specifications
+      </caption>
       <tbody>{attributesArr}</tbody>
     </table>
   );

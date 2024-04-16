@@ -20,9 +20,9 @@ export default function FavoriteToggle({
       }}
     >
       {isFavorite ? (
-        <MdFavorite className="w-full h-full hover:scale-105" />
+        <MdFavorite className="w-full h-full hover:scale-105 text-purple-700" />
       ) : (
-        <MdFavoriteBorder className="w-full h-full hover:scale-105 opacity-65 hover:opacity-100" />
+        <MdFavoriteBorder className="w-full h-full hover:scale-105 text-purple-500 hover:text-purple-700" />
       )}
     </section>
   );

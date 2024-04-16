@@ -82,37 +82,40 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        {currentImageLoaded ? (
-          <img
-            src={imageUrls[currentImageIndex as number]}
-            alt="Product image"
-          />
-        ) : (
-          <ImageLoadingSkeleton classes="w-full h-[680px]" />
-        )}
-        {notFirstImage && (
-          <section className="absolute left-[-20px] w-[40px] h-full flex items-center justify-start">
+        <section className="w-[30px] flex-grow-0 flex-shrink-0 h-full flex items-center justify-start">
+          {notFirstImage && (
             <FaAngleLeft
               className="cursor-pointer text-black h-8 w-[20px]"
               onClick={() =>
                 setCurrentImageIndex((prevIndex) => (prevIndex as number) - 1)
               }
             />
-          </section>
+          )}
+        </section>
+
+        {currentImageLoaded ? (
+          <img
+            className="w-[50px] flex-grow md:w-[540px] aspect-square shadow-md"
+            src={imageUrls[currentImageIndex as number]}
+            alt="Product image"
+          />
+        ) : (
+          <ImageLoadingSkeleton classes="w-[50px] flex-grow md:w-[540px] border-box aspect-square" />
         )}
-        {notLastImage && (
-          <section className="absolute right-[-20px] w-[40px] h-full flex items-center justify-end">
+
+        <section className="flex-grow-0 flex-shrink-0 w-[30px] h-full flex items-center justify-end">
+          {notLastImage && (
             <FaAngleRight
               className="cursor-pointer text-black h-8 w-[20px]"
               onClick={() =>
                 setCurrentImageIndex((prevIndex) => (prevIndex as number) + 1)
               }
             />
-          </section>
-        )}
+          )}
+        </section>
       </main>
       <footer
-        className="flex gap-1 overflow-auto mt-[10px]"
+        className="bg-red-500 flex gap-1 overflow-auto mt-[10px] pb-2 scrollbar-thin scrollbar-thumb-purple-300 scrollbar-thumb-rounded-lg mx-[30px]"
         ref={imagesSelector}
       >
         {imageUrls.map((imageUrl, index) => (
@@ -122,7 +125,7 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
             onClick={() => setCurrentImageIndex(index)}
             className={`w-[70px] aspect-square cursor-pointer border-2 ${
               currentImageIndex === index
-                ? "border-red-600 border-"
+                ? "border-purple-400"
                 : "border-transparent"
             }`}
           />

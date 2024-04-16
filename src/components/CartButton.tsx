@@ -12,7 +12,7 @@ export default function CartButton({
   return (
     <button
       type="button"
-      className={`bg-red-500 h-10 w-48 text-sm ${classes}`}
+      className={`bg-slate-200 hover:bg-purple-200 h-10 w-48 text-sm ${classes}`}
       onClick={callBack}
     >
       <h4 className="flex items-center justify-center gap-2">
