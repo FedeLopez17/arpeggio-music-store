@@ -12,7 +12,7 @@ export default function Footer() {
             alt="Arpeggio Music Store's Logo"
             className="h-6 m-auto sm:m-0"
           />
-          <p className="mt-2 text-left text-sm opacity-70">
+          <p className="mt-2 text-center sm:text-left text-sm opacity-70">
             Arpeggio is your ultimate destination for all things musical. We're
             a tight-knit group of musicians and instrument aficionados dedicated
             to enriching your musical journey.
