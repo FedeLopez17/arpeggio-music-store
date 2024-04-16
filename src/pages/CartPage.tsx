@@ -2,6 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 import CartItem from "../components/CartItem";
 import { ShoppingCart, RemoveProduct, UpdateProductQuantity } from "../types";
 import { formatPrice } from "../utils";
+import emptyCart from "../assets/images/empty-cart.png";
 
 export default function CartPage({
   removeProduct,
@@ -18,11 +19,23 @@ export default function CartPage({
   );
 
   return !shoppingCart.length ? (
-    <h4>Your cart is empty!</h4>
+    <section className="flex flex-col items-center flex-grow">
+      <img
+        src={emptyCart}
+        alt="Empty Cart"
+        className="w-[min(300px,60%)] aspect-square mt-20"
+      />
+      <h4 className="font-bold text-3xl mt-8 mb-2 px-2">
+        Your Cart is <span className="text-purple-500">Empty</span>!
+      </h4>
+      <p className="px-2">
+        Must add items to the cart before proceeding to check out
+      </p>
+    </section>
   ) : (
     <section className="flex justify-center flex-grow">
-      <section className="flex flex-col lg:flex-row bg-slate-500 w-full xl:w-[1280px] items-center justify-start lg:items-start lg:justify-center gap-6 ">
-        <section className="flex flex-col gap-4">
+      <section className="flex flex-col lg:flex-row w-full xl:w-[1280px] items-center justify-start lg:items-start lg:justify-center gap-6 sm:gap-24 mb-14 ">
+        <section className="flex flex-col gap-[1px] bg-purple-500 my-10">
           {shoppingCart.map((item) => (
             <CartItem
               removeProduct={removeProduct}
@@ -33,16 +46,17 @@ export default function CartPage({
           ))}
         </section>
         <section className="w-[min(300px,100%)] mt-10 top-10 sticky">
-          <section className="bg-sky-400 w-full min-h-[150px] flex flex-col justify-center items-center gap-4">
-            <h2 className="">
-              <span className="font-bold">Total: </span>
-              {formatPrice(totalPrice)}
+          <section className="w-full min-h-[150px] flex flex-col justify-start items-center sm:items-start gap-4">
+            <h2 className="flex flex-col">
+              <span className="text-lg text-purple-900 block">Total:</span>
+              <span className="text-3xl block">{formatPrice(totalPrice)}</span>
             </h2>
             <button
               type="button"
-              className=" bg-slate-600 flex items-center justify-center px-8 py-4 rounded-2xl"
+              className=" bg-slate-200 hover:bg-purple-200 flex items-center justify-center px-8 py-4 rounded-2xl"
             >
-              To Checkout <FaArrowRight />
+              <span className="mr-2 font-bold text-sm">TO CHECKOUT</span>{" "}
+              <FaArrowRight />
             </button>
           </section>
         </section>

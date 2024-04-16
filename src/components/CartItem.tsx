@@ -43,7 +43,7 @@ export default function CartItem({
   const totalPrice = product.price * quantity;
 
   return (
-    <section className="flex gap-4 bg-red-400 w-full md:w-[500px] p-2 pr-4 items-center justify-center">
+    <section className="flex bg-white gap-4 w-full md:w-[550px] pl-2 py-6 pr-4 items-center justify-center">
       <Link
         className="flex-1 flex gap-2"
         to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
@@ -55,11 +55,12 @@ export default function CartItem({
             <ImageLoadingSkeleton />
           )}
         </section>
-        <section className="bg-lime-300 flex-1">
+        <section className="flex-1 flex flex-col">
           <p>{product.name}</p>
           <p>
-            <span className="font-bold">Quantity:</span>
+            <span className="font-bold mr-2">Quantity</span>
             <select
+              className="bg-slate-100"
               value={quantity}
               onChange={(e) =>
                 updateProductQuantity(product.slug, Number(e.target.value))
@@ -68,12 +69,19 @@ export default function CartItem({
               <NumericSelectOptions />
             </select>
           </p>
-          {quantity > 1 && <p>{`${formatPrice(product.price)} per unit`}</p>}
-          <p className="font-bold">{formatPrice(totalPrice)}</p>
+
+          <p className="font-bold mt-auto">
+            {formatPrice(totalPrice)}
+            {quantity > 1 && (
+              <span className="text-xs font-light text-purple-900">{` - ${formatPrice(
+                product.price
+              )} p.u`}</span>
+            )}
+          </p>
         </section>
       </Link>
       <FaRegTrashAlt
-        className="cursor-pointer"
+        className="cursor-pointer hover:text-purple-900"
         onClick={() => removeProduct(product)}
       />
     </section>
