@@ -98,7 +98,7 @@ export default function ProductPage({
           <b>30-Day Money-Back Guarantee</b> on any item you buy at Arpeggio.
           <br className="block mt-1 content-['']" />
           Only exceptions are products specially made or modified for you (e. g.
-          custom cases) or items that are subject to wear and tear or products
+          custom cases), items that are subject to wear and tear, or products
           that cannot be taken back due to regulations of hygiene (e.g. used
           reeds for woodwinds).
         </p>
@@ -122,7 +122,7 @@ export default function ProductPage({
         <p>
           Your purchases at Arpeggio are backed by our <b>3-year warranty</b>,
           i.e. we extend the manufacturer's warranty period (usually 12 months)
-          to a<b>full 36 months</b> - at our own cost and there's no extra
+          to a <b>full 36 months</b> - at our own cost and there's no extra
           charge for you!
         </p>
       </CollapsiblePurchaseDetail>
