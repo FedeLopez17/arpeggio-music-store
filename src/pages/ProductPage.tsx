@@ -69,12 +69,12 @@ export default function ProductPage({
     classes?: string;
   }) => (
     <section className={`flex flex-col ${classes}`}>
-      <h1 className="text-2xl font-bold">{name}</h1>
+      <h1 className="text-3xl font-bold">{name}</h1>
       <span className="flex gap-2 items-center text-sm">
         <p className="opacity-70">{rating}</p>
         <RatingStars rating={rating} classes="text-sm text-purple-700" />
       </span>
-      <h3 className="text-xl mt-2">{formatPrice(price)}</h3>
+      <h3 className="text-2xl mt-2">{formatPrice(price)}</h3>
     </section>
   );
 
@@ -131,7 +131,7 @@ export default function ProductPage({
       <section className="flex flex-col lg:flex-row w-full xl:w-[1280px] justify-center gap-24 pb-32">
         <section className=" flex flex-col items-center px-6 mt-10">
           <section className="w-full md:w-[600px] flex flex-col gap-10 lg:gap-24">
-            <h1 className="text-2xl font-bold lg:hidden">{productData.name}</h1>
+            <h1 className="text-3xl font-bold lg:hidden">{productData.name}</h1>
 
             <Slideshow imageUrls={imageURLs} />
 
@@ -143,7 +143,9 @@ export default function ProductPage({
                   classes="text-sm text-purple-700"
                 />
               </span>
-              <h3 className="text-xl mt-2">{formatPrice(productData.price)}</h3>
+              <h3 className="text-2xl mt-2">
+                {formatPrice(productData.price)}
+              </h3>
             </section>
 
             <FavAndCartButtons
