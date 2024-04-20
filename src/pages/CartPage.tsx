@@ -2,7 +2,6 @@ import { FaArrowRight } from "react-icons/fa";
 import CartItem from "../components/CartItem";
 import { ShoppingCart, RemoveProduct, UpdateProductQuantity } from "../types";
 import { formatPrice } from "../utils";
-import emptyCart from "../assets/images/empty-cart.png";
 import NotFoundOrEmpty from "../components/NotFoundOrEmpty";
 
 export default function CartPage({
