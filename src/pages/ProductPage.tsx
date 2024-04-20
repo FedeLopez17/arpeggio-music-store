@@ -17,6 +17,10 @@ import { useEffect, useState } from "react";
 import CartButton from "../components/CartButton";
 import NumericSelectOptions from "../components/NumericSelectOptions";
 import FavoriteToggle from "../components/FavoriteToggle";
+import { PiArrowUDownLeft } from "react-icons/pi";
+import { GoShieldCheck } from "react-icons/go";
+import { LiaMedalSolid } from "react-icons/lia";
+import CollapsiblePurchaseDetail from "../components/CollapsiblePurchaseDetail";
 
 export default function ProductPage({
   addProduct,
@@ -78,6 +82,53 @@ export default function ProductPage({
     </section>
   );
 
+  const PurchaseDetails = ({ classes }: { classes?: string }) => (
+    <section
+      className={`flex flex-col lg:mb-44 gap-[1px] bg-purple-500 ${classes}`}
+    >
+      <CollapsiblePurchaseDetail
+        icon={PiArrowUDownLeft}
+        summaryText="30-Day Money-Back Guarantee"
+      >
+        <p>
+          So you thought a particular product was the right one for you, and
+          then you discover it's not. Well, that's life.
+          <br className="block mt-1 content-['']" />
+          <b>But no problem!</b> We grant a hassle-free{" "}
+          <b>30-Day Money-Back Guarantee</b> on any item you buy at Arpeggio.
+          <br className="block mt-1 content-['']" />
+          Only exceptions are products specially made or modified for you (e. g.
+          custom cases) or items that are subject to wear and tear or products
+          that cannot be taken back due to regulations of hygiene (e.g. used
+          reeds for woodwinds).
+        </p>
+      </CollapsiblePurchaseDetail>
+
+      <CollapsiblePurchaseDetail
+        icon={GoShieldCheck}
+        summaryText="Highest Payment Security"
+      >
+        <p>
+          Your data will be treated with utmost confidentality by Arpeggio. Your
+          address and credit card information is sent to us encrypted through a
+          secure server and cannot be seen by anyone except your contact person
+          and the web master.
+        </p>
+      </CollapsiblePurchaseDetail>
+      <CollapsiblePurchaseDetail
+        icon={LiaMedalSolid}
+        summaryText="3-Year Arpeggio Warranty"
+      >
+        <p>
+          Your purchases at Arpeggio are backed by our <b>3-year warranty</b>,
+          i.e. we extend the manufacturer's warranty period (usually 12 months)
+          to a<b>full 36 months</b> - at our own cost and there's no extra
+          charge for you!
+        </p>
+      </CollapsiblePurchaseDetail>
+    </section>
+  );
+
   const FavAndCartButtons = ({
     isAdd,
     productData,
@@ -88,7 +139,7 @@ export default function ProductPage({
     classes?: string;
   }) => (
     <section
-      className={`flex gap-1 justify-center items-center w-full md:w-[250px] md:self-start lg:mb-44 ${classes}`}
+      className={`flex gap-1 justify-center items-center w-full md:w-[250px] md:self-start ${classes}`}
     >
       <FavoriteToggle
         addToFavorites={() => addFavorite(productData.slug)}
@@ -154,6 +205,8 @@ export default function ProductPage({
               classes={"lg:hidden"}
             />
 
+            <PurchaseDetails classes={"lg:hidden"} />
+
             <AttributesTable attributes={productData.attributes} />
           </section>
         </section>
@@ -171,6 +224,8 @@ export default function ProductPage({
               productData={productData}
               classes={"hidden lg:flex"}
             />
+
+            <PurchaseDetails classes={"hidden lg:flex mt-12"} />
           </section>
         </section>
       </section>
