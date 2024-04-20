@@ -3,6 +3,7 @@ import CartItem from "../components/CartItem";
 import { ShoppingCart, RemoveProduct, UpdateProductQuantity } from "../types";
 import { formatPrice } from "../utils";
 import emptyCart from "../assets/images/empty-cart.png";
+import NotFoundOrEmpty from "../components/NotFoundOrEmpty";
 
 export default function CartPage({
   removeProduct,
@@ -19,19 +20,7 @@ export default function CartPage({
   );
 
   return !shoppingCart.length ? (
-    <section className="flex flex-col items-center flex-grow">
-      <img
-        src={emptyCart}
-        alt="Empty Cart"
-        className="w-[min(300px,60%)] aspect-square mt-20"
-      />
-      <h4 className="font-bold text-3xl mt-8 mb-2 px-2">
-        Your Cart is <span className="text-purple-500">Empty</span>!
-      </h4>
-      <p className="px-2">
-        Must add items to the cart before proceeding to check out
-      </p>
-    </section>
+    <NotFoundOrEmpty notFoundType="empty-cart" />
   ) : (
     <section className="flex justify-center flex-grow">
       <section className="flex flex-col lg:flex-row w-full xl:w-[1280px] items-center justify-start lg:items-start lg:justify-center gap-6 sm:gap-24 mb-14 ">

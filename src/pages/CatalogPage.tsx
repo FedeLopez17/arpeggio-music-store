@@ -14,6 +14,8 @@ import {
 } from "../types";
 import PageSelector from "../components/PageSelector";
 import { useEffect } from "react";
+import ProductNotFound from "../components/NotFoundOrEmpty";
+import NotFoundOrEmpty from "../components/NotFoundOrEmpty";
 
 export default function CatalogPage({
   currentOrderByOption,
@@ -65,9 +67,9 @@ export default function CatalogPage({
     <>
       {!catalog.length ? (
         isFavoritesPage ? (
-          <h4>No favorites</h4>
+          <NotFoundOrEmpty notFoundType="no-favorites" />
         ) : (
-          <h4>No matching products</h4>
+          <ProductNotFound notFoundType="no-matching" />
         )
       ) : (
         <>

@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { getProductBySlug } from "../catalogManager";
-import ProductNotFound from "../components/ProductNotFound";
 import RatingStars from "../components/RatingStars";
 import Slideshow from "../components/Slideshow";
 import { formatPrice, getProductImageURLs } from "../utils";
@@ -21,6 +20,7 @@ import { PiArrowUDownLeft } from "react-icons/pi";
 import { GoShieldCheck } from "react-icons/go";
 import { LiaMedalSolid } from "react-icons/lia";
 import CollapsiblePurchaseDetail from "../components/CollapsiblePurchaseDetail";
+import NotFoundOrEmpty from "../components/NotFoundOrEmpty";
 
 export default function ProductPage({
   addProduct,
@@ -176,7 +176,7 @@ export default function ProductPage({
   const isFavorite = productData ? favorites.includes(productData.slug) : false;
 
   return !productData ? (
-    <ProductNotFound />
+    <NotFoundOrEmpty notFoundType="no-product" />
   ) : (
     <section className="flex justify-center">
       <section className="flex flex-col lg:flex-row w-full xl:w-[1280px] justify-center gap-24 pb-32">
