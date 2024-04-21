@@ -14,11 +14,11 @@ export default function SubCategoryListItem({
   const linkActive = pathname.includes(`/${categoryId}/${subCategory.id}/`);
 
   return (
-    <li key={subCategory.id}>
-      <Link
-        to={subCategoryLinkTo}
-        className={`${linkActive ? "font-bold" : ""}`}
-      >
+    <li
+      key={subCategory.id}
+      className="bg-white border-t-[1px] border-t-slate-200 w-full text-sm text-[rgba(0,0,0,0.85)] py-1"
+    >
+      <Link to={subCategoryLinkTo} className={linkActive ? "font-bold" : ""}>
         {subCategory.name}
       </Link>
     </li>

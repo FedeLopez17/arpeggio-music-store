@@ -55,7 +55,9 @@ export default function PageSelector({
 
     specificPageSelectors.push(
       <Link key={i} to={pageLink}>
-        <section className={`${isActive ? "bg-blue-400" : ""}`}>{i}</section>
+        <section className={`${isActive ? "text-purple-800 font-bold" : ""}`}>
+          {i}
+        </section>
       </Link>
     );
   }

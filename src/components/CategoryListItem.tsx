@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { CategoryType } from "../types";
 import { useState } from "react";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { FaMinus, FaPlus } from "react-icons/fa";
 import SubCategoryListItem from "./SubCategoryListItem";
 
 export default function CategoryListItem({
@@ -16,8 +16,10 @@ export default function CategoryListItem({
   const categoryLinkActive = pathname.includes(`/catalog/${category.id}/`);
 
   return (
-    <li className="w-full">
-      <section className="flex items-center justify-between">
+    <li
+      className={`w-full box-border px-2 ${visibleSubCategories ? "mb-4" : ""}`}
+    >
+      <section className="flex items-center justify-between bg-white">
         <Link
           to={categoryLinkTo}
           className={`${categoryLinkActive ? "font-bold" : ""}`}
@@ -25,13 +27,19 @@ export default function CategoryListItem({
           {category.name}
         </Link>
         {visibleSubCategories ? (
-          <FaAngleUp onClick={() => setVisibleSubCategories(false)} />
+          <FaMinus
+            onClick={() => setVisibleSubCategories(false)}
+            className="cursor-pointer w-3 h-3"
+          />
         ) : (
-          <FaAngleDown onClick={() => setVisibleSubCategories(true)} />
+          <FaPlus
+            onClick={() => setVisibleSubCategories(true)}
+            className="cursor-pointer w-3 h-3"
+          />
         )}
       </section>
       {visibleSubCategories && (
-        <ul>
+        <ul className="flex flex-col gap-[1px]">
           {category.subCategories.map((subCategory) => (
             <SubCategoryListItem
               key={subCategory.id}

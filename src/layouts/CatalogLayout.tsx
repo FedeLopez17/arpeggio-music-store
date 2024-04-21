@@ -14,8 +14,8 @@ export default function ProductsLayout({
   const favoritesLinkActive = pathname.includes(`/catalog/favorites/`);
 
   return (
-    <section className="flex justify-center bg-blue-400 flex-grow">
-      <section className="w-full xl:w-[1280px] bg-green-300 flex">
+    <section className="flex justify-center flex-grow">
+      <section className="w-full xl:w-[1280px] flex">
         {/* The following section is a backdrop which can be clicked to deactivate the sidebar menu */}
         <section
           className={`${
@@ -24,15 +24,17 @@ export default function ProductsLayout({
           onClick={closeSideBar}
         ></section>
         <aside
-          className={`bg-red-400 text-nowrap absolute h-full overflow-hidden ${
+          className={`bg-white text-nowrap absolute h-full overflow-hidden ${
             sideBarActive ? "w-[min(280px,_100%)]" : "w-0"
           } xl:w-[280px] xl:static z-30 transition-all duration-200 ease-in`}
         >
           <nav className="">
-            <ul className="flex flex-col justify-start items-start gap-3">
+            <ul className="flex flex-col justify-start items-start mt-2 gap-4">
               <Link
                 to="favorites/1"
-                className={`${favoritesLinkActive ? "font-bold" : ""}`}
+                className={`bg-white w-full px-2 ${
+                  favoritesLinkActive ? "font-bold" : ""
+                }`}
               >
                 Favorites
               </Link>
@@ -42,7 +44,7 @@ export default function ProductsLayout({
             </ul>
           </nav>
         </aside>
-        <main className="w-full h-min-full">
+        <main className="w-full h-min-full bg-slate-50">
           <Outlet />
         </main>
       </section>

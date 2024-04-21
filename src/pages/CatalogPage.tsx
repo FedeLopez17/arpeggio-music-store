@@ -73,10 +73,11 @@ export default function CatalogPage({
         )
       ) : (
         <>
-          <section className="w-full flex justify-end mb-3">
+          <section className="w-full flex justify-center lg:justify-end lg:w-[954px] m-auto">
             <OrderBySelector
               currentSelection={currentOrderByOption}
               setOrderOption={setCurrentOrderByOption}
+              classes="my-6"
             />
           </section>
           <section className="w-full grid gap-3 grid-cols-catalog justify-center justify-items-center">
@@ -87,6 +88,7 @@ export default function CatalogPage({
                 addToFavorites={() => addFavorite(product.slug)}
                 removeFromFavorites={() => removeFavorite(product.slug)}
                 isFavorite={favorites.includes(product.slug)}
+                classes="bg-slate-100 my-4 shadow-lg"
               />
             ))}
           </section>
