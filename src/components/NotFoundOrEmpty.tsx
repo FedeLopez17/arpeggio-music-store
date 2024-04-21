@@ -1,16 +1,28 @@
 import produtNotFound from "../assets/images/not-found-404.png";
 import emptyCart from "../assets/images/empty-cart.png";
+import emptyFavorites from "../assets/images/no-favorites.png";
 
 export default function NotFoundOrEmpty({
   notFoundType,
 }: {
   notFoundType: "no-favorites" | "empty-cart" | "no-matching" | "no-product";
 }) {
+  const image =
+    notFoundType === "empty-cart"
+      ? emptyCart
+      : notFoundType === "no-favorites"
+      ? emptyFavorites
+      : produtNotFound;
+
   return (
     <section className="flex flex-col items-center flex-grow">
       <img
-        src={notFoundType === "empty-cart" ? emptyCart : produtNotFound}
-        alt={notFoundType === "empty-cart" ? "Empty Cart" : "404 Error"}
+        src={image}
+        alt={
+          ["empty-cart", "no-favorites"].includes(notFoundType)
+            ? "Empty Section"
+            : "404 Error; not found"
+        }
         className="w-[min(300px,60%)] aspect-square mt-20"
       />
       <h4 className="font-bold text-3xl mt-8 mb-2 px-2">
@@ -44,7 +56,7 @@ export default function NotFoundOrEmpty({
 
       {notFoundType === "no-favorites" && (
         <p className="px-2">
-          Add items to your favorites by clicking the heart icon
+          Add a favorite by clicking the heart icon on a product
         </p>
       )}
     </section>
