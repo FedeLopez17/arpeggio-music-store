@@ -88,7 +88,7 @@ export default function CatalogPage({
                 addToFavorites={() => addFavorite(product.slug)}
                 removeFromFavorites={() => removeFavorite(product.slug)}
                 isFavorite={favorites.includes(product.slug)}
-                classes="bg-slate-100 my-4 shadow-lg"
+                classes="bg-slate-100 my-4 shadow-xs"
               />
             ))}
           </section>

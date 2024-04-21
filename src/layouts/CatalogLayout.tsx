@@ -44,7 +44,7 @@ export default function ProductsLayout({
             </ul>
           </nav>
         </aside>
-        <main className="w-full h-min-full bg-slate-50">
+        <main className="w-full h-min-full">
           <Outlet />
         </main>
       </section>
