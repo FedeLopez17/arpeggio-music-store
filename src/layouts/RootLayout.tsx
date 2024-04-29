@@ -37,7 +37,7 @@ export default function RootLayout({
               src={storeLogo}
               alt="Arpeggio Music Store's Logo"
               title="Home"
-              className="h-6"
+              className="h-6 ml-3 xl:ml-0"
             />
           </Link>
           <ul className="flex justify-end items-center gap-8 w-full">
@@ -62,6 +62,7 @@ export default function RootLayout({
               <SearchBar
                 searchBarValue={searchBarValue}
                 setSearch={setSearch}
+                id="searchbar-1"
               />
             </li>
             <li>
@@ -82,7 +83,7 @@ export default function RootLayout({
           </ul>
         </section>
         <section className="md:hidden">
-          <SearchBar searchBarValue={searchBarValue} setSearch={setSearch} />
+          <SearchBar searchBarValue={searchBarValue} setSearch={setSearch} id="searchbar-2"/>
         </section>
       </nav>
       <main className="flex-grow flex flex-col">

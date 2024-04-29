@@ -8,9 +8,11 @@ import { useNavigate } from "react-router-dom";
 export default function SearchBar({
   searchBarValue,
   setSearch,
+  id
 }: {
   searchBarValue: string;
   setSearch: (search: string) => void;
+  id: string
 }) {
   const [matchingProducts, setMatchingProducts] = useState<ProductType[]>();
   const [inputHasFocus, setInputHasFocus] = useState(false);
@@ -47,6 +49,7 @@ export default function SearchBar({
         <input
           ref={inputRef}
           type="text"
+          id={id}
           placeholder="Search"
           className="w-full sm:w-[400px] bg-transparent focus-visible:outline-0 text-sm"
           value={searchBarValue}

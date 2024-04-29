@@ -73,14 +73,14 @@ export default function CatalogPage({
         )
       ) : (
         <>
-          <section className="w-full flex justify-center lg:justify-end lg:w-[954px] m-auto">
+          <section className="w-full flex justify-center lg:justify-end lg:w-[954px] xl:w-[984px] m-auto">
             <OrderBySelector
               currentSelection={currentOrderByOption}
               setOrderOption={setCurrentOrderByOption}
               classes="my-6"
             />
           </section>
-          <section className="w-full grid gap-3 grid-cols-catalog justify-center justify-items-center">
+          <section className="w-full grid gap-3 grid-cols-catalog justify-center justify-items-center xl:justify-end xl:justify-items-end">
             {catalog.map((product) => (
               <ProductCard
                 key={product.imagesPath}
@@ -93,7 +93,7 @@ export default function CatalogPage({
             ))}
           </section>
           {numberOfPages > 1 && (
-            <section className="w-full flex justify-center mt-2">
+            <section className="w-full flex justify-center mt-2 xl:pl-[12px]">
               <PageSelector
                 numberOfPages={numberOfPages}
                 category={category}
