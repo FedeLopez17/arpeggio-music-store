@@ -9,7 +9,7 @@ export default function CategoryListItem({
 }: {
   category: CategoryType;
 }) {
-  const [visibleSubCategories, setVisibleSubCategories] = useState(false);
+  const [visibleSubCategories, setVisibleSubCategories] = useState(true);
   const { pathname } = useLocation();
 
   const categoryLinkTo = `/catalog/${category.id}/1`;
