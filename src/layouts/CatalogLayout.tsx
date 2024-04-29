@@ -28,7 +28,7 @@ export default function ProductsLayout({
             sideBarActive ? "w-[min(280px,_100%)]" : "w-0"
           } xl:w-[280px] xl:static z-30 transition-all duration-200 ease-in`}
         >
-          <nav className="xl:mt-[105px]">
+          <nav className="xl:mt-[89px] mb-8">
             <ul className="flex flex-col justify-start items-start mt-2 gap-4">
               <Link
                 to="favorites/1"

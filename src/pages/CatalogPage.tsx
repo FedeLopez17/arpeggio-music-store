@@ -77,7 +77,7 @@ export default function CatalogPage({
             <OrderBySelector
               currentSelection={currentOrderByOption}
               setOrderOption={setCurrentOrderByOption}
-              classes="my-6"
+              classes="mt-6 mb-2"
             />
           </section>
           <section className="w-full grid gap-3 grid-cols-catalog justify-center justify-items-center xl:justify-end xl:justify-items-end">
