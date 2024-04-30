@@ -1,14 +1,33 @@
 import { Octokit } from "@octokit/core";
 import { GitHubFile } from "./types";
 
-const TOKEN = import.meta.env.VITE_GITHUB_ACCESS_TOKEN;
-const octokit = new Octokit({ auth: TOKEN });
+let cachedToken = "";
+
+async function fetchToken() {
+  if(cachedToken) return cachedToken;
+
+  try {
+    const res = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://pastebin.com/raw/WcQ9DqZS')}`);
+    if (!res.ok) {      
+      throw new Error('Failed to fetch token');
+    }
+    const data = await res.json();
+    const token = data.contents;
+    cachedToken = token;
+    return token;
+  } catch (error) {
+    console.error("Unable to fetch product images:", error);
+    return "";
+  }
+}
 
 export async function getProductImage(
   productPath: string,
   imageNumber?: number
 ) {
   try {
+    const token = await fetchToken();
+    const octokit = token ? new Octokit({ auth: token }) : new Octokit();
     const response = await octokit.request(
       "GET /repos/FedeLopez17/shopping-cart/contents/src/assets/images/catalog/{productPath}/{imageNumber}.jpg",
       {
@@ -32,6 +51,8 @@ export async function getProductImageURLs(
   product: string
 ) {
   try {
+    const token = await fetchToken();
+    const octokit = token ? new Octokit({ auth: token }) : new Octokit();
     const response = await octokit.request(
       "GET /repos/FedeLopez17/shopping-cart/contents/src/assets/images/catalog/{category}/{subCategory}/{product}",
       {
