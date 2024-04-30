@@ -9,4 +9,5 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: "./tests/setup.js",
   },
+  base: "https://fedelopez17.github.io/arpeggio-music-store/",
 });
