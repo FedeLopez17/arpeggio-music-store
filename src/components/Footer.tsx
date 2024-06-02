@@ -27,7 +27,7 @@ export default function Footer() {
               <Link to="/">Home</Link>
             </li>
             <li className="hover:text-purple-400">
-              <Link to="/catalog">Catalog</Link>
+              <Link to="/catalog/1">Catalog</Link>
             </li>
             <li className="hover:text-purple-400">
               <Link to="/cart">Cart</Link>
