@@ -7,7 +7,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "jsdom",
-    setupFiles: "./tests/setup.js",
+    setupFiles: "./__tests__/setup.js",
   },
   base: "https://fedelopez17.github.io/arpeggio-music-store/",
 });
