@@ -22,24 +22,26 @@ export default function Footer() {
           </p>
         </section>
         <section className="text-center mt-4 sm:mt-0 self-center sm:text-right sm:self-end">
-          <ul>
-            <li className="hover:text-purple-400">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="hover:text-purple-400">
-              <Link to="/catalog/1">Catalog</Link>
-            </li>
-            <li className="hover:text-purple-400">
-              <Link to="/cart">Cart</Link>
-            </li>
-            <li className="hover:text-purple-400">
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
+          <nav>
+            <ul>
+              <li className="hover:text-purple-400">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="hover:text-purple-400">
+                <Link to="/catalog/1">Catalog</Link>
+              </li>
+              <li className="hover:text-purple-400">
+                <Link to="/cart">Cart</Link>
+              </li>
+              <li className="hover:text-purple-400">
+                <Link to="/about">About</Link>
+              </li>
+            </ul>
+          </nav>
           <section className="flex gap-4 justify-end mt-4 text-2xl">
-            <FaFacebookSquare />
-            <FaInstagram />
-            <FaTwitter />
+            <FaFacebookSquare title="facebook" className="cursor-pointer" />
+            <FaInstagram title="instagram" className="cursor-pointer" />
+            <FaTwitter title="twitter" className="cursor-pointer" />
           </section>
         </section>
       </section>
