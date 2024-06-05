@@ -24,7 +24,7 @@ export default function MainNavBarLink({
   const IconElement = !Icon ? (
     false
   ) : addNotification ? (
-    <div className="relative">
+    <div className="relative" data-testid="notification-icon">
       <Icon />
       <PingNotification />
     </div>

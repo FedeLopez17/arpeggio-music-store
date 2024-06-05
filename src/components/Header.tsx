@@ -41,9 +41,9 @@ export default function Header({
               title="Toggle Sidebar"
             >
               {sideBarActive ? (
-                <FaXmark onClick={closeSideBar} />
+                <FaXmark onClick={closeSideBar} data-testid="x-mark-icon" />
               ) : (
-                <FaBars onClick={openSideBar} />
+                <FaBars onClick={openSideBar} data-testid="hamburger-icon" />
               )}
             </li>
           )}
