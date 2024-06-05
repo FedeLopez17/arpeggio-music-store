@@ -1,20 +1,20 @@
 import React from "react";
 import Footer from "../src/components/Footer";
-import { describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 
 describe("Footer", () => {
-  it("renders logo image", () => {
+  beforeEach(() => {
     render(<Footer />, { wrapper: BrowserRouter });
+  });
 
+  it("renders logo image", () => {
     const logo = screen.getByRole("img");
     expect(logo).toBeInTheDocument();
   });
 
   it("renders store description paragraph", () => {
-    render(<Footer />, { wrapper: BrowserRouter });
-
     const paragraph = screen.getByText(
       /Arpeggio is your ultimate destination for all things musical/i
     );
@@ -22,8 +22,6 @@ describe("Footer", () => {
   });
 
   it("renders navbar list items correctly", () => {
-    render(<Footer />, { wrapper: BrowserRouter });
-
     expect(screen.getByText("Home").closest("a")).toHaveAttribute("href", "/");
     expect(screen.getByText("Catalog").closest("a")).toHaveAttribute(
       "href",
@@ -40,8 +38,6 @@ describe("Footer", () => {
   });
 
   it("renders social media icons", () => {
-    render(<Footer />, { wrapper: BrowserRouter });
-
     const facebookIcon = screen.getByTitle("facebook");
     const instagramIcon = screen.getByTitle("instagram");
     const twitterIcon = screen.getByTitle("twitter");
