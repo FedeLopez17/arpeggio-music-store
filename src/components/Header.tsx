@@ -1,4 +1,3 @@
-import React from "react";
 import storeLogo from "../assets/images/arpeggio.svg";
 import { FaBars, FaInfoCircle, FaShoppingCart } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
