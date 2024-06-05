@@ -8,11 +8,11 @@ import { useNavigate } from "react-router-dom";
 export default function SearchBar({
   searchBarValue,
   setSearch,
-  id
+  id,
 }: {
   searchBarValue: string;
   setSearch: (search: string) => void;
-  id: string
+  id: string;
 }) {
   const [matchingProducts, setMatchingProducts] = useState<ProductType[]>();
   const [inputHasFocus, setInputHasFocus] = useState(false);
