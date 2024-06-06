@@ -19,6 +19,7 @@ export default function ProductBanner({
 }) {
   return (
     <section
+      title="Product Banner"
       className={`md:h-[400px] overflow-hidden flex flex-col justify-evenly items-center bg-no-repeat bg-contain gap-8 md:gap-0 box-border py-14 md:box-content md:py-0 ${
         imageOnTheLeft
           ? "md:flex-row bg-banner-shape-left bg-left-bottom"
