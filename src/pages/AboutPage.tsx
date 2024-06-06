@@ -56,7 +56,7 @@ export default function AboutPage() {
           </p>
           <section className="flex flex-col sm:flex-row gap-4 mt-5 justify-center items-center">
             <a
-              href="https://github.com/FedeLopez17/shopping-cart"
+              href="https://github.com/FedeLopez17/arpeggio-music-store"
               target="_blank"
             >
               <button
