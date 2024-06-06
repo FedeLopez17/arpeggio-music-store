@@ -138,7 +138,7 @@ export function getFilteredProducts({
   return getCatalogPageContent(page, filteredProducts);
 }
 
-export function getHighlitedProducts(limit: number) {
+export function getHighlitedProducts(limit: number): ProductType[] {
   const bestRatedProducts = productsJson.filter(
     (product) => product.rating === 5
   );
