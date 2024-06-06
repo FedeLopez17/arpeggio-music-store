@@ -1,15 +1,13 @@
 import React from "react";
 import HomePage from "../src/pages/HomePage";
-import { beforeEach, describe, expect, it } from "vitest";
+import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 
-describe("Homepage", () => {
-  beforeEach(() => {
-    render(<HomePage />, { wrapper: BrowserRouter });
-  });
-
+describe("Home Page", () => {
   it("renders elements", () => {
+    render(<HomePage />, { wrapper: BrowserRouter });
+
     const slideshow = screen.getByTestId("hero-slideshow");
     const mainCategoriesHeading = screen.getByRole("heading", {
       name: "Main Categories",
