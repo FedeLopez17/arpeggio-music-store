@@ -54,7 +54,7 @@ export default function HeroSlideshow() {
   useEffect(() => {
     const interval = setInterval(showNextImage, 5000);
     return () => clearInterval(interval);
-  }, [currentImageIndex]);
+  }, []);
 
   const showNextImage = () => {
     setCurrentImageIndex((prevIndex) => {
@@ -104,6 +104,7 @@ export default function HeroSlideshow() {
           src={currentImage.src}
           alt={currentImage.alt}
           className={animate ? "animate-fade-in" : ""}
+          data-testid={`image-${currentImageIndex}`}
           onAnimationEnd={() => setAnimate(false)}
           onTouchStart={onTouchStart}
           onTouchMove={onTouchMove}
