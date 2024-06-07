@@ -157,6 +157,7 @@ export default function ProductPage({
         <>
           <select
             className="w-1/4 h-full bg-slate-200"
+            title="Quantity"
             id="quantity-select"
             value={quantity}
             onChange={(e) => setQuantity(Number(e.target.value))}
