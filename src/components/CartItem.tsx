@@ -43,33 +43,48 @@ export default function CartItem({
   const totalPrice = product.price * quantity;
 
   return (
-    <section className="flex bg-white gap-4 w-full md:w-[550px] pl-2 py-6 pr-4 items-center justify-center">
-      <Link
-        className="flex-1 flex gap-2"
-        to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
-      >
-        <section className="flex w-24 h-24">
+    <section
+      className="flex bg-white gap-4 w-full md:w-[550px] pl-2 py-6 pr-4 items-center justify-center"
+      data-testid="cart-item"
+    >
+      <section className="flex w-24 h-24">
+        <Link
+          className="flex-1 flex gap-2"
+          to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
+        >
           {imageLoaded ? (
             <img src={productImage} alt="Product Image" />
           ) : (
             <ImageLoadingSkeleton />
           )}
-        </section>
-        <section className="flex-1 flex flex-col">
-          <p>{product.name}</p>
-          <p>
-            <span className="font-bold mr-2">Quantity</span>
-            <select
-              className="bg-slate-100"
-              value={quantity}
-              onChange={(e) =>
-                updateProductQuantity(product.slug, Number(e.target.value))
-              }
-            >
-              <NumericSelectOptions />
-            </select>
-          </p>
-
+        </Link>
+      </section>
+      <section className="flex-1 flex flex-col">
+        <Link
+          className="flex-1 flex gap-2"
+          to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
+        >
+          <p className="hover:underline">{product.name}</p>
+        </Link>
+        <p>
+          <label className="font-bold mr-2" htmlFor={`select-${product.slug}`}>
+            Quantity
+          </label>
+          <select
+            id={`select-${product.slug}`}
+            className="bg-slate-100"
+            value={quantity}
+            onChange={(e) =>
+              updateProductQuantity(product.slug, Number(e.target.value))
+            }
+          >
+            <NumericSelectOptions />
+          </select>
+        </p>
+        <Link
+          className="flex-1 flex gap-2"
+          to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
+        >
           <p className="font-bold mt-auto">
             {formatPrice(totalPrice)}
             {quantity > 1 && (
@@ -78,11 +93,12 @@ export default function CartItem({
               )} p.u`}</span>
             )}
           </p>
-        </section>
-      </Link>
+        </Link>
+      </section>
       <FaRegTrashAlt
         className="cursor-pointer hover:text-purple-900"
         onClick={() => removeProduct(product)}
+        title="Remove"
       />
     </section>
   );
