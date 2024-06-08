@@ -75,7 +75,10 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
   };
 
   return (
-    <section className="flex flex-col w-full select-none">
+    <section
+      className="flex flex-col w-full select-none"
+      data-testid="slideshow"
+    >
       <main
         className="flex justify-center items-center relative"
         onTouchStart={onTouchStart}
@@ -89,6 +92,7 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
               onClick={() =>
                 setCurrentImageIndex((prevIndex) => (prevIndex as number) - 1)
               }
+              title="Previous"
             />
           )}
         </section>
@@ -110,6 +114,7 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
               onClick={() =>
                 setCurrentImageIndex((prevIndex) => (prevIndex as number) + 1)
               }
+              title="Next"
             />
           )}
         </section>
@@ -120,6 +125,7 @@ export default function Slideshow({ imageUrls }: { imageUrls: string[] }) {
       >
         {imageUrls.map((imageUrl, index) => (
           <img
+            data-testid={`image-selector-${index}`}
             src={imageUrl}
             key={imageUrl}
             onClick={() => setCurrentImageIndex(index)}
