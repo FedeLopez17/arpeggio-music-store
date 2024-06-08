@@ -5,7 +5,14 @@ import { render, screen } from "@testing-library/react";
 import { ShoppingCart } from "../src/types";
 import { BrowserRouter } from "react-router-dom";
 import userEvent from "@testing-library/user-event";
-import { formatPrice } from "../src/utils";
+
+vi.mock("../src/utils", async (importOriginal) => {
+  const actual: {} = await importOriginal();
+  return {
+    ...actual,
+    formatPrice: vi.fn((number: number) => number),
+  };
+});
 
 const mockedRemoveProduct = vi.fn();
 const mockedUpdateProductQuantity = vi.fn();
@@ -108,6 +115,6 @@ describe("Cart Page", () => {
       0
     );
 
-    expect(screen.getByText(formatPrice(totalPrice))).toBeInTheDocument();
+    expect(screen.getByText(totalPrice)).toBeInTheDocument();
   });
 });
