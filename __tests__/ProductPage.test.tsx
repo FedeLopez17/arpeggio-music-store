@@ -1,8 +1,8 @@
 import React from "react";
 import { describe, expect, it, vi, afterEach, beforeEach } from "vitest";
-import { act, cleanup, render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 import ProductPage from "../src/pages/ProductPage";
-import { ShoppingCart, ProductType, ShoppingCartItem } from "../src/types";
+import { ShoppingCart } from "../src/types";
 import { Params } from "react-router-dom";
 import userEvent from "@testing-library/user-event";
 
