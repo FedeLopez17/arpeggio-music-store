@@ -54,7 +54,11 @@ export default function PageSelector({
     const isActive = currentPage === i;
 
     specificPageSelectors.push(
-      <Link key={i} to={pageLink}>
+      <Link
+        key={i}
+        to={pageLink}
+        data-testid={isActive ? `active-${i}` : `inactive-${i}`}
+      >
         <section className={`${isActive ? "text-purple-800 font-bold" : ""}`}>
           {i}
         </section>
