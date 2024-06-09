@@ -40,6 +40,7 @@ export default function SearchBar({
 
   const handleKeyDown: KeyboardEventHandler<HTMLInputElement> = (e) => {
     if (e.key !== "Enter") return;
+
     handleSearch();
   };
 
@@ -71,6 +72,7 @@ export default function SearchBar({
           onKeyDownCapture={handleKeyDown}
         />
         <FaMagnifyingGlass
+          data-testid="magnifying-glass-icon"
           className="cursor-pointer border-l-[1px] border-l-gray-400 pl-2 box-content"
           onClick={handleSearch}
         />
