@@ -38,7 +38,7 @@ export default function NotFoundOrEmpty({
           </>
         ) : notFoundType === "no-favorites" ? (
           <>
-            Your favorites section is{" "}
+            Your favorites section is
             <span className="text-purple-500"> Empty</span>!
           </>
         ) : (
