@@ -14,7 +14,7 @@ export async function getProductImageURLs(
 ) {
   const noImageCache = new Set<string>();
 
-  const imageExists = async (url: string) => {
+  const imageExists = async (url: string): Promise<boolean> => {
     if (noImageCache.has(url)) return false;
 
     try {
@@ -37,7 +37,10 @@ export async function getProductImageURLs(
   const BASE_URL = `https://raw.githubusercontent.com/FedeLopez17/arpeggio-music-store/main/src/assets/images/catalog/${category}/${subCategory}/${product}/`;
 
   // Here I use a binary search to reduce the amount of fetching I have to do in order to make the function faster
-  const findMaxImageNumber = async (low: number, high: number) => {
+  const findMaxImageNumber = async (
+    low: number,
+    high: number
+  ): Promise<number> => {
     if (low > high) {
       return low - 1;
     }
