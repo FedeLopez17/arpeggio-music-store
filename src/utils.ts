@@ -1,32 +1,3 @@
-import { Octokit } from "@octokit/core";
-import { GitHubFile } from "./types";
-
-let cachedToken = "";
-
-async function fetchToken() {
-  if (cachedToken) return cachedToken;
-
-  try {
-    // I understand that storing tokens in platforms like Pastebin may not be the most secure practice.
-    // However, in this case, the token is not critical. I'm using this method as a workaround because GitHub automatically revokes tokens when hardcoded in the codebase.
-    const res = await fetch(
-      `https://api.allorigins.win/get?url=${encodeURIComponent(
-        "https://pastebin.com/raw/WcQ9DqZS"
-      )}`
-    );
-    if (!res.ok) {
-      throw new Error("Failed to fetch token");
-    }
-    const data = await res.json();
-    const token = data.contents;
-    cachedToken = token;
-    return token;
-  } catch (error) {
-    console.error("Unable to fetch product images:", error);
-    return "";
-  }
-}
-
 export function getProductImage(productPath: string, imageNumber: number = 1) {
   return new URL(
     `./assets/images/catalog/${productPath}/${imageNumber}.jpg`,
@@ -34,30 +5,61 @@ export function getProductImage(productPath: string, imageNumber: number = 1) {
   ).href;
 }
 
+// I search for the product images through GitHub because there's no way of dinamically importing all images from an specific directory using Vite.
+// import.meta.glob won't work with dynamic paths.
 export async function getProductImageURLs(
   category: string,
   subCategory: string,
   product: string
 ) {
-  try {
-    const token = await fetchToken();
-    const octokit = token ? new Octokit({ auth: token }) : new Octokit();
-    const response = await octokit.request(
-      "GET /repos/FedeLopez17/shopping-cart/contents/src/assets/images/catalog/{category}/{subCategory}/{product}",
-      {
-        category,
-        subCategory,
-        product,
-      }
-    );
+  const noImageCache = new Set<string>();
 
-    const responseData: GitHubFile[] = response.data as GitHubFile[];
-    const imageUrls = responseData.map((file) => file.download_url as string);
-    return imageUrls;
-  } catch (error) {
-    console.error("Error fetching images:", error);
-    return [];
+  const imageExists = async (url: string) => {
+    if (noImageCache.has(url)) return false;
+
+    try {
+      const response = await fetch(url);
+      if (response.status === 404) {
+        noImageCache.add(url);
+        // Browsers always print network errors in the console if the status code is 4XX or 5XX.
+        // I could clear the console, but that would be a bad solution, as it would remove all logs.
+        // Here's an alternative solution to get rid of these 404 error logs I might implement in the future:
+        // https://stackoverflow.com/questions/4500741/suppress-chrome-failed-to-load-resource-messages-in-console/75848002#75848002
+        console.log("The previous 404 error is meant to happen");
+        return false;
+      }
+      return true;
+    } catch {
+      return false;
+    }
+  };
+
+  const BASE_URL = `https://raw.githubusercontent.com/FedeLopez17/arpeggio-music-store/main/src/assets/images/catalog/${category}/${subCategory}/${product}/`;
+
+  // Here I use a binary search to reduce the amount of fetching I have to do in order to make the function faster
+  const findMaxImageNumber = async (low: number, high: number) => {
+    if (low > high) {
+      return low - 1;
+    }
+
+    const mid = Math.floor((low + high) / 2);
+    const imageUrl = `${BASE_URL}${mid}.jpg`;
+
+    if (await imageExists(imageUrl)) {
+      return await findMaxImageNumber(mid + 1, high);
+    } else {
+      return await findMaxImageNumber(low, mid - 1);
+    }
+  };
+
+  const maxNumber = await findMaxImageNumber(1, 20);
+
+  const imageUrls = [];
+  for (let i = 1; i <= maxNumber; i++) {
+    imageUrls.push(`${BASE_URL}${i}.jpg`);
   }
+
+  return imageUrls;
 }
 
 export function formatPrice(number: number) {

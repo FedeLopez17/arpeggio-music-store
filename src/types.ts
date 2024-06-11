@@ -57,20 +57,6 @@ export type OrderByOption =
 
 export type SetOrderByOption = (orderBy: OrderByOption) => void;
 
-export type GitHubFile = {
-  type: string;
-  size: number;
-  name: string;
-  path: string;
-  content?: string;
-  sha: string;
-  url: string;
-  git_url: string | null;
-  html_url: string | null;
-  download_url: string | null;
-  _links: { git: string; html: string; self: string };
-};
-
 export type HeroImage = {
   src: string;
   alt: string;
