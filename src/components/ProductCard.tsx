@@ -24,24 +24,15 @@ export default function Product({
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
-    const preloadFirstImage = async () => {
-      try {
-        const imageUrl = await getProductImage(product.imagesPath);
-        const img = new Image();
-        img.src = imageUrl;
-        img.onload = () => {
-          setFirstProductImage(imageUrl);
-          setImageLoaded(true);
-        };
-      } catch (error) {
-        console.error("Error loading image:", error);
-      }
+    const imageUrl = getProductImage(product.imagesPath);
+    const img = new Image();
+    img.src = imageUrl;
+    img.onload = () => {
+      setFirstProductImage(imageUrl);
+      setImageLoaded(true);
     };
 
-    preloadFirstImage();
-    getProductImage(product.imagesPath, 2).then((imagePath) =>
-      setSecondProductImage(imagePath)
-    );
+    setSecondProductImage(getProductImage(product.imagesPath, 2));
   }, [product.imagesPath]);
 
   return (

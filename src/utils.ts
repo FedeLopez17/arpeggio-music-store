@@ -4,14 +4,18 @@ import { GitHubFile } from "./types";
 let cachedToken = "";
 
 async function fetchToken() {
-  if(cachedToken) return cachedToken;
+  if (cachedToken) return cachedToken;
 
   try {
     // I understand that storing tokens in platforms like Pastebin may not be the most secure practice.
     // However, in this case, the token is not critical. I'm using this method as a workaround because GitHub automatically revokes tokens when hardcoded in the codebase.
-    const res = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://pastebin.com/raw/WcQ9DqZS')}`);
-    if (!res.ok) {      
-      throw new Error('Failed to fetch token');
+    const res = await fetch(
+      `https://api.allorigins.win/get?url=${encodeURIComponent(
+        "https://pastebin.com/raw/WcQ9DqZS"
+      )}`
+    );
+    if (!res.ok) {
+      throw new Error("Failed to fetch token");
     }
     const data = await res.json();
     const token = data.contents;
@@ -23,28 +27,11 @@ async function fetchToken() {
   }
 }
 
-export async function getProductImage(
-  productPath: string,
-  imageNumber?: number
-) {
-  try {
-    const token = await fetchToken();
-    const octokit = token ? new Octokit({ auth: token }) : new Octokit();
-    const response = await octokit.request(
-      "GET /repos/FedeLopez17/shopping-cart/contents/src/assets/images/catalog/{productPath}/{imageNumber}.jpg",
-      {
-        productPath,
-        imageNumber: imageNumber !== undefined ? imageNumber : 1,
-      }
-    );
-
-    const responseData: GitHubFile = response.data as GitHubFile;
-    const imageUrl = responseData.download_url as string;
-    return imageUrl;
-  } catch (error) {
-    console.error("Error fetching image:", error);
-    return "";
-  }
+export function getProductImage(productPath: string, imageNumber: number = 1) {
+  return new URL(
+    `./assets/images/catalog/${productPath}/${imageNumber}.jpg`,
+    import.meta.url
+  ).href;
 }
 
 export async function getProductImageURLs(
