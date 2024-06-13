@@ -132,10 +132,12 @@ export default function ProductPage({
   const FavAndCartButtons = ({
     isAdd,
     productData,
+    selectId,
     classes,
   }: {
     isAdd: boolean;
     productData: ProductType;
+    selectId: number;
     classes?: string;
   }) => (
     <section
@@ -158,7 +160,7 @@ export default function ProductPage({
           <select
             className="w-1/4 h-full bg-slate-200"
             title="Quantity"
-            id="quantity-select"
+            id={`quantity-select-${selectId}`}
             value={quantity}
             onChange={(e) => setQuantity(Number(e.target.value))}
           >
@@ -204,6 +206,7 @@ export default function ProductPage({
               isAdd={!productInCart}
               productData={productData}
               classes={"lg:hidden"}
+              selectId={2}
             />
 
             <PurchaseDetails classes={"lg:hidden"} />
@@ -224,6 +227,7 @@ export default function ProductPage({
               isAdd={!productInCart}
               productData={productData}
               classes={"hidden lg:flex"}
+              selectId={1}
             />
 
             <PurchaseDetails classes={"hidden lg:flex mt-12"} />

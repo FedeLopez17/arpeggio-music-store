@@ -24,6 +24,7 @@ export default function OrderBySelector({
     >
       <FaFilter />
       <select
+        id="order-by-selector"
         className="bg-inherit focus-visible:outline-0 text-sm"
         value={currentSelection}
         onChange={(event) =>
