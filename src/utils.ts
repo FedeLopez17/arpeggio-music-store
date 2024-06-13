@@ -5,36 +5,38 @@ export function getProductImage(productPath: string, imageNumber: number = 1) {
   ).href;
 }
 
-// I search for the product images through GitHub because there's no way of dinamically importing all images from an specific directory using Vite.
-// import.meta.glob won't work with dynamic paths.
+// I search for the product images this way because there's no way of dinamically importing
+// all images from an specific directory using Vite, as import.meta.glob won't work with dynamic paths.
+// What I do instead is, since product images are named numerically, use binary search to find the highest image number
+// and then get the images through the GitHub repository. This way, I only need a few imports.
 export async function getProductImageURLs(
   category: string,
   subCategory: string,
   product: string
 ) {
-  const noImageCache = new Set<string>();
+  const noImageCache = new Set<number>();
 
-  const imageExists = async (url: string): Promise<boolean> => {
-    if (noImageCache.has(url)) return false;
+  const imageExists = (
+    category: string,
+    subCategory: string,
+    product: string,
+    imageNumber: number
+  ) => {
+    if (noImageCache.has(imageNumber)) return false;
 
-    try {
-      const response = await fetch(url);
-      if (response.status === 404) {
-        noImageCache.add(url);
-        // Browsers always print network errors in the console if the status code is 4XX or 5XX.
-        // I could clear the console, but that would be a bad solution, as it would remove all logs.
-        // Here's an alternative solution to get rid of these 404 error logs I might implement in the future:
-        // https://stackoverflow.com/questions/4500741/suppress-chrome-failed-to-load-resource-messages-in-console/75848002#75848002
-        console.log("The previous 404 error is meant to happen");
-        return false;
-      }
-      return true;
-    } catch {
+    const url = new URL(
+      `./assets/images/catalog/${category}/${subCategory}/${product}/${imageNumber}.jpg`,
+      import.meta.url
+    );
+
+    const noImage = url.toString().includes("undefined");
+    if (noImage) {
+      noImageCache.add(imageNumber);
       return false;
     }
-  };
 
-  const BASE_URL = `https://raw.githubusercontent.com/FedeLopez17/arpeggio-music-store/main/src/assets/images/catalog/${category}/${subCategory}/${product}/`;
+    return true;
+  };
 
   // Here I use a binary search to reduce the amount of fetching I have to do in order to make the function faster
   const findMaxImageNumber = async (
@@ -46,9 +48,8 @@ export async function getProductImageURLs(
     }
 
     const mid = Math.floor((low + high) / 2);
-    const imageUrl = `${BASE_URL}${mid}.jpg`;
 
-    if (await imageExists(imageUrl)) {
+    if (imageExists(category, subCategory, product, mid)) {
       return await findMaxImageNumber(mid + 1, high);
     } else {
       return await findMaxImageNumber(low, mid - 1);
@@ -56,8 +57,8 @@ export async function getProductImageURLs(
   };
 
   const maxNumber = await findMaxImageNumber(1, 20);
-
   const imageUrls = [];
+  const BASE_URL = `https://raw.githubusercontent.com/FedeLopez17/arpeggio-music-store/main/src/assets/images/catalog/${category}/${subCategory}/${product}/`;
   for (let i = 1; i <= maxNumber; i++) {
     imageUrls.push(`${BASE_URL}${i}.jpg`);
   }
