@@ -54,7 +54,7 @@ export default function HeroSlideshow() {
   useEffect(() => {
     const interval = setInterval(showNextImage, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [currentImageIndex]);
 
   const showNextImage = () => {
     setCurrentImageIndex((prevIndex) => {
