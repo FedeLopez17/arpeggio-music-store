@@ -41,6 +41,7 @@ export default function Product({
     >
       <section
         className={`flex flex-col bg-slate-200 p-2 box-border w-[290px] h-[380px] overflow-auto relative rounded-sm ${classes}`}
+        data-testid={`product-card-${product.slug}`}
       >
         {addToFavorites && removeFromFavorites && isFavorite !== undefined && (
           <FavoriteToggle
@@ -72,13 +73,13 @@ export default function Product({
             <ImageLoadingSkeleton />
           )}
         </section>
-        <p>{product.name}</p>
+        <p className="product-name">{product.name}</p>
         <section className="flex justify-between mt-auto">
           <section className="flex items-center gap-2 text-xs">
             <RatingStars rating={product.rating} />
-            <p>({product.rating})</p>
+            <p className="product-rating">({product.rating})</p>
           </section>
-          <p className="text-xl font-bold">${product.price}</p>
+          <p className="text-xl font-bold product-price">${product.price}</p>
         </section>
       </section>
     </Link>

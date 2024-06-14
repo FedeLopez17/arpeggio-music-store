@@ -21,12 +21,12 @@ export default function FavoriteToggle({
     >
       {isFavorite ? (
         <MdFavorite
-          className="w-full h-full hover:scale-105 text-purple-700"
+          className="w-full h-full hover:scale-105 text-purple-700 favorite-toggle-remove"
           title="Remove from Favorites"
         />
       ) : (
         <MdFavoriteBorder
-          className="w-full h-full hover:scale-105 text-purple-500 hover:text-purple-700"
+          className="w-full h-full hover:scale-105 text-purple-500 hover:text-purple-700 favorite-toggle-add"
           title="Add to Favorites"
         />
       )}

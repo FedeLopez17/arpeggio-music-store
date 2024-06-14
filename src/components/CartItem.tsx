@@ -64,7 +64,7 @@ export default function CartItem({
           className="flex-1 flex gap-2"
           to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
         >
-          <p className="hover:underline">{product.name}</p>
+          <p className="hover:underline product-name">{product.name}</p>
         </Link>
         <p>
           <label className="font-bold mr-2" htmlFor={`select-${product.slug}`}>

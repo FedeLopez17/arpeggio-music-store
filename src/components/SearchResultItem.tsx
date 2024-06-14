@@ -11,17 +11,13 @@ export default function SearchResultItem({
 }) {
   const [productImagePath, setProductImage] = useState("");
   useEffect(() => {
-    const preloadImage = async () => {
-      try {
-        const imageUrl = await getProductImage(product.imagesPath);
-        const img = new Image();
-        img.src = imageUrl;
-        img.onload = () => {
-          setProductImage(imageUrl);
-        };
-      } catch (error) {
-        console.error("Error loading image:", error);
-      }
+    const preloadImage = () => {
+      const imageUrl = getProductImage(product.imagesPath);
+      const img = new Image();
+      img.src = imageUrl;
+      img.onload = () => {
+        setProductImage(imageUrl);
+      };
     };
 
     preloadImage();
@@ -29,7 +25,7 @@ export default function SearchResultItem({
 
   return (
     <Link
-      className=""
+      title={`Search result ${product.name}`}
       to={`product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
     >
       <section className="flex gap-2 bg-white hover:bg-gray-200">
