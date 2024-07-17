@@ -2020,7 +2020,7 @@
     "subCategoryId": "electric_basses",
     "brand": "harley-benton",
     "slug": "harley-benton-jb-75mn-na-vintage-series",
-    "imagesPath": "catalog/guitars_basses/electric_basses/harley-benton-jb-75mn-na-vintage-series",
+    "imagesPath": "guitars_basses/electric_basses/harley-benton-jb-75mn-na-vintage-series",
     "rating": 4.5,
     "price": 166,
     "attributes": {
@@ -2045,7 +2045,7 @@
     "subCategoryId": "electric_basses",
     "brand": "squier",
     "slug": "squier-affinity-p-bass-mn-pj-ow",
-    "imagesPath": "catalog/guitars_basses/electric_basses/squier-affinity-p-bass-mn-pj-ow",
+    "imagesPath": "guitars_basses/electric_basses/squier-affinity-p-bass-mn-pj-ow",
     "rating": 4.5,
     "price": 235,
     "attributes": {
@@ -2070,7 +2070,7 @@
     "subCategoryId": "electric_basses",
     "brand": "fender",
     "slug": "fender-mij-ltd-hybrid-ii-j-bass-noir",
-    "imagesPath": "catalog/guitars_basses/electric_basses/fender-mij-ltd-hybrid-ii-j-bass-noir",
+    "imagesPath": "guitars_basses/electric_basses/fender-mij-ltd-hybrid-ii-j-bass-noir",
     "rating": 5,
     "price": 1279,
     "attributes": {
@@ -2095,7 +2095,7 @@
     "subCategoryId": "electric_basses",
     "brand": "fender",
     "slug": "fender-player-ii-jazz-bass-rw-bcg",
-    "imagesPath": "catalog/guitars_basses/electric_basses/fender-player-ii-jazz-bass-rw-bcg",
+    "imagesPath": "guitars_basses/electric_basses/fender-player-ii-jazz-bass-rw-bcg",
     "rating": 5,
     "price": 825,
     "attributes": {
@@ -2120,7 +2120,7 @@
     "subCategoryId": "electric_basses",
     "brand": "höfner",
     "slug": "hofner-h5001-artist-violin-bass",
-    "imagesPath": "catalog/guitars_basses/electric_basses/hofner-h5001-artist-violin-bass",
+    "imagesPath": "guitars_basses/electric_basses/hofner-h5001-artist-violin-bass",
     "rating": 5,
     "price": 1699,
     "attributes": {
@@ -2149,7 +2149,7 @@
     "subCategoryId": "electric_basses",
     "brand": "ibanez",
     "slug": "ibanez-sr300eb-wk",
-    "imagesPath": "catalog/guitars_basses/electric_basses/ibanez-sr300eb-wk",
+    "imagesPath": "guitars_basses/electric_basses/ibanez-sr300eb-wk",
     "rating": 5,
     "price": 325,
     "attributes": {
@@ -2174,7 +2174,7 @@
     "subCategoryId": "electric_basses",
     "brand": "marcus-miller",
     "slug": "marcus-miller-v7-vint-swamp-ash-4-2-gen-nt",
-    "imagesPath": "catalog/guitars_basses/electric_basses/marcus-miller-v7-vint-swamp-ash-4-2-gen-nt",
+    "imagesPath": "guitars_basses/electric_basses/marcus-miller-v7-vint-swamp-ash-4-2-gen-nt",
     "rating": 5,
     "price": 733,
     "attributes": {
@@ -2199,7 +2199,7 @@
     "subCategoryId": "electric_basses",
     "brand": "yamaha",
     "slug": "yamaha-bb734-a-tmbl",
-    "imagesPath": "catalog/guitars_basses/electric_basses/yamaha-bb734-a-tmbl",
+    "imagesPath": "guitars_basses/electric_basses/yamaha-bb734-a-tmbl",
     "rating": 4,
     "price": 969,
     "attributes": {
@@ -2225,7 +2225,7 @@
     "subCategoryId": "electric_basses",
     "brand": "cort",
     "slug": "cort-a4-plus-fmmh-opbc",
-    "imagesPath": "catalog/guitars_basses/electric_basses/cort-a4-plus-fmmh-opbc",
+    "imagesPath": "guitars_basses/electric_basses/cort-a4-plus-fmmh-opbc",
     "rating": 4,
     "price": 677,
     "attributes": {
@@ -2250,7 +2250,7 @@
     "subCategoryId": "electric_basses",
     "brand": "höfner",
     "slug": "hofner-club-bass-vintage-relic-black",
-    "imagesPath": "catalog/guitars_basses/electric_basses/hofner-club-bass-vintage-relic-black",
+    "imagesPath": "guitars_basses/electric_basses/hofner-club-bass-vintage-relic-black",
     "rating": 4,
     "price": 3199,
     "attributes": {
@@ -2276,7 +2276,7 @@
     "subCategoryId": "acoustic_basses",
     "brand": "fender",
     "slug": "fender-cb-60sce-a-bass-natural-il",
-    "imagesPath": "catalog/guitars_basses/acoustic_basses/fender-cb-60sce-a-bass-natural-il",
+    "imagesPath": "guitars_basses/acoustic_basses/fender-cb-60sce-a-bass-natural-il",
     "rating": 4.5,
     "price": 245,
     "attributes": {
@@ -2300,7 +2300,7 @@
     "subCategoryId": "acoustic_basses",
     "brand": "harley-benton",
     "slug": "harley-benton-b-30nt-acoustic-bass-series",
-    "imagesPath": "catalog/guitars_basses/acoustic_basses/harley-benton-b-30nt-acoustic-bass-series",
+    "imagesPath": "guitars_basses/acoustic_basses/harley-benton-b-30nt-acoustic-bass-series",
     "rating": 4,
     "price": 135,
     "attributes": {
@@ -2324,7 +2324,7 @@
     "subCategoryId": "acoustic_basses",
     "brand": "cordoba",
     "slug": "cordoba-mini-ii-bass-mh-e",
-    "imagesPath": "catalog/guitars_basses/acoustic_basses/cordoba-mini-ii-bass-mh-e",
+    "imagesPath": "guitars_basses/acoustic_basses/cordoba-mini-ii-bass-mh-e",
     "rating": 4,
     "price": 225,
     "attributes": {
@@ -2348,7 +2348,7 @@
     "subCategoryId": "acoustic_basses",
     "brand": "harley-benton",
     "slug": "harley-benton-hbo-850-bass-natural",
-    "imagesPath": "catalog/guitars_basses/acoustic_basses/harley-benton-hbo-850-bass-natural",
+    "imagesPath": "guitars_basses/acoustic_basses/harley-benton-hbo-850-bass-natural",
     "rating": 4,
     "price": 126,
     "attributes": {
@@ -2372,7 +2372,7 @@
     "subCategoryId": "acoustic_basses",
     "brand": "takamine",
     "slug": "takamine-gb30ce-n2-natural",
-    "imagesPath": "catalog/guitars_basses/acoustic_basses/takamine-gb30ce-n2-natural",
+    "imagesPath": "guitars_basses/acoustic_basses/takamine-gb30ce-n2-natural",
     "rating": 5,
     "price": 475,
     "attributes": {
@@ -2397,7 +2397,7 @@
     "subCategoryId": "electric_guitar_amps",
     "brand": "boss",
     "slug": "boss-katana-50-gen-3",
-    "imagesPath": "catalog/guitars_basses/electric_guitar_amps/boss-katana-50-gen-3",
+    "imagesPath": "guitars_basses/electric_guitar_amps/boss-katana-50-gen-3",
     "rating": 5,
     "price": 299,
     "attributes": {
@@ -2428,7 +2428,7 @@
     "subCategoryId": "electric_guitar_amps",
     "brand": "blackstar",
     "slug": "blackstar-fly3-thomann-70th-anniversary",
-    "imagesPath": "catalog/guitars_basses/electric_guitar_amps/blackstar-fly3-thomann-70th-anniversary",
+    "imagesPath": "guitars_basses/electric_guitar_amps/blackstar-fly3-thomann-70th-anniversary",
     "rating": 5,
     "price": 54,
     "attributes": {
@@ -2461,7 +2461,7 @@
     "subCategoryId": "electric_guitar_amps",
     "brand": "marshall",
     "slug": "marshall-dsl40cr",
-    "imagesPath": "catalog/guitars_basses/electric_guitar_amps/marshall-dsl40cr",
+    "imagesPath": "guitars_basses/electric_guitar_amps/marshall-dsl40cr",
     "rating": 5,
     "price": 611,
     "attributes": {
@@ -2488,7 +2488,7 @@
     "subCategoryId": "electric_guitar_amps",
     "brand": "fender",
     "slug": "fender-68-custom-twin-reverb",
-    "imagesPath": "catalog/guitars_basses/electric_guitar_amps/fender-68-custom-twin-reverb",
+    "imagesPath": "guitars_basses/electric_guitar_amps/fender-68-custom-twin-reverb",
     "rating": 5,
     "price": 1799,
     "attributes": {
@@ -2516,7 +2516,7 @@
     "subCategoryId": "electric_guitar_amps",
     "brand": "fender",
     "slug": "fender-blues-junior-lacquered-tweed",
-    "imagesPath": "catalog/guitars_basses/electric_guitar_amps/fender-blues-junior-lacquered-tweed",
+    "imagesPath": "guitars_basses/electric_guitar_amps/fender-blues-junior-lacquered-tweed",
     "rating": 4.5,
     "price": 695,
     "attributes": {
@@ -2545,7 +2545,7 @@
     "subCategoryId": "acoustic_guitar_amps",
     "brand": "fishman",
     "slug": "fishman-70th-loudbox-mini-bluet-ltd-bk",
-    "imagesPath": "catalog/guitars_basses/acoustic_guitar_amps/fishman-70th-loudbox-mini-bluet-ltd-bk",
+    "imagesPath": "guitars_basses/acoustic_guitar_amps/fishman-70th-loudbox-mini-bluet-ltd-bk",
     "rating": 5,
     "price": 311,
     "attributes": {
@@ -2572,7 +2572,7 @@
     "subCategoryId": "acoustic_guitar_amps",
     "brand": "aer",
     "slug": "aer-compact-60-iv-bk",
-    "imagesPath": "catalog/guitars_basses/acoustic_guitar_amps/aer-compact-60-iv-bk",
+    "imagesPath": "guitars_basses/acoustic_guitar_amps/aer-compact-60-iv-bk",
     "rating": 5,
     "price": 1045,
     "attributes": {
@@ -2599,7 +2599,7 @@
     "subCategoryId": "acoustic_guitar_amps",
     "brand": "fender",
     "slug": "fender-acoustasonic-15",
-    "imagesPath": "catalog/guitars_basses/acoustic_guitar_amps/fender-acoustasonic-15",
+    "imagesPath": "guitars_basses/acoustic_guitar_amps/fender-acoustasonic-15",
     "rating": 4.5,
     "price": 109,
     "attributes": {
@@ -2627,7 +2627,7 @@
     "subCategoryId": "bass_amps",
     "brand": "harley-benton",
     "slug": "harley-benton-hb-20b",
-    "imagesPath": "catalog/guitars_basses/bass_amps/harley-benton-hb-20b",
+    "imagesPath": "guitars_basses/bass_amps/harley-benton-hb-20b",
     "rating": 4,
     "price": 72,
     "attributes": {
@@ -2653,7 +2653,7 @@
     "subCategoryId": "bass_amps",
     "brand": "markbass",
     "slug": "markbass-cmb-121-blackline-combo",
-    "imagesPath": "catalog/guitars_basses/bass_amps/markbass-cmb-121-blackline-combo",
+    "imagesPath": "guitars_basses/bass_amps/markbass-cmb-121-blackline-combo",
     "rating": 5,
     "price": 366,
     "attributes": {
@@ -2678,7 +2678,7 @@
     "subCategoryId": "bass_amps",
     "brand": "fender",
     "slug": "fender-rumble-studio-40",
-    "imagesPath": "catalog/guitars_basses/bass_amps/fender-rumble-studio-40",
+    "imagesPath": "guitars_basses/bass_amps/fender-rumble-studio-40",
     "rating": 5,
     "price": 411,
     "attributes": {
@@ -2705,7 +2705,7 @@
     "subCategoryId": "bass_amps",
     "brand": "bugera",
     "slug": "bugera-bxd15a",
-    "imagesPath": "catalog/guitars_basses/bass_amps/bugera-bxd15a",
+    "imagesPath": "guitars_basses/bass_amps/bugera-bxd15a",
     "rating": 5,
     "price": 345,
     "attributes": {
