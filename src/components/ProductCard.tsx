@@ -40,7 +40,7 @@ export default function Product({
       to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
     >
       <section
-        className={`flex flex-col bg-slate-200 p-2 box-border w-[290px] h-[380px] overflow-auto relative rounded-sm ${classes}`}
+        className={`flex flex-col bg-slate-200 p-2 box-border w-[290px] h-[380px] overflow-auto relative rounded-md hover:text-purple-600 ${classes}`}
         data-testid={`product-card-${product.slug}`}
       >
         {addToFavorites && removeFromFavorites && isFavorite !== undefined && (
@@ -73,8 +73,8 @@ export default function Product({
             <ImageLoadingSkeleton />
           )}
         </section>
-        <p className="product-name">{product.name}</p>
-        <section className="flex justify-between mt-auto">
+        <p className="product-name mt-2">{product.name}</p>
+        <section className="flex justify-between mt-auto text-black">
           <section className="flex items-center gap-2 text-xs">
             <RatingStars rating={product.rating} />
             <p className="product-rating">({product.rating})</p>
