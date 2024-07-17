@@ -73,8 +73,7 @@ export default function HomePage() {
           imageClasses="lg:relative lg:top-[25%]"
           containerClasses="mt-[100px]"
           title="Fender's '68 Custom Twin Reverb"
-          // LINK MISSING AS THE PRODUCT IS YET TO BE ADDED
-          linkTo="[amp page]"
+          linkTo="/product/guitars_basses/electric_guitar_amps/fender-68-custom-twin-reverb"
           imageOnTheLeft={true}
           description="Fender's '68 Custom Twin Reverb combo amp brings you everything you love about the classic Twin Reverb with the character of the '60s original. No matter how you look at it, the '68 Custom Twin Reverb was made to play and perform like a classic."
         />
