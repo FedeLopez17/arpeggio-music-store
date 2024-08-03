@@ -85,7 +85,7 @@ export default function PageSelector({
   );
 
   return (
-    <section className="flex mb-40 gap-3">
+    <section className="flex gap-3">
       {currentPage > 1 && <PreviousPageLink />}
       {specificPageSelectors}
       {currentPage < numberOfPages && <NextPageLink />}

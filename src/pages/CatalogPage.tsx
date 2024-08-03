@@ -80,7 +80,11 @@ export default function CatalogPage({
               classes="mt-6 mb-2"
             />
           </section>
-          <section className="w-full grid gap-3 grid-cols-catalog justify-center justify-items-center xl:justify-end xl:justify-items-end">
+          <section
+            className={`w-full grid gap-3 grid-cols-catalog justify-center justify-items-center xl:justify-end xl:justify-items-end ${
+              numberOfPages <= 1 ? "mb-40" : ""
+            }`}
+          >
             {catalog.map((product) => (
               <ProductCard
                 key={product.imagesPath}
@@ -93,7 +97,7 @@ export default function CatalogPage({
             ))}
           </section>
           {numberOfPages > 1 && (
-            <section className="w-full flex justify-center mt-2 xl:pl-[12px]">
+            <section className="w-full flex justify-center mb-40 mt-2 xl:pl-[12px]">
               <PageSelector
                 numberOfPages={numberOfPages}
                 category={category}
