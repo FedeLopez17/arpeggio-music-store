@@ -1,7 +1,7 @@
 import HeroSlideshow from "../components/HeroSlideshow";
 import MainCategoryCard from "../components/MainCategoryCard";
 import keys from "../assets/images/categories/keys.png";
-import piano from "../assets/images/categories/piano.png";
+import piano from "../assets/images/categories/digital-piano.png";
 import electricGuitar from "../assets/images/categories/electric-guitar.png";
 import acousticGuitar from "../assets/images/categories/acoustic-guitar.png";
 import classicalGuitar from "../assets/images/categories/classical-guitar.png";
@@ -42,9 +42,13 @@ const CATEGORIES: CategoryCard[] = [
     linkTo: "/catalog/guitars_basses/electric_basses/1",
     text: "BASSES",
   },
-  { image: piano, linkTo: "/catalog/keys/pianos/1", text: "PIANOS" },
+  { image: piano, linkTo: "/catalog/keys/digital_pianos/1", text: "PIANOS" },
   { image: keys, linkTo: "/catalog/keys/keyboards/1", text: "KEYBOARDS" },
-  { image: amp, linkTo: "/catalog/amplification/1", text: "AMPS" },
+  {
+    image: amp,
+    linkTo: "/catalog/guitars_basses/electric_guitar_amps/1",
+    text: "AMPS",
+  },
   { image: guitarPedal, linkTo: "/catalog/accessories/1", text: "ACCESSORIES" },
 ];
 
@@ -82,8 +86,7 @@ export default function HomePage() {
           image={zildjianCymbals}
           containerClasses="mt-[25px]"
           title="Zildjian K-Custom Darkbox Set"
-          // LINK MISSING AS THE PRODUCT IS YET TO BE ADDED
-          linkTo="[cymbals page]"
+          linkTo="/product/drums/cymbals/zildjian-k-custom-darkbox-set"
           imageOnTheLeft={false}
           description="The Zildjian 4-piece K Custom Dark cymbal pack gives you a mellow, dark sound with a fast decay, adding plenty of character to your accents. This 4-piece pack features a traditional finish, making it a fine complement to your kit, both visually and sonically."
         />
