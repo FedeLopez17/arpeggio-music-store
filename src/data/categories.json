@@ -55,20 +55,35 @@
         "name": "MIDI Keyboards"
       },
       {
-        "id": "pianos",
-        "name": "Pianos"
-      },
-      {
         "id": "stage_pianos",
         "name": "Stage Pianos"
       },
       {
         "id": "digital_pianos",
         "name": "Digital Pianos"
+      }
+    ]
+  },
+
+  {
+    "name": "Drums",
+    "id": "drums",
+    "subCategories": [
+      {
+        "id": "acoustic",
+        "name": "Acoustic Drums"
       },
       {
-        "id": "grand_pianos",
-        "name": "Grand Pianos"
+        "id": "electronic",
+        "name": "Electronic Drums"
+      },
+      {
+        "id": "cymbals",
+        "name": "Cymbals"
+      },
+      {
+        "id": "drumheads",
+        "name": "Drumheads"
       }
     ]
   }
