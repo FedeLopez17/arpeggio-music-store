@@ -2783,7 +2783,7 @@
     "subCategoryId": "keyboards",
     "brand": "yamaha",
     "slug": "yamaha-dgx-670-b",
-    "imagesPath": "catalog/keys/keyboards/yamaha-dgx-670-b",
+    "imagesPath": "keys/keyboards/yamaha-dgx-670-b",
     "rating": 5,
     "price": 635,
     "attributes": {
@@ -2814,7 +2814,7 @@
     "subCategoryId": "keyboards",
     "brand": "startone",
     "slug": "startone-mk-300",
-    "imagesPath": "catalog/keys/keyboards/startone-mk-300",
+    "imagesPath": "keys/keyboards/startone-mk-300",
     "rating": 4.5,
     "price": 122,
     "attributes": {
@@ -2845,7 +2845,7 @@
     "subCategoryId": "keyboards",
     "brand": "korg",
     "slug": "korg-pa-5x-76-international",
-    "imagesPath": "catalog/keys/keyboards/korg-pa-5x-76-international",
+    "imagesPath": "keys/keyboards/korg-pa-5x-76-international",
     "rating": 4,
     "price": 3799,
     "attributes": {
@@ -2874,7 +2874,7 @@
     "subCategoryId": "keyboards",
     "brand": "yamaha",
     "slug": "yamaha-pss-a50",
-    "imagesPath": "catalog/keys/keyboards/yamaha-pss-a50",
+    "imagesPath": "keys/keyboards/yamaha-pss-a50",
     "rating": 4.5,
     "price": 77,
     "attributes": {
@@ -2896,7 +2896,7 @@
     "subCategoryId": "synthesizers",
     "brand": "arturia",
     "slug": "arturia-minifreak-stellar",
-    "imagesPath": "catalog/keys/synthesizers/arturia-minifreak-stellar",
+    "imagesPath": "keys/synthesizers/arturia-minifreak-stellar",
     "rating": 5,
     "price": 515,
     "attributes": {
@@ -2929,7 +2929,7 @@
     "subCategoryId": "synthesizers",
     "brand": "behringer",
     "slug": "behringer-pro-800",
-    "imagesPath": "catalog/keys/synthesizers/behringer-pro-800",
+    "imagesPath": "keys/synthesizers/behringer-pro-800",
     "rating": 4.5,
     "price": 333,
     "attributes": {
@@ -2956,7 +2956,7 @@
     "subCategoryId": "synthesizers",
     "brand": "teenage-engineering",
     "slug": "teenage-engineering-op-1-field",
-    "imagesPath": "catalog/keys/synthesizers/teenage-engineering-op-1-field",
+    "imagesPath": "keys/synthesizers/teenage-engineering-op-1-field",
     "rating": 4.5,
     "price": 1769,
     "attributes": {
@@ -2986,7 +2986,7 @@
     "subCategoryId": "synthesizers",
     "brand": "moog",
     "slug": "moog-one-16",
-    "imagesPath": "catalog/keys/synthesizers/moog-one-16",
+    "imagesPath": "keys/synthesizers/moog-one-16",
     "rating": 5,
     "price": 9999,
     "attributes": {
@@ -3019,7 +3019,7 @@
     "subCategoryId": "synthesizers",
     "brand": "behringer",
     "slug": "behringer-td-3-am-yellow",
-    "imagesPath": "catalog/keys/synthesizers/behringer-td-3-am-yellow",
+    "imagesPath": "keys/synthesizers/behringer-td-3-am-yellow",
     "rating": 4.5,
     "price": 118,
     "attributes": {
@@ -3047,7 +3047,7 @@
     "subCategoryId": "midi_keyboards",
     "brand": "akai-professional",
     "slug": "akai-professional-mpk-mini-mk3",
-    "imagesPath": "catalog/keys/midi_keyboards/akai-professional-mpk-mini-mk3",
+    "imagesPath": "keys/midi_keyboards/akai-professional-mpk-mini-mk3",
     "rating": 5,
     "price": 77,
     "attributes": {
@@ -3079,7 +3079,7 @@
     "subCategoryId": "midi_keyboards",
     "brand": "akai-professional",
     "slug": "akai-professional-mpk-261",
-    "imagesPath": "catalog/keys/midi_keyboards/akai-professional-mpk-261",
+    "imagesPath": "keys/midi_keyboards/akai-professional-mpk-261",
     "rating": 5,
     "price": 269,
     "attributes": {
@@ -3111,7 +3111,7 @@
     "subCategoryId": "midi_keyboards",
     "brand": "native-instruments",
     "slug": "native-instruments-kontrol-s61-mk3",
-    "imagesPath": "catalog/keys/midi_keyboards/native-instruments-kontrol-s61-mk3",
+    "imagesPath": "keys/midi_keyboards/native-instruments-kontrol-s61-mk3",
     "rating": 4,
     "price": 666,
     "attributes": {
@@ -3143,7 +3143,7 @@
     "subCategoryId": "midi_keyboards",
     "brand": "akai-professional",
     "slug": "akai-professional-mpk-mini-plus",
-    "imagesPath": "catalog/keys/midi_keyboards/akai-professional-mpk-mini-plus",
+    "imagesPath": "keys/midi_keyboards/akai-professional-mpk-mini-plus",
     "rating": 4.5,
     "price": 135,
     "attributes": {
@@ -3175,7 +3175,7 @@
     "subCategoryId": "stage_pianos",
     "brand": "roland",
     "slug": "roland-fp-10",
-    "imagesPath": "catalog/keys/stage_pianos/roland-fp-10",
+    "imagesPath": "keys/stage_pianos/roland-fp-10",
     "rating": 5,
     "price": 389,
     "attributes": {
@@ -3206,7 +3206,7 @@
     "subCategoryId": "stage_pianos",
     "brand": "roland",
     "slug": "roland-rd-88",
-    "imagesPath": "catalog/keys/stage_pianos/roland-rd-88",
+    "imagesPath": "keys/stage_pianos/roland-rd-88",
     "rating": 4.5,
     "price": 899,
     "attributes": {
@@ -3237,7 +3237,7 @@
     "subCategoryId": "stage_pianos",
     "brand": "roland",
     "slug": "roland-fp-30x-bk",
-    "imagesPath": "catalog/keys/stage_pianos/roland-fp-30x-bk",
+    "imagesPath": "keys/stage_pianos/roland-fp-30x-bk",
     "rating": 5,
     "price": 599,
     "attributes": {
@@ -3286,7 +3286,7 @@
     "subCategoryId": "stage_pianos",
     "brand": "kawai",
     "slug": "kawai-es-120-b",
-    "imagesPath": "catalog/keys/stage_pianos/kawai-es-120-b",
+    "imagesPath": "keys/stage_pianos/kawai-es-120-b",
     "rating": 5,
     "price": 545,
     "attributes": {
@@ -3331,7 +3331,7 @@
     "subCategoryId": "stage_pianos",
     "brand": "thomann",
     "slug": "thomann-dp-26",
-    "imagesPath": "catalog/keys/stage_pianos/thomann-dp-26",
+    "imagesPath": "keys/stage_pianos/thomann-dp-26",
     "rating": 4.5,
     "price": 309,
     "attributes": {
@@ -3379,7 +3379,7 @@
     "subCategoryId": "stage_pianos",
     "brand": "thomann",
     "slug": "thomann-sp-5600",
-    "imagesPath": "catalog/keys/stage_pianos/thomann-sp-5600",
+    "imagesPath": "keys/stage_pianos/thomann-sp-5600",
     "rating": 4.5,
     "price": 359,
     "attributes": {
@@ -3434,7 +3434,7 @@
     "subCategoryId": "stage_pianos",
     "brand": "yamaha",
     "slug": "yamaha-ck88",
-    "imagesPath": "catalog/keys/stage_pianos/yamaha-ck88",
+    "imagesPath": "keys/stage_pianos/yamaha-ck88",
     "rating": 5,
     "price": 1277,
     "attributes": {
@@ -3474,7 +3474,7 @@
     "subCategoryId": "stage_pianos",
     "brand": "clavia-nord",
     "slug": "clavia-nord-stage-4-88",
-    "imagesPath": "catalog/keys/stage_pianos/clavia-nord-stage-4-88",
+    "imagesPath": "keys/stage_pianos/clavia-nord-stage-4-88",
     "rating": 5,
     "price": 4199,
     "attributes": {
@@ -3506,7 +3506,7 @@
     "subCategoryId": "stage_pianos",
     "brand": "clavia-nord",
     "slug": "clavia-nord-electro-6d-61",
-    "imagesPath": "catalog/keys/stage_pianos/clavia-nord-electro-6d-61",
+    "imagesPath": "keys/stage_pianos/clavia-nord-electro-6d-61",
     "rating": 5,
     "price": 1699,
     "attributes": {
@@ -3538,7 +3538,7 @@
     "subCategoryId": "stage_pianos",
     "brand": "yamaha",
     "slug": "yamaha-p-525-b-set",
-    "imagesPath": "catalog/keys/stage_pianos/yamaha-p-525-b-set",
+    "imagesPath": "keys/stage_pianos/yamaha-p-525-b-set",
     "rating": 5,
     "price": 1750,
     "attributes": {
@@ -3594,7 +3594,7 @@
     "subCategoryId": "stage_pianos",
     "brand": "arturia",
     "slug": "arturia-astrolab-wooden-legs-set",
-    "imagesPath": "catalog/keys/stage_pianos/arturia-astrolab-wooden-legs-set",
+    "imagesPath": "keys/stage_pianos/arturia-astrolab-wooden-legs-set",
     "rating": 5,
     "price": 1525,
     "attributes": {
@@ -3638,7 +3638,7 @@
     "subCategoryId": "digital_pianos",
     "brand": "yamaha",
     "slug": "yamaha-ydp-145-b-arius",
-    "imagesPath": "catalog/keys/digital_pianos/yamaha-ydp-145-b-arius",
+    "imagesPath": "keys/digital_pianos/yamaha-ydp-145-b-arius",
     "rating": 5,
     "price": 811,
     "attributes": {
@@ -3682,7 +3682,7 @@
     "subCategoryId": "digital_pianos",
     "brand": "yamaha",
     "slug": "yamaha-ydp-165-b-arius",
-    "imagesPath": "catalog/keys/digital_pianos/yamaha-ydp-165-b-arius",
+    "imagesPath": "keys/digital_pianos/yamaha-ydp-165-b-arius",
     "rating": 5,
     "price": 999,
     "attributes": {
@@ -3726,7 +3726,7 @@
     "subCategoryId": "digital_pianos",
     "brand": "thomann",
     "slug": "thomann-sp-120",
-    "imagesPath": "catalog/keys/digital_pianos/thomann-sp-120",
+    "imagesPath": "keys/digital_pianos/thomann-sp-120",
     "rating": 4,
     "price": 159,
     "attributes": {
@@ -3772,7 +3772,7 @@
     "subCategoryId": "digital_pianos",
     "brand": "thomann",
     "slug": "thomann-dp-95-b",
-    "imagesPath": "catalog/keys/digital_pianos/thomann-dp-95-b",
+    "imagesPath": "keys/digital_pianos/thomann-dp-95-b",
     "rating": 5,
     "price": 525,
     "attributes": {
@@ -3812,7 +3812,7 @@
     "subCategoryId": "digital_pianos",
     "brand": "roland",
     "slug": "roland-fp-30x-bk",
-    "imagesPath": "catalog/keys/digital_pianos/roland-fp-30x-bk",
+    "imagesPath": "keys/digital_pianos/roland-fp-30x-bk",
     "rating": 5,
     "price": 599,
     "attributes": {
@@ -3861,7 +3861,7 @@
     "subCategoryId": "digital_pianos",
     "brand": "yamaha",
     "slug": "yamaha-ydp-145-wh-arius",
-    "imagesPath": "catalog/keys/digital_pianos/yamaha-ydp-145-wh-arius",
+    "imagesPath": "keys/digital_pianos/yamaha-ydp-145-wh-arius",
     "rating": 5,
     "price": 811,
     "attributes": {
@@ -3906,7 +3906,7 @@
     "subCategoryId": "acoustic",
     "brand": "dw",
     "slug": "dw-satin-oil-set-regal-blue-gold",
-    "imagesPath": "catalog/drums/acoustic/dw-satin-oil-set-regal-blue-gold",
+    "imagesPath": "drums/acoustic/dw-satin-oil-set-regal-blue-gold",
     "rating": 5,
     "price": 8199,
     "attributes": {
@@ -3933,7 +3933,7 @@
     "subCategoryId": "acoustic",
     "brand": "ludwig",
     "slug": "ludwig-classic-maple-fab-22-black-oy",
-    "imagesPath": "catalog/drums/acoustic/ludwig-classic-maple-fab-22-black-oy",
+    "imagesPath": "drums/acoustic/ludwig-classic-maple-fab-22-black-oy",
     "rating": 5,
     "price": 3369,
     "attributes": {
@@ -3960,7 +3960,7 @@
     "subCategoryId": "acoustic",
     "brand": "yamaha",
     "slug": "yamaha-absolute-hybrid-studio-wln",
-    "imagesPath": "catalog/drums/acoustic/yamaha-absolute-hybrid-studio-wln",
+    "imagesPath": "drums/acoustic/yamaha-absolute-hybrid-studio-wln",
     "rating": 5,
     "price": 3190,
     "attributes": {
@@ -3987,7 +3987,7 @@
     "subCategoryId": "acoustic",
     "brand": "millenium",
     "slug": "millenium-focus-junior-drum-set-black",
-    "imagesPath": "catalog/drums/acoustic/millenium-focus-junior-drum-set-black",
+    "imagesPath": "drums/acoustic/millenium-focus-junior-drum-set-black",
     "rating": 4,
     "price": 159,
     "attributes": {
@@ -4016,7 +4016,7 @@
     "subCategoryId": "acoustic",
     "brand": "millenium",
     "slug": "millenium-mx420-studio-set-bl",
-    "imagesPath": "catalog/drums/acoustic/millenium-mx420-studio-set-bl",
+    "imagesPath": "drums/acoustic/millenium-mx420-studio-set-bl",
     "rating": 4,
     "price": 389,
     "attributes": {
@@ -4045,7 +4045,7 @@
     "subCategoryId": "acoustic",
     "brand": "millenium",
     "slug": "millenium-focus-18-drum-set-red",
-    "imagesPath": "catalog/drums/acoustic/millenium-focus-18-drum-set-red",
+    "imagesPath": "drums/acoustic/millenium-focus-18-drum-set-red",
     "rating": 4,
     "price": 269,
     "attributes": {
@@ -4074,7 +4074,7 @@
     "subCategoryId": "acoustic",
     "brand": "millenium",
     "slug": "millenium-hybrid-practice-drum-set-bl",
-    "imagesPath": "catalog/drums/acoustic/millenium-hybrid-practice-drum-set-bl",
+    "imagesPath": "drums/acoustic/millenium-hybrid-practice-drum-set-bl",
     "rating": 4,
     "price": 545,
     "attributes": {
@@ -4103,7 +4103,7 @@
     "subCategoryId": "acoustic",
     "brand": "pearl",
     "slug": "pearl-roadshow-22-plus-jet-black",
-    "imagesPath": "catalog/drums/acoustic/pearl-roadshow-22-plus-jet-black",
+    "imagesPath": "drums/acoustic/pearl-roadshow-22-plus-jet-black",
     "rating": 5,
     "price": 699,
     "attributes": {
@@ -4132,7 +4132,7 @@
     "subCategoryId": "acoustic",
     "brand": "pearl",
     "slug": "pearl-export-double-bass-set-black",
-    "imagesPath": "catalog/drums/acoustic/pearl-export-double-bass-set-black",
+    "imagesPath": "drums/acoustic/pearl-export-double-bass-set-black",
     "rating": 5,
     "price": 1639,
     "attributes": {
@@ -4161,7 +4161,7 @@
     "subCategoryId": "acoustic",
     "brand": "mapex",
     "slug": "mapex-venus-5295-drum-set-bundle-vh",
-    "imagesPath": "catalog/drums/acoustic/mapex-venus-5295-drum-set-bundle-vh",
+    "imagesPath": "drums/acoustic/mapex-venus-5295-drum-set-bundle-vh",
     "rating": 5,
     "price": 729,
     "attributes": {
@@ -4191,7 +4191,7 @@
     "subCategoryId": "electronic",
     "brand": "millenium",
     "slug": "millenium-mps-850-e-drum-set",
-    "imagesPath": "catalog/drums/electronic/millenium-mps-850-e-drum-set",
+    "imagesPath": "drums/electronic/millenium-mps-850-e-drum-set",
     "rating": 4.5,
     "price": 545,
     "attributes": {
@@ -4213,7 +4213,7 @@
     "subCategoryId": "electronic",
     "brand": "millenium",
     "slug": "millenium-mps-750x-e-drum-mesh-set",
-    "imagesPath": "catalog/drums/electronic/millenium-mps-750x-e-drum-mesh-set",
+    "imagesPath": "drums/electronic/millenium-mps-750x-e-drum-mesh-set",
     "rating": 4,
     "price": 449,
     "attributes": {
@@ -4235,7 +4235,7 @@
     "subCategoryId": "electronic",
     "brand": "roland",
     "slug": "roland-td-27kv2-e-drum-set",
-    "imagesPath": "catalog/drums/electronic/roland-td-27kv2-e-drum-set",
+    "imagesPath": "drums/electronic/roland-td-27kv2-e-drum-set",
     "rating": 5,
     "price": 2699,
     "attributes": {
@@ -4257,7 +4257,7 @@
     "subCategoryId": "electronic",
     "brand": "alesis",
     "slug": "alesis-nitro-max-kit",
-    "imagesPath": "catalog/drums/electronic/alesis-nitro-max-kit",
+    "imagesPath": "drums/electronic/alesis-nitro-max-kit",
     "rating": 4,
     "price": 398,
     "attributes": {
@@ -4279,7 +4279,7 @@
     "subCategoryId": "electronic",
     "brand": "roland",
     "slug": "roland-td-17kvx2-e-drum-set",
-    "imagesPath": "catalog/drums/electronic/roland-td-17kvx2-e-drum-set",
+    "imagesPath": "drums/electronic/roland-td-17kvx2-e-drum-set",
     "rating": 5,
     "price": 1549,
     "attributes": {
@@ -4301,7 +4301,7 @@
     "subCategoryId": "electronic",
     "brand": "millenium",
     "slug": "millenium-mps-1000-e-drum-set",
-    "imagesPath": "catalog/drums/electronic/millenium-mps-1000-e-drum-set",
+    "imagesPath": "drums/electronic/millenium-mps-1000-e-drum-set",
     "rating": 4,
     "price": 899,
     "attributes": {
@@ -4323,7 +4323,7 @@
     "subCategoryId": "electronic",
     "brand": "alesis",
     "slug": "alesis-strata-prime-e-drum-kit",
-    "imagesPath": "catalog/drums/electronic/alesis-strata-prime-e-drum-kit",
+    "imagesPath": "drums/electronic/alesis-strata-prime-e-drum-kit",
     "rating": 5,
     "price": 2799,
     "attributes": {
@@ -4345,7 +4345,7 @@
     "subCategoryId": "cymbals",
     "brand": "zultan",
     "slug": "zultan-raw-slapclap-12-14-16",
-    "imagesPath": "catalog/drums/cymbals/zultan-raw-slapclap-12-14-16",
+    "imagesPath": "drums/cymbals/zultan-raw-slapclap-12-14-16",
     "rating": 5,
     "price": 205,
     "attributes": {
@@ -4361,7 +4361,7 @@
     "subCategoryId": "cymbals",
     "brand": "zildjian",
     "slug": "zildjian-18-a-custom-crash",
-    "imagesPath": "catalog/drums/cymbals/zildjian-18-a-custom-crash",
+    "imagesPath": "drums/cymbals/zildjian-18-a-custom-crash",
     "rating": 5,
     "price": 333,
     "attributes": {
@@ -4378,7 +4378,7 @@
     "subCategoryId": "cymbals",
     "brand": "zildjian",
     "slug": "zildjian-k-custom-darkbox-set",
-    "imagesPath": "catalog/drums/cymbals/zildjian-k-custom-darkbox-set",
+    "imagesPath": "drums/cymbals/zildjian-k-custom-darkbox-set",
     "rating": 5,
     "price": 1077,
     "attributes": {
@@ -4396,7 +4396,7 @@
     "subCategoryId": "cymbals",
     "brand": "zildjian",
     "slug": "zildjian-s-series-dark-cymbal-pack",
-    "imagesPath": "catalog/drums/cymbals/zildjian-s-series-dark-cymbal-pack",
+    "imagesPath": "drums/cymbals/zildjian-s-series-dark-cymbal-pack",
     "rating": 5,
     "price": 425,
     "attributes": {
@@ -4414,7 +4414,7 @@
     "subCategoryId": "cymbals",
     "brand": "millenium",
     "slug": "millenium-18-b20-china",
-    "imagesPath": "catalog/drums/cymbals/millenium-18-b20-china",
+    "imagesPath": "drums/cymbals/millenium-18-b20-china",
     "rating": 4.5,
     "price": 72,
     "attributes": {
@@ -4432,7 +4432,7 @@
     "subCategoryId": "cymbals",
     "brand": "millenium",
     "slug": "millenium-still-series-cymbal-set",
-    "imagesPath": "catalog/drums/cymbals/millenium-still-series-cymbal-set",
+    "imagesPath": "drums/cymbals/millenium-still-series-cymbal-set",
     "rating": 5,
     "price": 118,
     "attributes": {
@@ -4450,7 +4450,7 @@
     "subCategoryId": "cymbals",
     "brand": "zultan",
     "slug": "zultan-q-series-professional-set",
-    "imagesPath": "catalog/drums/cymbals/zultan-q-series-professional-set",
+    "imagesPath": "drums/cymbals/zultan-q-series-professional-set",
     "rating": 5,
     "price": 535,
     "attributes": {
@@ -4469,7 +4469,7 @@
     "subCategoryId": "drumheads",
     "brand": "remo",
     "slug": "remo-14-ambassador-coated",
-    "imagesPath": "catalog/drums/drumheads/remo-14-ambassador-coated",
+    "imagesPath": "drums/drumheads/remo-14-ambassador-coated",
     "rating": 5,
     "price": 1990,
     "attributes": {
@@ -4488,7 +4488,7 @@
     "subCategoryId": "drumheads",
     "brand": "evans",
     "slug": "evans-22-emad2-clear-bass-drum",
-    "imagesPath": "catalog/drums/drumheads/evans-22-emad2-clear-bass-drum",
+    "imagesPath": "drums/drumheads/evans-22-emad2-clear-bass-drum",
     "rating": 5,
     "price": 61,
     "attributes": {
@@ -4509,7 +4509,7 @@
     "subCategoryId": "drumheads",
     "brand": "remo",
     "slug": "remo-14-cs-coated-black-dot-snare",
-    "imagesPath": "catalog/drums/drumheads/remo-14-cs-coated-black-dot-snare",
+    "imagesPath": "drums/drumheads/remo-14-cs-coated-black-dot-snare",
     "rating": 5,
     "price": 2090,
     "attributes": {
@@ -4529,7 +4529,7 @@
     "subCategoryId": "drumheads",
     "brand": "remo",
     "slug": "remo-14-ambassador-coated-set",
-    "imagesPath": "catalog/drums/drumheads/remo-14-ambassador-coated-set",
+    "imagesPath": "drums/drumheads/remo-14-ambassador-coated-set",
     "rating": 5,
     "price": 33,
     "attributes": {
@@ -4549,7 +4549,7 @@
     "subCategoryId": "drumheads",
     "brand": "evans",
     "slug": "evans-ec2s-studio-fusion-set-clear",
-    "imagesPath": "catalog/drums/drumheads/evans-ec2s-studio-fusion-set-clear",
+    "imagesPath": "drums/drumheads/evans-ec2s-studio-fusion-set-clear",
     "rating": 5,
     "price": 51,
     "attributes": {
@@ -4570,7 +4570,7 @@
     "subCategoryId": "drumheads",
     "brand": "remo",
     "slug": "remo-16-cs-clear",
-    "imagesPath": "catalog/drums/drumheads/remo-16-cs-clear",
+    "imagesPath": "drums/drumheads/remo-16-cs-clear",
     "rating": 5,
     "price": 26,
     "attributes": {
@@ -4589,7 +4589,7 @@
     "subCategoryId": "drumheads",
     "brand": "evans",
     "slug": "evans-22-emad2-system-bass-pack",
-    "imagesPath": "catalog/drums/drumheads/evans-22-emad2-system-bass-pack",
+    "imagesPath": "drums/drumheads/evans-22-emad2-system-bass-pack",
     "rating": 5,
     "price": 109,
     "attributes": {
