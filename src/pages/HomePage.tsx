@@ -20,8 +20,16 @@ import zildjianCymbals from "../assets/images/banners/zildjian-k-cymbals.png";
 
 const CATEGORIES: CategoryCard[] = [
   { image: drums, linkTo: "/catalog/drums/1", text: "DRUMS" },
-  { image: percussion, linkTo: "/catalog/percussion/1", text: "PERCUSSION" },
-  { image: sax, linkTo: "/catalog/saxes/1", text: "SAXES" },
+  {
+    image: percussion,
+    linkTo: "/catalog/drums/percussion/1",
+    text: "PERCUSSION",
+  },
+  {
+    image: sax,
+    linkTo: "/catalog/wind_instruments/saxophones/1",
+    text: "SAXES",
+  },
   {
     image: electricGuitar,
     linkTo: "/catalog/guitars_basses/electric/1",

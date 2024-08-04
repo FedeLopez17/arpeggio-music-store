@@ -66,7 +66,7 @@
   },
 
   {
-    "name": "Drums",
+    "name": "Drums and Percussion",
     "id": "drums",
     "subCategories": [
       {
@@ -84,6 +84,60 @@
       {
         "id": "drumheads",
         "name": "Drumheads"
+      },
+      {
+        "id": "percussion",
+        "name": "Percussion"
+      }
+    ]
+  },
+
+  {
+    "name": "Wind instruments",
+    "id": "wind_instruments",
+    "subCategories": [
+      {
+        "id": "trumpets",
+        "name": "Trumpets"
+      },
+      {
+        "id": "flutes",
+        "name": "Flutes"
+      },
+      {
+        "id": "saxophones",
+        "name": "Saxophones"
+      },
+      {
+        "id": "clarinets",
+        "name": "Clarinets"
+      }
+    ]
+  },
+
+  {
+    "name": "Accessories",
+    "id": "accessories",
+    "subCategories": [
+      {
+        "id": "stands",
+        "name": "Stands"
+      },
+      {
+        "id": "metronomes_tuners",
+        "name": "Metronomes and Tuners"
+      },
+      {
+        "id": "headphones",
+        "name": "Headphones"
+      },
+      {
+        "id": "strings",
+        "name": "Strings"
+      },
+      {
+        "id": "effects",
+        "name": "Effects"
       }
     ]
   }

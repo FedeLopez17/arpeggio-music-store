@@ -36,7 +36,7 @@ const HERO_IMAGES: HeroImage[] = [
   {
     src: sax,
     alt: "Sax",
-    linkTo: "/catalog/saxes/1",
+    linkTo: "/catalog/wind_instruments/saxophones/1",
   },
   {
     src: hollowBody,
