@@ -40,7 +40,7 @@ export default function Product({
       to={`/product/${product.categoryId}/${product.subCategoryId}/${product.slug}`}
     >
       <section
-        className={`flex flex-col bg-slate-200 p-2 box-border w-[290px] h-[380px] overflow-auto relative rounded-md hover:text-purple-600 ${classes}`}
+        className={`flex flex-col outline outline-1 outline-slate-200 shadow-md bg-white hover:bg-slate-50 p-2 box-border w-[290px] h-[380px] overflow-auto relative rounded-md hover:text-purple-600 ${classes}`}
         data-testid={`product-card-${product.slug}`}
       >
         {addToFavorites && removeFromFavorites && isFavorite !== undefined && (
