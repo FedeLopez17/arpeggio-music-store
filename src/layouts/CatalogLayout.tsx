@@ -24,11 +24,11 @@ export default function ProductsLayout({
           onClick={closeSideBar}
         ></section>
         <aside
-          className={`bg-white text-nowrap absolute h-full overflow-hidden ${
+          className={`bg-white text-nowrap absolute h-full overflow-auto ${
             sideBarActive ? "w-[min(280px,_100%)]" : "w-0"
           } xl:w-[280px] xl:static z-30 transition-all duration-200 ease-in`}
         >
-          <nav className="xl:mt-[89px] mb-8">
+          <nav className="xl:mt-[89px] mb-8 box-border pb-44">
             <ul className="flex flex-col justify-start items-start mt-2 gap-4">
               <Link
                 to="favorites/1"
