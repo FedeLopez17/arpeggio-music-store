@@ -15,7 +15,7 @@ export default function NotFoundOrEmpty({
       : produtNotFound;
 
   return (
-    <section className="flex flex-col items-center flex-grow">
+    <section className="flex flex-col items-center flex-grow mb-44">
       <img
         src={image}
         alt={
