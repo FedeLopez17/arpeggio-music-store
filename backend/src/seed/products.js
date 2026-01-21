@@ -1,8 +1,7 @@
 module.exports = [
   {
     "name": "Fender Player Series Tele PF 3TS",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "fender",
     "slug": "fender-player-tele-pf-3ts",
     "images": [],
@@ -24,8 +23,7 @@ module.exports = [
   },
   {
     "name": "Gibson ES-335 Figured 60s Cherry",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "gibson",
     "slug": "gibson-es335-figured-60s-cherry",
     "images": [],
@@ -47,8 +45,7 @@ module.exports = [
   },
   {
     "name": "Fender Cory Wong Strat SBT",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "fender",
     "slug": "fender-cory-wong-strat-sbt",
     "images": [],
@@ -74,8 +71,7 @@ module.exports = [
   },
   {
     "name": "Gibson Les Paul Custom EB GH",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "gibson",
     "slug": "gibson-les-paul-custom-eb-gh",
     "images": [],
@@ -101,8 +97,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton ST-20 BK Standard Series",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "harley-benton",
     "slug": "harley-benton-st-20-bk-standard-series",
     "images": [],
@@ -125,8 +120,7 @@ module.exports = [
   },
   {
     "name": "Jackson ProPlus Soloist SLA3Q FBRST",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "jackson",
     "slug": "jackson-pro-plus-soloist-sla3-q-fbrst",
     "images": [],
@@ -149,8 +143,7 @@ module.exports = [
   },
   {
     "name": "Gretsch EMTC J Gourley BKSTR IRD BLK",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "gretsch",
     "slug": "gretsch-emtc-j-gourley-bkstr-ird-blk",
     "images": [],
@@ -173,8 +166,7 @@ module.exports = [
   },
   {
     "name": "Squier Affinity Strat Laurel SG",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "squier",
     "slug": "squier-affinity-strat-laurel-sg",
     "images": [],
@@ -197,8 +189,7 @@ module.exports = [
   },
   {
     "name": "Ibanez GB10SE-BS George Benson",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "ibanez",
     "slug": "ibanez-gb10se-bs-george-benson",
     "images": [],
@@ -221,8 +212,7 @@ module.exports = [
   },
   {
     "name": "Godin 5th Ave CW Kingpin II HB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "godin",
     "slug": "godin-5th-ave-cw-kingpin-ii-hb",
     "images": [],
@@ -245,8 +235,7 @@ module.exports = [
   },
   {
     "name": "Schecter C-1 SLS Elite FR AFB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "schecter",
     "slug": "schecter-c-1-sls-elite-fr-afb",
     "images": [],
@@ -272,8 +261,7 @@ module.exports = [
   },
   {
     "name": "Fender AM Pro II Strat 3TSB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "fender",
     "slug": "fender-am-pro-ii-strat-3tsb",
     "images": [],
@@ -296,8 +284,7 @@ module.exports = [
   },
   {
     "name": "Ibanez RG652AHM-NGB Prestige",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "ibanez",
     "slug": "ibanez-rg652ahm-ngb-prestige",
     "images": [],
@@ -320,8 +307,7 @@ module.exports = [
   },
   {
     "name": "Squier Sonic Strat HSS Black",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "squier",
     "slug": "squier-sonic-strat-hss-black",
     "images": [],
@@ -344,8 +330,7 @@ module.exports = [
   },
   {
     "name": "ESP LTD EC-Black Metal BLKS",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "esp",
     "slug": "esp-ltd-ec-black-metal-blks",
     "images": [],
@@ -368,8 +353,7 @@ module.exports = [
   },
   {
     "name": "Ibanez RG550-DY",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "ibanez",
     "slug": "ibanez-rg550-dy",
     "images": [],
@@ -392,8 +376,7 @@ module.exports = [
   },
   {
     "name": "Fender Clapton Strat Signature BLK",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "fender",
     "slug": "fender-clapton-strat-signature-blk",
     "images": [],
@@ -419,8 +402,7 @@ module.exports = [
   },
   {
     "name": "ESP LTD EC-1000ET QM DBSB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "esp",
     "slug": "esp-ltd-ec-1000et-qm-dbsb",
     "images": [],
@@ -443,8 +425,7 @@ module.exports = [
   },
   {
     "name": "Duesenberg Starplayer TV Blue Sparkle",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "duesenberg",
     "slug": "duesenberg-starplayer-tv-blue-sparkle",
     "images": [],
@@ -467,8 +448,7 @@ module.exports = [
   },
   {
     "name": "Schecter Synyster Gates Custom S SGB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "schecter",
     "slug": "schecter-synyster-gates-custom-s-sgb",
     "images": [],
@@ -493,8 +473,7 @@ module.exports = [
   },
   {
     "name": "Schecter Damien Platinum 6 SBK",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "schecter",
     "slug": "schecter-damien-platinum-6-sbk",
     "images": [],
@@ -519,8 +498,7 @@ module.exports = [
   },
   {
     "name": "Epiphone Billie Joe Armstrong LP Junior",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "epiphone",
     "slug": "epiphone-billie-joe-armstrong-lp-junior",
     "images": [],
@@ -543,8 +521,7 @@ module.exports = [
   },
   {
     "name": "Duesenberg Starplayer TV LH BK",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "duesenberg",
     "slug": "duesenberg-starplayer-tv-lh-bk",
     "images": [],
@@ -569,8 +546,7 @@ module.exports = [
   },
   {
     "name": "ESP E-II Horizon-III FM RDB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "esp",
     "slug": "esp-e-ii-horizon-iii-fm-rdb",
     "images": [],
@@ -595,8 +571,7 @@ module.exports = [
   },
   {
     "name": "Solar Guitars V2.6C G2",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "solar-guitars",
     "slug": "solar-guitars-v2.6c-g2",
     "images": [],
@@ -621,8 +596,7 @@ module.exports = [
   },
   {
     "name": "Ibanez RG652AHMFX-RPB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "ibanez",
     "slug": "ibanez-rg652ahmfx-rpb",
     "images": [],
@@ -645,8 +619,7 @@ module.exports = [
   },
   {
     "name": "Yamaha Revstar RSS20 Sunset Burst",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "yamaha",
     "slug": "yamaha-revstar-rss20-sunset-burst",
     "images": [],
@@ -669,8 +642,7 @@ module.exports = [
   },
   {
     "name": "Ibanez RG5320-CSW Prestige",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "ibanez",
     "slug": "ibanez-rg5320-csw-prestige",
     "images": [],
@@ -698,8 +670,7 @@ module.exports = [
   },
   {
     "name": "Gibson Les Paul Slash Standard NB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "gibson",
     "slug": "gibson-les-paul-slash-standard-nb",
     "images": [],
@@ -724,8 +695,7 @@ module.exports = [
   },
   {
     "name": "PRS SE Standard 24/08 TS",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "prs",
     "slug": "prs-se-standard-24-08-ts",
     "images": [],
@@ -748,8 +718,7 @@ module.exports = [
   },
   {
     "name": "Fender AM Pro II Strat MN MYST SFG",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "fender",
     "slug": "fender-am-pro-ii-strat-mn-myst-sfg",
     "images": [],
@@ -772,8 +741,7 @@ module.exports = [
   },
   {
     "name": "Ibanez GB10-BS",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "ibanez",
     "slug": "ibanez-gb10-bs",
     "images": [],
@@ -796,8 +764,7 @@ module.exports = [
   },
   {
     "name": "Fender Clapton Custom Shop MDB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "fender",
     "slug": "fender-clapton-custom-shop-mdb",
     "images": [],
@@ -826,8 +793,7 @@ module.exports = [
   },
   {
     "name": "Schecter C-1 Exotic Ebony NS",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "schecter",
     "slug": "schecter-c-1-exotic-ebony-ns",
     "images": [],
@@ -850,8 +816,7 @@ module.exports = [
   },
   {
     "name": "Jackson Demmelition Fury PD RTF",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "jackson",
     "slug": "jackson-demmelition-fury-pd-rtf",
     "images": [],
@@ -879,8 +844,7 @@ module.exports = [
   },
   {
     "name": "ESP LTD GH 600 BLK",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "esp",
     "slug": "esp-ltd-gh-600-blk",
     "images": [],
@@ -905,8 +869,7 @@ module.exports = [
   },
   {
     "name": "Gibson SG Standard 64 Maestro CH VOS",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "gibson",
     "slug": "gibson-sg-standard-64-maestro-ch-vos",
     "images": [],
@@ -933,8 +896,7 @@ module.exports = [
   },
   {
     "name": "Ibanez S6570Q-NBL Prestige",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "ibanez",
     "slug": "ibanez-s6570q-nbl-prestige",
     "images": [],
@@ -957,8 +919,7 @@ module.exports = [
   },
   {
     "name": "Charvel Guthrie Govan MJ SD24 CM 3TS",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "charvel",
     "slug": "charvel-guthrie-govan-mj-sd24-cm-3ts",
     "images": [],
@@ -984,8 +945,7 @@ module.exports = [
   },
   {
     "name": "ESP LTD EC-1000FR See Thru Black",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "esp",
     "slug": "esp-ltd-ec-1000fr-see-thru-black",
     "images": [],
@@ -1008,8 +968,7 @@ module.exports = [
   },
   {
     "name": "Yamaha Pacifica 112V OVS RL",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "yamaha",
     "slug": "yamaha-pacifica-112v-ovs-rl",
     "images": [],
@@ -1032,8 +991,7 @@ module.exports = [
   },
   {
     "name": "Rickenbacker 330 JG",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "rickenbacker",
     "slug": "rickenbacker-330-jg",
     "images": [],
@@ -1057,8 +1015,7 @@ module.exports = [
   },
   {
     "name": "ESP LTD SH 7ETFM STP",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "esp",
     "slug": "esp-ltd-sh-7etfm-stp",
     "images": [],
@@ -1084,8 +1041,7 @@ module.exports = [
   },
   {
     "name": "Schecter E-1 FR S Special Edition TPB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "schecter",
     "slug": "schecter-e-1-fr-s-special-edition-tpb",
     "images": [],
@@ -1110,8 +1066,7 @@ module.exports = [
   },
   {
     "name": "Gretsch G6119T-62VS Chet Atkins",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "gretsch",
     "slug": "gretsch-g6119t-62vs-chet-atkins",
     "images": [],
@@ -1136,8 +1091,7 @@ module.exports = [
   },
   {
     "name": "Solar Guitars E2.7C",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "solar-guitars",
     "slug": "solar-guitars-e2.7c",
     "images": [],
@@ -1160,8 +1114,7 @@ module.exports = [
   },
   {
     "name": "ESP E-II Arrow BLK",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "esp",
     "slug": "esp-e-ii-arrow-blk",
     "images": [],
@@ -1186,8 +1139,7 @@ module.exports = [
   },
   {
     "name": "ESP LTD M-HT Arctic Metal SWS",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "esp",
     "slug": "esp-ltd-m-ht-arctic-metal-sws",
     "images": [],
@@ -1213,8 +1165,7 @@ module.exports = [
   },
   {
     "name": "Fender AM Ultra Luxe Tele MN 2CSB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "fender",
     "slug": "fender-am-ultra-luxe-tele-mn-2csb",
     "images": [],
@@ -1237,8 +1188,7 @@ module.exports = [
   },
   {
     "name": "Rickenbacker 360/12 FG",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric",
+    "categoryPath": ["guitars_basses", "electric"],
     "brand": "rickenbacker",
     "slug": "rickenbacker-360-12-fg",
     "images": [],
@@ -1264,8 +1214,7 @@ module.exports = [
   },
   {
     "name": "Taylor GS Mini Mahogany",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["guitars_basses", "acoustic-guitars"],
     "brand": "talyor",
     "slug": "taylor-gs-mini-mahogany",
     "images": [],
@@ -1286,8 +1235,7 @@ module.exports = [
   },
   {
     "name": "Taylor 114ce Special Edition Gloss",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["guitars_basses", "acoustic-guitars"],
     "brand": "taylor",
     "slug": "taylor-114ce-special-edition-gloss",
     "images": [],
@@ -1310,8 +1258,7 @@ module.exports = [
   },
   {
     "name": "Taylor 214ce-SB DLX",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["guitars_basses", "acoustic-guitars"],
     "brand": "taylor",
     "slug": "taylor-214ce-sb-dlx",
     "images": [],
@@ -1334,8 +1281,7 @@ module.exports = [
   },
   {
     "name": "Taylor Baby Taylor BTe Koa",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["guitars_basses", "acoustic-guitars"],
     "brand": "taylor",
     "slug": "taylor-baby-taylor-bte-koa",
     "images": [],
@@ -1364,8 +1310,7 @@ module.exports = [
   },
   {
     "name": "Gibson L-00 Standard VSB",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["guitars_basses", "acoustic-guitars"],
     "brand": "gibson",
     "slug": "gibson-l-00-standard-vsb",
     "images": [],
@@ -1388,8 +1333,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton Custom Line CLA-15MCE NS",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["guitars_basses", "acoustic-guitars"],
     "brand": "harley-benton",
     "slug": "harley-benton-custom-line-cla-15mce-ns",
     "images": [],
@@ -1412,8 +1356,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton CLD-15MCE SolidWood Bundle",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["guitars_basses", "acoustic-guitars"],
     "brand": "harley-benton",
     "slug": "harley-benton-cld-15mce-solidwood-bundle",
     "images": [],
@@ -1435,8 +1378,7 @@ module.exports = [
   },
   {
     "name": "Yamaha A5R ARE VN",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["guitars_basses", "acoustic-guitars"],
     "brand": "yamaha",
     "slug": "yamaha-a5r-are-vn",
     "images": [],
@@ -1458,8 +1400,7 @@ module.exports = [
   },
   {
     "name": "Takamine GD11MCENS",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["guitars_basses", "acoustic-guitars"],
     "brand": "takamine",
     "slug": "takamine-gd11mcens",
     "images": [],
@@ -1481,8 +1422,7 @@ module.exports = [
   },
   {
     "name": "Epiphone J-45 AVS",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["guitars_basses", "acoustic-guitars"],
     "brand": "epiphone",
     "slug": "epiphone-j-45-avs",
     "images": [],
@@ -1504,8 +1444,7 @@ module.exports = [
   },
   {
     "name": "Yamaha C40",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "yamaha",
     "slug": "yamaha-c40",
     "images": [],
@@ -1527,8 +1466,7 @@ module.exports = [
   },
   {
     "name": "Yamaha C40 BL",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "yamaha",
     "slug": "yamaha-c40-bl",
     "images": [],
@@ -1550,8 +1488,7 @@ module.exports = [
   },
   {
     "name": "Startone CG851 1/4",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "startone",
     "slug": "startone-cg851-1-4",
     "images": [],
@@ -1573,8 +1510,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton Hybrid Nylon NT",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "harley-benton",
     "slug": "harley-benton-hybrid-nylon-nt",
     "images": [],
@@ -1595,8 +1531,7 @@ module.exports = [
   },
   {
     "name": "Startone CG 851 1/8",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "startone",
     "slug": "startone-cg-851-1-8",
     "images": [],
@@ -1618,8 +1553,7 @@ module.exports = [
   },
   {
     "name": "Cort Sunset Nylectric DLX",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "cort",
     "slug": "cort-sunset-nylectric-dlx",
     "images": [],
@@ -1642,8 +1576,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton HBO-850 Classic Black",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "harley-benton",
     "slug": "harley-benton-hbo-850-classic-black",
     "images": [],
@@ -1668,8 +1601,7 @@ module.exports = [
   },
   {
     "name": "Startone CG-851 7/8",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "startone",
     "slug": "startone-cg-851-7-8",
     "images": [],
@@ -1691,8 +1623,7 @@ module.exports = [
   },
   {
     "name": "Cordoba F7 Flamenco Iberia",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "cordoba",
     "slug": "cordoba-f7-flamenco-iberia",
     "images": [],
@@ -1715,8 +1646,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton CG200-BK",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "harley-benton",
     "slug": "harley-benton-cg200-bk",
     "images": [],
@@ -1738,8 +1668,7 @@ module.exports = [
   },
   {
     "name": "Takamine GC5CE Natur",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "takamine",
     "slug": "takamine-gc5ce-natur",
     "images": [],
@@ -1761,8 +1690,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton Nashville Nylon NT",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "harley-benton",
     "slug": "harley-benton-nashville-nylon-nt",
     "images": [],
@@ -1783,8 +1711,7 @@ module.exports = [
   },
   {
     "name": "Furch GNc4-CR",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "furch",
     "slug": "furch-gnc4-cr",
     "images": [],
@@ -1806,8 +1733,7 @@ module.exports = [
   },
   {
     "name": "Cordoba Stage Guitar Traditional NA",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "cordoba",
     "slug": "cordoba-stage-guitar-traditional-na",
     "images": [],
@@ -1828,8 +1754,7 @@ module.exports = [
   },
   {
     "name": "Cordoba Stage Guitar Natural Amber w/B",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "cordoba",
     "slug": "cordoba-stage-guitar-natural-amber-w-b",
     "images": [],
@@ -1850,8 +1775,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton GL-2NT Guitarlele",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "harley-benton",
     "slug": "harley-benton-gl-2nt-guitarlele",
     "images": [],
@@ -1875,8 +1799,7 @@ module.exports = [
   },
   {
     "name": "Startone CG 851 3/4",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "startone",
     "slug": "startone-cg-851-3-4",
     "images": [],
@@ -1898,8 +1821,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton CG200CE-BK",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "harley-benton",
     "slug": "harley-benton-cg200ce-bk",
     "images": [],
@@ -1921,8 +1843,7 @@ module.exports = [
   },
   {
     "name": "Taylor 214ce-N Black Dlx Special Ed",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "taylor",
     "slug": "taylor-214ce-n-black-dlx-special-ed",
     "images": [],
@@ -1946,8 +1867,7 @@ module.exports = [
   },
   {
     "name": "Fender CN-140SCE Thinline Natural",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "fender",
     "slug": "fender-cn-140sce-thinline-natural",
     "images": [],
@@ -1969,8 +1889,7 @@ module.exports = [
   },
   {
     "name": "Alhambra 1C HT incl. Gigbag",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "alhambra",
     "slug": "alhambra-1c-ht-incl.-gigbag",
     "images": [],
@@ -1992,8 +1911,7 @@ module.exports = [
   },
   {
     "name": "Fender ESC110 Educational 4/4 WN",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "classical",
+    "categoryPath": ["guitars_basses", "classical"],
     "brand": "fender",
     "slug": "fender-esc110-educational-4-4-wn",
     "images": [],
@@ -2016,8 +1934,7 @@ module.exports = [
 
   {
     "name": "Harley Benton JB-75MN NA Vintage Series",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_basses",
+    "categoryPath": ["guitars_basses", "electric_basses"],
     "brand": "harley-benton",
     "slug": "harley-benton-jb-75mn-na-vintage-series",
     "images": [],
@@ -2041,8 +1958,7 @@ module.exports = [
   },
   {
     "name": "Squier Affinity P Bass MN PJ OW",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_basses",
+    "categoryPath": ["guitars_basses", "electric_basses"],
     "brand": "squier",
     "slug": "squier-affinity-p-bass-mn-pj-ow",
     "images": [],
@@ -2066,8 +1982,7 @@ module.exports = [
   },
   {
     "name": "Fender MIJ LTD Hybrid II J-Bass Noir",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_basses",
+    "categoryPath": ["guitars_basses", "electric_basses"],
     "brand": "fender",
     "slug": "fender-mij-ltd-hybrid-ii-j-bass-noir",
     "images": [],
@@ -2091,8 +2006,7 @@ module.exports = [
   },
   {
     "name": "Fender Player II Jazz Bass RW BCG",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_basses",
+    "categoryPath": ["guitars_basses", "electric_basses"],
     "brand": "fender",
     "slug": "fender-player-ii-jazz-bass-rw-bcg",
     "images": [],
@@ -2116,8 +2030,7 @@ module.exports = [
   },
   {
     "name": "Höfner H500/1 Artist Violin Bass",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_basses",
+    "categoryPath": ["guitars_basses", "electric_basses"],
     "brand": "höfner",
     "slug": "hofner-h5001-artist-violin-bass",
     "images": [],
@@ -2145,8 +2058,7 @@ module.exports = [
   },
   {
     "name": "Ibanez SR300EB-WK",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_basses",
+    "categoryPath": ["guitars_basses", "electric_basses"],
     "brand": "ibanez",
     "slug": "ibanez-sr300eb-wk",
     "images": [],
@@ -2170,8 +2082,7 @@ module.exports = [
   },
   {
     "name": "Marcus Miller V7 Vint. Swamp Ash-4 2 Gen NT",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_basses",
+    "categoryPath": ["guitars_basses", "electric_basses"],
     "brand": "marcus-miller",
     "slug": "marcus-miller-v7-vint-swamp-ash-4-2-gen-nt",
     "images": [],
@@ -2195,8 +2106,7 @@ module.exports = [
   },
   {
     "name": "Yamaha BB734 A TMBL",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_basses",
+    "categoryPath": ["guitars_basses", "electric_basses"],
     "brand": "yamaha",
     "slug": "yamaha-bb734-a-tmbl",
     "images": [],
@@ -2221,8 +2131,7 @@ module.exports = [
   },
   {
     "name": "Cort A4 Plus FMMH OPBC",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_basses",
+    "categoryPath": ["guitars_basses", "electric_basses"],
     "brand": "cort",
     "slug": "cort-a4-plus-fmmh-opbc",
     "images": [],
@@ -2246,8 +2155,7 @@ module.exports = [
   },
   {
     "name": "Höfner Club Bass Vintage Relic Black",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_basses",
+    "categoryPath": ["guitars_basses", "electric_basses"],
     "brand": "höfner",
     "slug": "hofner-club-bass-vintage-relic-black",
     "images": [],
@@ -2272,8 +2180,7 @@ module.exports = [
 
   {
     "name": "Fender CB-60SCE A-Bass Natural IL",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic_basses",
+    "categoryPath": ["guitars_basses", "acoustic_basses"],
     "brand": "fender",
     "slug": "fender-cb-60sce-a-bass-natural-il",
     "images": [],
@@ -2296,8 +2203,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton B-30NT Acoustic Bass Series",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic_basses",
+    "categoryPath": ["guitars_basses", "acoustic_basses"],
     "brand": "harley-benton",
     "slug": "harley-benton-b-30nt-acoustic-bass-series",
     "images": [],
@@ -2320,8 +2226,7 @@ module.exports = [
   },
   {
     "name": "Cordoba Mini II Bass MH-E",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic_basses",
+    "categoryPath": ["guitars_basses", "acoustic_basses"],
     "brand": "cordoba",
     "slug": "cordoba-mini-ii-bass-mh-e",
     "images": [],
@@ -2344,8 +2249,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton HBO-850 Bass Natural",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic_basses",
+    "categoryPath": ["guitars_basses", "acoustic_basses"],
     "brand": "harley-benton",
     "slug": "harley-benton-hbo-850-bass-natural",
     "images": [],
@@ -2368,8 +2272,7 @@ module.exports = [
   },
   {
     "name": "Takamine GB30CE-N2 Natural",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic_basses",
+    "categoryPath": ["guitars_basses", "acoustic_basses"],
     "brand": "takamine",
     "slug": "takamine-gb30ce-n2-natural",
     "images": [],
@@ -2393,8 +2296,7 @@ module.exports = [
 
   {
     "name": "Boss Katana 50 Gen 3",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_guitar_amps",
+    "categoryPath": ["guitars_basses", "electric_guitar_amps"],
     "brand": "boss",
     "slug": "boss-katana-50-gen-3",
     "images": [],
@@ -2424,8 +2326,7 @@ module.exports = [
   },
   {
     "name": "Blackstar FLY3 Thomann 70th Anniversary",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_guitar_amps",
+    "categoryPath": ["guitars_basses", "electric_guitar_amps"],
     "brand": "blackstar",
     "slug": "blackstar-fly3-thomann-70th-anniversary",
     "images": [],
@@ -2457,8 +2358,7 @@ module.exports = [
   },
   {
     "name": "Marshall DSL40CR",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_guitar_amps",
+    "categoryPath": ["guitars_basses", "electric_guitar_amps"],
     "brand": "marshall",
     "slug": "marshall-dsl40cr",
     "images": [],
@@ -2484,8 +2384,7 @@ module.exports = [
   },
   {
     "name": "Fender 68 Custom Twin Reverb",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_guitar_amps",
+    "categoryPath": ["guitars_basses", "electric_guitar_amps"],
     "brand": "fender",
     "slug": "fender-68-custom-twin-reverb",
     "images": [],
@@ -2512,8 +2411,7 @@ module.exports = [
   },
   {
     "name": "Fender Blues Junior Lacquered Tweed",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "electric_guitar_amps",
+    "categoryPath": ["guitars_basses", "electric_guitar_amps"],
     "brand": "fender",
     "slug": "fender-blues-junior-lacquered-tweed",
     "images": [],
@@ -2541,8 +2439,7 @@ module.exports = [
 
   {
     "name": "Fishman 70th Loudbox Mini Bluet LTD BK",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic_guitar_amps",
+    "categoryPath": ["guitars_basses", "acoustic_guitar_amps"],
     "brand": "fishman",
     "slug": "fishman-70th-loudbox-mini-bluet-ltd-bk",
     "images": [],
@@ -2568,8 +2465,7 @@ module.exports = [
   },
   {
     "name": "AER Compact 60 IV BK",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic_guitar_amps",
+    "categoryPath": ["guitars_basses", "acoustic_guitar_amps"],
     "brand": "aer",
     "slug": "aer-compact-60-iv-bk",
     "images": [],
@@ -2595,8 +2491,7 @@ module.exports = [
   },
   {
     "name": "Fender Acoustasonic 15",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "acoustic_guitar_amps",
+    "categoryPath": ["guitars_basses", "acoustic_guitar_amps"],
     "brand": "fender",
     "slug": "fender-acoustasonic-15",
     "images": [],
@@ -2623,8 +2518,7 @@ module.exports = [
 
   {
     "name": "Harley Benton HB-20B",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "bass_amps",
+    "categoryPath": ["guitars_basses", "bass_amps"],
     "brand": "harley-benton",
     "slug": "harley-benton-hb-20b",
     "images": [],
@@ -2649,8 +2543,7 @@ module.exports = [
   },
   {
     "name": "Markbass CMB 121 Blackline Combo",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "bass_amps",
+    "categoryPath": ["guitars_basses", "bass_amps"],
     "brand": "markbass",
     "slug": "markbass-cmb-121-blackline-combo",
     "images": [],
@@ -2674,8 +2567,7 @@ module.exports = [
   },
   {
     "name": "Fender Rumble Studio 40",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "bass_amps",
+    "categoryPath": ["guitars_basses", "bass_amps"],
     "brand": "fender",
     "slug": "fender-rumble-studio-40",
     "images": [],
@@ -2701,8 +2593,7 @@ module.exports = [
   },
   {
     "name": "Bugera BXD15A",
-    "categoryId": "guitars_basses",
-    "subCategoryId": "bass_amps",
+    "categoryPath": ["guitars_basses", "bass_amps"],
     "brand": "bugera",
     "slug": "bugera-bxd15a",
     "images": [],
@@ -2728,8 +2619,7 @@ module.exports = [
 
   {
     "name": "Yamaha PSR-E373",
-    "categoryId": "keys",
-    "subCategoryId": "keyboards",
+    "categoryPath": ["keys", "keyboards"],
     "brand": "yamaha",
     "slug": "yamaha-psr-e373",
     "images": [],
@@ -2756,8 +2646,7 @@ module.exports = [
   },
   {
     "name": "Yamaha Genos 2",
-    "categoryId": "keys",
-    "subCategoryId": "keyboards",
+    "categoryPath": ["keys", "keyboards"],
     "brand": "yamaha",
     "slug": "yamaha-genos-2",
     "images": [],
@@ -2779,8 +2668,7 @@ module.exports = [
   },
   {
     "name": "Yamaha DGX-670 B",
-    "categoryId": "keys",
-    "subCategoryId": "keyboards",
+    "categoryPath": ["keys", "keyboards"],
     "brand": "yamaha",
     "slug": "yamaha-dgx-670-b",
     "images": [],
@@ -2810,8 +2698,7 @@ module.exports = [
   },
   {
     "name": "Startone MK-300",
-    "categoryId": "keys",
-    "subCategoryId": "keyboards",
+    "categoryPath": ["keys", "keyboards"],
     "brand": "startone",
     "slug": "startone-mk-300",
     "images": [],
@@ -2841,8 +2728,7 @@ module.exports = [
   },
   {
     "name": "Korg PA-5X 76 International",
-    "categoryId": "keys",
-    "subCategoryId": "keyboards",
+    "categoryPath": ["keys", "keyboards"],
     "brand": "korg",
     "slug": "korg-pa-5x-76-international",
     "images": [],
@@ -2870,8 +2756,7 @@ module.exports = [
   },
   {
     "name": "Yamaha PSS-A50",
-    "categoryId": "keys",
-    "subCategoryId": "keyboards",
+    "categoryPath": ["keys", "keyboards"],
     "brand": "yamaha",
     "slug": "yamaha-pss-a50",
     "images": [],
@@ -2892,8 +2777,7 @@ module.exports = [
   },
   {
     "name": "Arturia MiniFreak Stellar",
-    "categoryId": "keys",
-    "subCategoryId": "synthesizers",
+    "categoryPath": ["keys", "synthesizers"],
     "brand": "arturia",
     "slug": "arturia-minifreak-stellar",
     "images": [],
@@ -2925,8 +2809,7 @@ module.exports = [
   },
   {
     "name": "Behringer Pro-800",
-    "categoryId": "keys",
-    "subCategoryId": "synthesizers",
+    "categoryPath": ["keys", "synthesizers"],
     "brand": "behringer",
     "slug": "behringer-pro-800",
     "images": [],
@@ -2952,8 +2835,7 @@ module.exports = [
   },
   {
     "name": "Teenage Engineering OP-1 field",
-    "categoryId": "keys",
-    "subCategoryId": "synthesizers",
+    "categoryPath": ["keys", "synthesizers"],
     "brand": "teenage-engineering",
     "slug": "teenage-engineering-op-1-field",
     "images": [],
@@ -2982,8 +2864,7 @@ module.exports = [
   },
   {
     "name": "Moog One - 16",
-    "categoryId": "keys",
-    "subCategoryId": "synthesizers",
+    "categoryPath": ["keys", "synthesizers"],
     "brand": "moog",
     "slug": "moog-one-16",
     "images": [],
@@ -3015,8 +2896,7 @@ module.exports = [
   },
   {
     "name": "Behringer TD-3-AM Yellow",
-    "categoryId": "keys",
-    "subCategoryId": "synthesizers",
+    "categoryPath": ["keys", "synthesizers"],
     "brand": "behringer",
     "slug": "behringer-td-3-am-yellow",
     "images": [],
@@ -3043,8 +2923,7 @@ module.exports = [
   },
   {
     "name": "AKAI Professional MPK Mini MK3",
-    "categoryId": "keys",
-    "subCategoryId": "midi_keyboards",
+    "categoryPath": ["keys", "midi_keyboards"],
     "brand": "akai-professional",
     "slug": "akai-professional-mpk-mini-mk3",
     "images": [],
@@ -3075,8 +2954,7 @@ module.exports = [
   },
   {
     "name": "AKAI Professional MPK 261",
-    "categoryId": "keys",
-    "subCategoryId": "midi_keyboards",
+    "categoryPath": ["keys", "midi_keyboards"],
     "brand": "akai-professional",
     "slug": "akai-professional-mpk-261",
     "images": [],
@@ -3107,8 +2985,7 @@ module.exports = [
   },
   {
     "name": "Native Instruments Kontrol S61 MK3",
-    "categoryId": "keys",
-    "subCategoryId": "midi_keyboards",
+    "categoryPath": ["keys", "midi_keyboards"],
     "brand": "native-instruments",
     "slug": "native-instruments-kontrol-s61-mk3",
     "images": [],
@@ -3139,8 +3016,7 @@ module.exports = [
   },
   {
     "name": "AKAI Professional MPK mini Plus",
-    "categoryId": "keys",
-    "subCategoryId": "midi_keyboards",
+    "categoryPath": ["keys", "midi_keyboards"],
     "brand": "akai-professional",
     "slug": "akai-professional-mpk-mini-plus",
     "images": [],
@@ -3171,8 +3047,7 @@ module.exports = [
   },
   {
     "name": "Roland FP-10",
-    "categoryId": "keys",
-    "subCategoryId": "stage_pianos",
+    "categoryPath": ["keys", "stage_pianos"],
     "brand": "roland",
     "slug": "roland-fp-10",
     "images": [],
@@ -3202,8 +3077,7 @@ module.exports = [
   },
   {
     "name": "Roland RD-88",
-    "categoryId": "keys",
-    "subCategoryId": "stage_pianos",
+    "categoryPath": ["keys", "stage_pianos"],
     "brand": "roland",
     "slug": "roland-rd-88",
     "images": [],
@@ -3232,58 +3106,8 @@ module.exports = [
     }
   },
   {
-    "name": "Roland FP-30X BK",
-    "categoryId": "keys",
-    "subCategoryId": "stage_pianos",
-    "brand": "roland",
-    "slug": "roland-fp-30x-bk",
-    "images": [],
-    "rating": 5,
-    "price": 599,
-    "attributes": {
-      "Available since": "February 2021",
-      "Item number": "510682",
-      "Sales Unit": "1 piece(s)",
-      "Number Of Keys": "88",
-      "Hammer Action Keys": "Yes",
-      "Number of simultaneous Voices": "256",
-      "Number Of Sounds": "56",
-      "Effects": "Yes",
-      "Speaker": "Yes",
-      "Headphone Outputs": "2",
-      "Sequencer": "Yes",
-      "Metronome": "Yes",
-      "Master keyboard function": "No",
-      "Pitch Bend": "No",
-      "Modulation Wheel": "No",
-      "Split Zones": "1",
-      "Layer Function": "No",
-      "MIDI interface": "USB",
-      "Colour": "Black",
-      "Finish": "matt",
-      "Number of keys": "88",
-      "Ivory Feel Keyboard": "1",
-      "Pressure point simulation": "1",
-      "Polyphony": "256",
-      "Number of Sounds": "56",
-      "Styles": "0",
-      "Weight": "14,8 kg",
-      "Bluetooth Audio": "1",
-      "Bluetooth Midi": "1",
-      "Included Accessories": "Power Supply, Sheet Music Holder, Single Pedal",
-      "Half pedal possible": "1",
-      "Audio out": "1",
-      "Midi Interface": "VIA USB",
-      "USB to Host": "1",
-      "USB to Device": "1",
-      "Speaker power": "2x 11W",
-      "Dimensions": "1300 x 284 x 151"
-    }
-  },
-  {
     "name": "Kawai ES-120 B",
-    "categoryId": "keys",
-    "subCategoryId": "stage_pianos",
+    "categoryPath": ["keys", "stage_pianos"],
     "brand": "kawai",
     "slug": "kawai-es-120-b",
     "images": [],
@@ -3327,8 +3151,7 @@ module.exports = [
   },
   {
     "name": "Thomann DP-26",
-    "categoryId": "keys",
-    "subCategoryId": "stage_pianos",
+    "categoryPath": ["keys", "stage_pianos"],
     "brand": "thomann",
     "slug": "thomann-dp-26",
     "images": [],
@@ -3375,8 +3198,7 @@ module.exports = [
   },
   {
     "name": "Thomann SP-5600",
-    "categoryId": "keys",
-    "subCategoryId": "stage_pianos",
+    "categoryPath": ["keys", "stage_pianos"],
     "brand": "thomann",
     "slug": "thomann-sp-5600",
     "images": [],
@@ -3430,8 +3252,7 @@ module.exports = [
   },
   {
     "name": "Yamaha CK88",
-    "categoryId": "keys",
-    "subCategoryId": "stage_pianos",
+    "categoryPath": ["keys", "stage_pianos"],
     "brand": "yamaha",
     "slug": "yamaha-ck88",
     "images": [],
@@ -3470,8 +3291,7 @@ module.exports = [
   },
   {
     "name": "Clavia Nord Stage 4 88",
-    "categoryId": "keys",
-    "subCategoryId": "stage_pianos",
+    "categoryPath": ["keys", "stage_pianos"],
     "brand": "clavia-nord",
     "slug": "clavia-nord-stage-4-88",
     "images": [],
@@ -3502,8 +3322,7 @@ module.exports = [
   },
   {
     "name": "Clavia Nord Electro 6D 61",
-    "categoryId": "keys",
-    "subCategoryId": "stage_pianos",
+    "categoryPath": ["keys", "stage_pianos"],
     "brand": "clavia-nord",
     "slug": "clavia-nord-electro-6d-61",
     "images": [],
@@ -3534,8 +3353,7 @@ module.exports = [
   },
   {
     "name": "Yamaha P-525 B Set",
-    "categoryId": "keys",
-    "subCategoryId": "stage_pianos",
+    "categoryPath": ["keys", "stage_pianos"],
     "brand": "yamaha",
     "slug": "yamaha-p-525-b-set",
     "images": [],
@@ -3590,8 +3408,7 @@ module.exports = [
   },
   {
     "name": "Arturia AstroLab Wooden Legs Set",
-    "categoryId": "keys",
-    "subCategoryId": "stage_pianos",
+    "categoryPath": ["keys", "stage_pianos"],
     "brand": "arturia",
     "slug": "arturia-astrolab-wooden-legs-set",
     "images": [],
@@ -3634,8 +3451,7 @@ module.exports = [
   },
   {
     "name": "Yamaha YDP-145 B Arius",
-    "categoryId": "keys",
-    "subCategoryId": "digital_pianos",
+    "categoryPath": ["keys", "digital_pianos"],
     "brand": "yamaha",
     "slug": "yamaha-ydp-145-b-arius",
     "images": [],
@@ -3678,8 +3494,7 @@ module.exports = [
   },
   {
     "name": "Yamaha YDP-165 B Arius",
-    "categoryId": "keys",
-    "subCategoryId": "digital_pianos",
+    "categoryPath": ["keys", "digital_pianos"],
     "brand": "yamaha",
     "slug": "yamaha-ydp-165-b-arius",
     "images": [],
@@ -3722,8 +3537,7 @@ module.exports = [
   },
   {
     "name": "Thomann SP-120",
-    "categoryId": "keys",
-    "subCategoryId": "digital_pianos",
+    "categoryPath": ["keys", "digital_pianos"],
     "brand": "thomann",
     "slug": "thomann-sp-120",
     "images": [],
@@ -3768,8 +3582,7 @@ module.exports = [
   },
   {
     "name": "Thomann DP-95 B",
-    "categoryId": "keys",
-    "subCategoryId": "digital_pianos",
+    "categoryPath": ["keys", "digital_pianos"],
     "brand": "thomann",
     "slug": "thomann-dp-95-b",
     "images": [],
@@ -3808,8 +3621,7 @@ module.exports = [
   },
   {
     "name": "Roland FP-30X BK",
-    "categoryId": "keys",
-    "subCategoryId": "digital_pianos",
+    "categoryPath": ["keys", "digital_pianos"],
     "brand": "roland",
     "slug": "roland-fp-30x-bk",
     "images": [],
@@ -3857,8 +3669,7 @@ module.exports = [
   },
   {
     "name": "Yamaha YDP-145 WH Arius",
-    "categoryId": "keys",
-    "subCategoryId": "digital_pianos",
+    "categoryPath": ["keys", "digital_pianos"],
     "brand": "yamaha",
     "slug": "yamaha-ydp-145-wh-arius",
     "images": [],
@@ -3902,8 +3713,7 @@ module.exports = [
 
   {
     "name": "DW Satin Oil Set Regal Blue Gold",
-    "categoryId": "drums",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["drums", "acoustic-drums"],
     "brand": "dw",
     "slug": "dw-satin-oil-set-regal-blue-gold",
     "images": [],
@@ -3929,8 +3739,7 @@ module.exports = [
   },
   {
     "name": "Ludwig Classic Maple Fab 22 Black Oy.",
-    "categoryId": "drums",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["drums", "acoustic-drums"],
     "brand": "ludwig",
     "slug": "ludwig-classic-maple-fab-22-black-oy",
     "images": [],
@@ -3956,8 +3765,7 @@ module.exports = [
   },
   {
     "name": "Yamaha Absolute Hybrid Studio -WLN",
-    "categoryId": "drums",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["drums", "acoustic-drums"],
     "brand": "yamaha",
     "slug": "yamaha-absolute-hybrid-studio-wln",
     "images": [],
@@ -3983,8 +3791,7 @@ module.exports = [
   },
   {
     "name": "Millenium Focus Junior Drum Set Black",
-    "categoryId": "drums",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["drums", "acoustic-drums"],
     "brand": "millenium",
     "slug": "millenium-focus-junior-drum-set-black",
     "images": [],
@@ -4012,8 +3819,7 @@ module.exports = [
   },
   {
     "name": "Millenium MX420 Studio Set BL",
-    "categoryId": "drums",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["drums", "acoustic-drums"],
     "brand": "millenium",
     "slug": "millenium-mx420-studio-set-bl",
     "images": [],
@@ -4041,8 +3847,7 @@ module.exports = [
   },
   {
     "name": "Millenium Focus 18 Drum Set Red",
-    "categoryId": "drums",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["drums", "acoustic-drums"],
     "brand": "millenium",
     "slug": "millenium-focus-18-drum-set-red",
     "images": [],
@@ -4070,8 +3875,7 @@ module.exports = [
   },
   {
     "name": "Millenium Hybrid Practice Drum Set BL",
-    "categoryId": "drums",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["drums", "acoustic-drums"],
     "brand": "millenium",
     "slug": "millenium-hybrid-practice-drum-set-bl",
     "images": [],
@@ -4099,8 +3903,7 @@ module.exports = [
   },
   {
     "name": "Pearl Roadshow 22 Plus Jet Black",
-    "categoryId": "drums",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["drums", "acoustic-drums"],
     "brand": "pearl",
     "slug": "pearl-roadshow-22-plus-jet-black",
     "images": [],
@@ -4128,8 +3931,7 @@ module.exports = [
   },
   {
     "name": "Pearl Export Double Bass Set Black",
-    "categoryId": "drums",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["drums", "acoustic-drums"],
     "brand": "pearl",
     "slug": "pearl-export-double-bass-set-black",
     "images": [],
@@ -4157,8 +3959,7 @@ module.exports = [
   },
   {
     "name": "Mapex Venus 5295 Drum Set Bundle VH",
-    "categoryId": "drums",
-    "subCategoryId": "acoustic",
+    "categoryPath": ["drums", "acoustic-drums"],
     "brand": "mapex",
     "slug": "mapex-venus-5295-drum-set-bundle-vh",
     "images": [],
@@ -4187,8 +3988,7 @@ module.exports = [
 
   {
     "name": "Millenium MPS-850 E-Drum Set",
-    "categoryId": "drums",
-    "subCategoryId": "electronic",
+    "categoryPath": ["drums", "electronic"],
     "brand": "millenium",
     "slug": "millenium-mps-850-e-drum-set",
     "images": [],
@@ -4209,8 +4009,7 @@ module.exports = [
   },
   {
     "name": "Millenium MPS-750X E-Drum Mesh Set",
-    "categoryId": "drums",
-    "subCategoryId": "electronic",
+    "categoryPath": ["drums", "electronic"],
     "brand": "millenium",
     "slug": "millenium-mps-750x-e-drum-mesh-set",
     "images": [],
@@ -4231,8 +4030,7 @@ module.exports = [
   },
   {
     "name": "Roland TD-27KV2 E-Drum Set",
-    "categoryId": "drums",
-    "subCategoryId": "electronic",
+    "categoryPath": ["drums", "electronic"],
     "brand": "roland",
     "slug": "roland-td-27kv2-e-drum-set",
     "images": [],
@@ -4253,8 +4051,7 @@ module.exports = [
   },
   {
     "name": "Alesis Nitro Max Kit",
-    "categoryId": "drums",
-    "subCategoryId": "electronic",
+    "categoryPath": ["drums", "electronic"],
     "brand": "alesis",
     "slug": "alesis-nitro-max-kit",
     "images": [],
@@ -4275,8 +4072,7 @@ module.exports = [
   },
   {
     "name": "Roland TD-17KVX2 E-Drum Set",
-    "categoryId": "drums",
-    "subCategoryId": "electronic",
+    "categoryPath": ["drums", "electronic"],
     "brand": "roland",
     "slug": "roland-td-17kvx2-e-drum-set",
     "images": [],
@@ -4297,8 +4093,7 @@ module.exports = [
   },
   {
     "name": "Millenium MPS-1000 E-Drum Set",
-    "categoryId": "drums",
-    "subCategoryId": "electronic",
+    "categoryPath": ["drums", "electronic"],
     "brand": "millenium",
     "slug": "millenium-mps-1000-e-drum-set",
     "images": [],
@@ -4319,8 +4114,7 @@ module.exports = [
   },
   {
     "name": "Alesis Strata Prime E-Drum Kit",
-    "categoryId": "drums",
-    "subCategoryId": "electronic",
+    "categoryPath": ["drums", "electronic"],
     "brand": "alesis",
     "slug": "alesis-strata-prime-e-drum-kit",
     "images": [],
@@ -4341,8 +4135,7 @@ module.exports = [
 
   {
     "name": "Zultan Raw SlapClap 12/14/16",
-    "categoryId": "drums",
-    "subCategoryId": "cymbals",
+    "categoryPath": ["drums", "cymbals"],
     "brand": "zultan",
     "slug": "zultan-raw-slapclap-12-14-16",
     "images": [],
@@ -4357,8 +4150,7 @@ module.exports = [
   },
   {
     "name": "Zildjian 18 A-Custom Crash",
-    "categoryId": "drums",
-    "subCategoryId": "cymbals",
+    "categoryPath": ["drums", "cymbals"],
     "brand": "zildjian",
     "slug": "zildjian-18-a-custom-crash",
     "images": [],
@@ -4374,8 +4166,7 @@ module.exports = [
   },
   {
     "name": "Zildjian K-Custom Darkbox Set",
-    "categoryId": "drums",
-    "subCategoryId": "cymbals",
+    "categoryPath": ["drums", "cymbals"],
     "brand": "zildjian",
     "slug": "zildjian-k-custom-darkbox-set",
     "images": [],
@@ -4392,8 +4183,7 @@ module.exports = [
   },
   {
     "name": "Zildjian S Series Dark Cymbal Pack",
-    "categoryId": "drums",
-    "subCategoryId": "cymbals",
+    "categoryPath": ["drums", "cymbals"],
     "brand": "zildjian",
     "slug": "zildjian-s-series-dark-cymbal-pack",
     "images": [],
@@ -4410,8 +4200,7 @@ module.exports = [
   },
   {
     "name": "Millenium 18 B20 China",
-    "categoryId": "drums",
-    "subCategoryId": "cymbals",
+    "categoryPath": ["drums", "cymbals"],
     "brand": "millenium",
     "slug": "millenium-18-b20-china",
     "images": [],
@@ -4428,8 +4217,7 @@ module.exports = [
   },
   {
     "name": "Millenium Still Series Cymbal Set",
-    "categoryId": "drums",
-    "subCategoryId": "cymbals",
+    "categoryPath": ["drums", "cymbals"],
     "brand": "millenium",
     "slug": "millenium-still-series-cymbal-set",
     "images": [],
@@ -4446,8 +4234,7 @@ module.exports = [
   },
   {
     "name": "Zultan Q Series Professional Set",
-    "categoryId": "drums",
-    "subCategoryId": "cymbals",
+    "categoryPath": ["drums", "cymbals"],
     "brand": "zultan",
     "slug": "zultan-q-series-professional-set",
     "images": [],
@@ -4465,8 +4252,7 @@ module.exports = [
 
   {
     "name": "Remo 14 Ambassador Coated",
-    "categoryId": "drums",
-    "subCategoryId": "drumheads",
+    "categoryPath": ["drums", "drumheads"],
     "brand": "remo",
     "slug": "remo-14-ambassador-coated",
     "images": [],
@@ -4484,8 +4270,7 @@ module.exports = [
   },
   {
     "name": "Evans 22 EMAD2 Clear Bass Drum",
-    "categoryId": "drums",
-    "subCategoryId": "drumheads",
+    "categoryPath": ["drums", "drumheads"],
     "brand": "evans",
     "slug": "evans-22-emad2-clear-bass-drum",
     "images": [],
@@ -4505,8 +4290,7 @@ module.exports = [
   },
   {
     "name": "Remo 14 CS Coated Black Dot Snare",
-    "categoryId": "drums",
-    "subCategoryId": "drumheads",
+    "categoryPath": ["drums", "drumheads"],
     "brand": "remo",
     "slug": "remo-14-cs-coated-black-dot-snare",
     "images": [],
@@ -4525,8 +4309,7 @@ module.exports = [
   },
   {
     "name": "Remo 14 Ambassador Coated Set",
-    "categoryId": "drums",
-    "subCategoryId": "drumheads",
+    "categoryPath": ["drums", "drumheads"],
     "brand": "remo",
     "slug": "remo-14-ambassador-coated-set",
     "images": [],
@@ -4545,8 +4328,7 @@ module.exports = [
   },
   {
     "name": "Evans EC2S Studio / Fusion Set Clear",
-    "categoryId": "drums",
-    "subCategoryId": "drumheads",
+    "categoryPath": ["drums", "drumheads"],
     "brand": "evans",
     "slug": "evans-ec2s-studio-fusion-set-clear",
     "images": [],
@@ -4566,8 +4348,7 @@ module.exports = [
   },
   {
     "name": "Remo 16 CS Clear",
-    "categoryId": "drums",
-    "subCategoryId": "drumheads",
+    "categoryPath": ["drums", "drumheads"],
     "brand": "remo",
     "slug": "remo-16-cs-clear",
     "images": [],
@@ -4585,8 +4366,7 @@ module.exports = [
   },
   {
     "name": "Evans 22 EMAD2 System Bass Pack",
-    "categoryId": "drums",
-    "subCategoryId": "drumheads",
+    "categoryPath": ["drums", "drumheads"],
     "brand": "evans",
     "slug": "evans-22-emad2-system-bass-pack",
     "images": [],
@@ -4606,11 +4386,9 @@ module.exports = [
       "Head`s Type": "Double Ply"
     }
   },
-
   {
     "name": "Startone Handpan D Kurd A=440Hz",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "startone",
     "slug": "startone-handpan-d-kurd-a-440hz",
     "images": [],
@@ -4626,8 +4404,7 @@ module.exports = [
   },
   {
     "name": "Koshi Chimes Aqua",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "koshi",
     "slug": "koshi-chimes-aqua",
     "images": [],
@@ -4645,8 +4422,7 @@ module.exports = [
   },
   {
     "name": "Millenium BlackBox Cajon",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "millenium",
     "slug": "millenium-blackbox-cajon",
     "images": [],
@@ -4666,8 +4442,7 @@ module.exports = [
   },
   {
     "name": "Koshi Chimes Set of 4",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "koshi",
     "slug": "koshi-chimes-set-of-4",
     "images": [],
@@ -4685,8 +4460,7 @@ module.exports = [
   },
   {
     "name": "Thomann NN32 Djembe V2",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "thomann",
     "slug": "thomann-nn32-djembe-v2",
     "images": [],
@@ -4704,8 +4478,7 @@ module.exports = [
   },
   {
     "name": "Millenium MB202H NT",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "millenium",
     "slug": "millenium-mb202h-nt",
     "images": [],
@@ -4722,8 +4495,7 @@ module.exports = [
   },
   {
     "name": "Thomann MMD 114 Master Djembe",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "thomann",
     "slug": "thomann-mmd-114-master-djembe",
     "images": [],
@@ -4741,8 +4513,7 @@ module.exports = [
   },
   {
     "name": "Nino Egg Shaker Set",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "nino",
     "slug": "nino-egg-shaker-set",
     "images": [],
@@ -4761,8 +4532,7 @@ module.exports = [
   },
   {
     "name": "Thomann Classic Conga Set 10\" & 11\"",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "thomann",
     "slug": "thomann-classic-conga-set-10-11",
     "images": [],
@@ -4781,8 +4551,7 @@ module.exports = [
   },
   {
     "name": "Thomann Bongoset",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "thomann",
     "slug": "thomann-bongoset",
     "images": [],
@@ -4800,8 +4569,7 @@ module.exports = [
   },
   {
     "name": "Boomwhackers BW Set 04 Basic School Set",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "boomwhackers",
     "slug": "boomwhackers-bw-set-04-basic-school-set",
     "images": [],
@@ -4815,8 +4583,7 @@ module.exports = [
   },
   {
     "name": "Koshi Chimes Terra",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "koshi",
     "slug": "koshi-chimes-terra",
     "images": [],
@@ -4834,8 +4601,7 @@ module.exports = [
   },
   {
     "name": "Meinl Woodcraft Pro Pickup Cajon Ltd",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "meinl",
     "slug": "meinl-woodcraft-pro-pickup-cajon-ltd",
     "images": [],
@@ -4854,8 +4620,7 @@ module.exports = [
   },
   {
     "name": "Schlagwerk CP404BLK Cajon Black Edition",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "schlagwerk",
     "slug": "schlagwerk-cp404blk-cajon-black-edition",
     "images": [],
@@ -4875,8 +4640,7 @@ module.exports = [
   },
   {
     "name": "Terre Shaman Drum Goat Skin Shorn 50",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "terre",
     "slug": "terre-shaman-drum-goat-skin-shorn-50",
     "images": [],
@@ -4891,8 +4655,7 @@ module.exports = [
   },
   {
     "name": "LP LP646NY-CMW 10\"+11\" Conga Set",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "lp",
     "slug": "lp-lp646ny-cmw-10-11-conga-set",
     "images": [],
@@ -4911,8 +4674,7 @@ module.exports = [
   },
   {
     "name": "Schlagwerk CP432 2inOne \"Deluxe\" Makassar",
-    "categoryId": "drums",
-    "subCategoryId": "percussion",
+    "categoryPath": ["drums", "percussion"],
     "brand": "schlagwerk",
     "slug": "schlagwerk-cp432-2inone-deluxe-makassar",
     "images": [],
@@ -4933,8 +4695,7 @@ module.exports = [
 
   {
     "name": "Yamaha YTR-2330 Bb- Trumpet",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "trumpets",
+    "categoryPath": ["wind_instruments", "trumpets"],
     "brand": "yamaha",
     "slug": "yamaha-ytr-2330-bb-trumpet",
     "images": [],
@@ -4956,8 +4717,7 @@ module.exports = [
   },
   {
     "name": "Yamaha YTR-4335 GII Bb- Trumpet",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "trumpets",
+    "categoryPath": ["wind_instruments", "trumpets"],
     "brand": "yamaha",
     "slug": "yamaha-ytr-4335-gii-bb-trumpet",
     "images": [],
@@ -4979,8 +4739,7 @@ module.exports = [
   },
   {
     "name": "Thomann TR 200 Bb-Trumpet",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "trumpets",
+    "categoryPath": ["wind_instruments", "trumpets"],
     "brand": "thomann",
     "slug": "thomann-tr-200-bb-trumpet",
     "images": [],
@@ -5002,8 +4761,7 @@ module.exports = [
   },
   {
     "name": "Thomann TR-901S Piccolo Trumpet",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "trumpets",
+    "categoryPath": ["wind_instruments", "trumpets"],
     "brand": "thomann",
     "slug": "thomann-tr-901s-piccolo-trumpet",
     "images": [],
@@ -5024,8 +4782,7 @@ module.exports = [
   },
   {
     "name": "Schagerl Salzburg L Bb-Trumpet",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "trumpets",
+    "categoryPath": ["wind_instruments", "trumpets"],
     "brand": "schagerl",
     "slug": "schagerl-salzburg-l-bb-trumpet",
     "images": [],
@@ -5046,8 +4803,7 @@ module.exports = [
   },
   {
     "name": "Jupiter JTR710Q Pocket Trumpet Lacquer",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "trumpets",
+    "categoryPath": ["wind_instruments", "trumpets"],
     "brand": "jupiter",
     "slug": "jupiter-jtr710q-pocket-trumpet-lacquer",
     "images": [],
@@ -5069,8 +4825,7 @@ module.exports = [
   },
   {
     "name": "Startone PTR-20 Bb- Trumpet Red",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "trumpets",
+    "categoryPath": ["wind_instruments", "trumpets"],
     "brand": "startone",
     "slug": "startone-ptr-20-bb-trumpet-red",
     "images": [],
@@ -5092,8 +4847,7 @@ module.exports = [
   },
   {
     "name": "B&S 3137 G-L Challenger I GM",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "trumpets",
+    "categoryPath": ["wind_instruments", "trumpets"],
     "brand": "b&s",
     "slug": "b-s-3137-g-l-challenger-i-gm",
     "images": [],
@@ -5116,8 +4870,7 @@ module.exports = [
 
   {
     "name": "Yamaha YFL-212 Flute",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "flutes",
+    "categoryPath": ["wind_instruments", "flutes"],
     "brand": "yamaha",
     "slug": "yamaha-yfl-212-flute",
     "images": [],
@@ -5143,8 +4896,7 @@ module.exports = [
   },
   {
     "name": "Yamaha YFL-272 Flute",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "flutes",
+    "categoryPath": ["wind_instruments", "flutes"],
     "brand": "yamaha",
     "slug": "yamaha-yfl-272-flute",
     "images": [],
@@ -5170,8 +4922,7 @@ module.exports = [
   },
   {
     "name": "Thomann FL-200 Flute",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "flutes",
+    "categoryPath": ["wind_instruments", "flutes"],
     "brand": "thomann",
     "slug": "thomann-fl-200-flute",
     "images": [],
@@ -5197,8 +4948,7 @@ module.exports = [
   },
   {
     "name": "Startone SBF-100 Bass Flute",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "flutes",
+    "categoryPath": ["wind_instruments", "flutes"],
     "brand": "startone",
     "slug": "startone-sbf-100-bass-flute",
     "images": [],
@@ -5222,8 +4972,7 @@ module.exports = [
   },
   {
     "name": "Pearl Flutes PF-525 E Quantz Flute",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "flutes",
+    "categoryPath": ["wind_instruments", "flutes"],
     "brand": "pearl-flutes",
     "slug": "pearl-flutes-pf-525-e-quantz-flute",
     "images": [],
@@ -5249,8 +4998,7 @@ module.exports = [
   },
   {
     "name": "Pearl Flutes PF-505 RE Quantz Flute",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "flutes",
+    "categoryPath": ["wind_instruments", "flutes"],
     "brand": "pearl-flutes",
     "slug": "pearl-flutes-pf-505-re-quantz-flute",
     "images": [],
@@ -5276,8 +5024,7 @@ module.exports = [
   },
   {
     "name": "Jupiter JFL700EC-CBox Flute",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "flutes",
+    "categoryPath": ["wind_instruments", "flutes"],
     "brand": "jupiter",
     "slug": "jupiter-jfl700ec-cbox-flute",
     "images": [],
@@ -5303,8 +5050,7 @@ module.exports = [
   },
   {
     "name": "Jupiter JFL700WE C-Loop Flute",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "flutes",
+    "categoryPath": ["wind_instruments", "flutes"],
     "brand": "jupiter",
     "slug": "jupiter-jfl700we-c-loop-flute",
     "images": [],
@@ -5331,8 +5077,7 @@ module.exports = [
 
   {
     "name": "Yamaha YAS-280 Alto Sax",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "saxophones",
+    "categoryPath": ["wind_instruments", "saxophones"],
     "brand": "yamaha",
     "slug": "yamaha-yas-280-alto-sax",
     "images": [],
@@ -5357,8 +5102,7 @@ module.exports = [
   },
   {
     "name": "Startone STS-75 Tenor Sax",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "saxophones",
+    "categoryPath": ["wind_instruments", "saxophones"],
     "brand": "startone",
     "slug": "startone-sts-75-tenor-sax",
     "images": [],
@@ -5383,8 +5127,7 @@ module.exports = [
   },
   {
     "name": "BetterSax Alto Saxophone",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "saxophones",
+    "categoryPath": ["wind_instruments", "saxophones"],
     "brand": "bettersax",
     "slug": "bettersax-alto-saxophone",
     "images": [],
@@ -5409,8 +5152,7 @@ module.exports = [
   },
   {
     "name": "Yamaha YAS-480 Alto Sax",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "saxophones",
+    "categoryPath": ["wind_instruments", "saxophones"],
     "brand": "yamaha",
     "slug": "yamaha-yas-480-alto-sax",
     "images": [],
@@ -5435,8 +5177,7 @@ module.exports = [
   },
   {
     "name": "Yamaha YTS-280 Tenor Sax",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "saxophones",
+    "categoryPath": ["wind_instruments", "saxophones"],
     "brand": "yamaha",
     "slug": "yamaha-yts-280-tenor-sax",
     "images": [],
@@ -5461,8 +5202,7 @@ module.exports = [
   },
   {
     "name": "Selmer Axos Alto Sax",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "saxophones",
+    "categoryPath": ["wind_instruments", "saxophones"],
     "brand": "selmer",
     "slug": "selmer-axos-alto-sax",
     "images": [],
@@ -5487,8 +5227,7 @@ module.exports = [
   },
   {
     "name": "Selmer Supreme Alto Sax SE-ASUB",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "saxophones",
+    "categoryPath": ["wind_instruments", "saxophones"],
     "brand": "selmer",
     "slug": "selmer-supreme-alto-sax-se-asub",
     "images": [],
@@ -5513,8 +5252,7 @@ module.exports = [
   },
   {
     "name": "Jupiter JBS1000 Baritone Sax",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "saxophones",
+    "categoryPath": ["wind_instruments", "saxophones"],
     "brand": "jupiter",
     "slug": "jupiter-jbs1000-baritone-sax",
     "images": [],
@@ -5538,8 +5276,7 @@ module.exports = [
   },
   {
     "name": "Thomann Antique Soprano Sax",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "saxophones",
+    "categoryPath": ["wind_instruments", "saxophones"],
     "brand": "thomann",
     "slug": "thomann-antique-soprano-sax",
     "images": [],
@@ -5568,8 +5305,7 @@ module.exports = [
 
   {
     "name": "Schreiber D-12 Bb-Clarinet",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "clarinets",
+    "categoryPath": ["wind_instruments", "clarinets"],
     "brand": "schreiber",
     "slug": "schreiber-d-12-bb-clarinet",
     "images": [],
@@ -5594,8 +5330,7 @@ module.exports = [
   },
   {
     "name": "Buffet Crampon Prodige Bb-Clarinet 17/6",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "clarinets",
+    "categoryPath": ["wind_instruments", "clarinets"],
     "brand": "buffet-crampon",
     "slug": "buffet-crampon-prodige-bb-clarinet-17-6",
     "images": [],
@@ -5618,8 +5353,7 @@ module.exports = [
   },
   {
     "name": "Yamaha YCL-255 S Bb-Clarinet",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "clarinets",
+    "categoryPath": ["wind_instruments", "clarinets"],
     "brand": "yamaha",
     "slug": "yamaha-ycl-255-s-bb-clarinet",
     "images": [],
@@ -5643,8 +5377,7 @@ module.exports = [
   },
   {
     "name": "Startone SCL- 65 Bb- Clarinet",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "clarinets",
+    "categoryPath": ["wind_instruments", "clarinets"],
     "brand": "startone",
     "slug": "startone-scl-65-bb-clarinet",
     "images": [],
@@ -5668,8 +5401,7 @@ module.exports = [
   },
   {
     "name": "Oscar Adler & Co. 323 Bb-Clarinet",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "clarinets",
+    "categoryPath": ["wind_instruments", "clarinets"],
     "brand": "oscar-adler-&-co.",
     "slug": "oscar-adler-co-323-bb-clarinet",
     "images": [],
@@ -5694,8 +5426,7 @@ module.exports = [
   },
   {
     "name": "Yamaha YCL-221 II S Bass Clarinet",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "clarinets",
+    "categoryPath": ["wind_instruments", "clarinets"],
     "brand": "yamaha",
     "slug": "yamaha-ycl-221-ii-s-bass-clarinet",
     "images": [],
@@ -5716,8 +5447,7 @@ module.exports = [
   },
   {
     "name": "Schreiber D-41 Bb-Clarinet",
-    "categoryId": "wind_instruments",
-    "subCategoryId": "clarinets",
+    "categoryPath": ["wind_instruments", "clarinets"],
     "brand": "schreiber",
     "slug": "schreiber-d-41-bb-clarinet",
     "images": [],
@@ -5742,8 +5472,7 @@ module.exports = [
 
   {
     "name": "K&M 210/9 Black",
-    "categoryId": "accessories",
-    "subCategoryId": "stands",
+    "categoryPath": ["accessories", "stands"],
     "brand": "k&m",
     "slug": "k-m-210-9-black",
     "images": [],
@@ -5764,8 +5493,7 @@ module.exports = [
   },
   {
     "name": "Roadworx Mic Stand + Cable 10 m Pack",
-    "categoryId": "accessories",
-    "subCategoryId": "stands",
+    "categoryPath": ["accessories", "stands"],
     "brand": "roadworx",
     "slug": "roadworx-mic-stand-cable-10-m-pack",
     "images": [],
@@ -5787,8 +5515,7 @@ module.exports = [
   },
   {
     "name": "K&M 10065 Music Stand Black",
-    "categoryId": "accessories",
-    "subCategoryId": "stands",
+    "categoryPath": ["accessories", "stands"],
     "brand": "k&m",
     "slug": "k-m-10065-music-stand-black",
     "images": [],
@@ -5813,8 +5540,7 @@ module.exports = [
   },
   {
     "name": "Fun Generation Orchestra Stand",
-    "categoryId": "accessories",
-    "subCategoryId": "stands",
+    "categoryPath": ["accessories", "stands"],
     "brand": "fun-generation",
     "slug": "fun-generation-orchestra-stand",
     "images": [],
@@ -5839,8 +5565,7 @@ module.exports = [
   },
   {
     "name": "Millenium BS-2222 Pro Set",
-    "categoryId": "accessories",
-    "subCategoryId": "stands",
+    "categoryPath": ["accessories", "stands"],
     "brand": "millenium",
     "slug": "millenium-bs-2222-pro-set",
     "images": [],
@@ -5867,8 +5592,7 @@ module.exports = [
   },
   {
     "name": "Millenium KS-1001",
-    "categoryId": "accessories",
-    "subCategoryId": "stands",
+    "categoryPath": ["accessories", "stands"],
     "brand": "millenium",
     "slug": "millenium-ks-1001",
     "images": [],
@@ -5883,8 +5607,7 @@ module.exports = [
   },
   {
     "name": "Millenium GS-2001 E",
-    "categoryId": "accessories",
-    "subCategoryId": "stands",
+    "categoryPath": ["accessories", "stands"],
     "brand": "millenium",
     "slug": "millenium-gs-2001-e",
     "images": [],
@@ -5902,8 +5625,7 @@ module.exports = [
   },
   {
     "name": "Fun Generation Universal Stand",
-    "categoryId": "accessories",
-    "subCategoryId": "stands",
+    "categoryPath": ["accessories", "stands"],
     "brand": "fun-generation",
     "slug": "fun-generation-universal-stand",
     "images": [],
@@ -5923,8 +5645,7 @@ module.exports = [
   },
   {
     "name": "Thomann Guitar Multistand 5",
-    "categoryId": "accessories",
-    "subCategoryId": "stands",
+    "categoryPath": ["accessories", "stands"],
     "brand": "thomann",
     "slug": "thomann-guitar-multistand-5",
     "images": [],
@@ -5942,8 +5663,7 @@ module.exports = [
   },
   {
     "name": "Millenium CBS-718 Stage Boom Stand",
-    "categoryId": "accessories",
-    "subCategoryId": "stands",
+    "categoryPath": ["accessories", "stands"],
     "brand": "millenium",
     "slug": "millenium-cbs-718-stage-boom-stand",
     "images": [],
@@ -5959,8 +5679,7 @@ module.exports = [
   },
   {
     "name": "Millenium DSS-718B Stage Snare Stand",
-    "categoryId": "accessories",
-    "subCategoryId": "stands",
+    "categoryPath": ["accessories", "stands"],
     "brand": "millenium",
     "slug": "millenium-dss-718b-stage-snare-stand",
     "images": [],
@@ -5976,8 +5695,7 @@ module.exports = [
 
   {
     "name": "Thomann Metronom 330",
-    "categoryId": "accessories",
-    "subCategoryId": "metronomes_tuners",
+    "categoryPath": ["accessories", "metronomes_tuners"],
     "brand": "thomann",
     "slug": "thomann-metronom-330",
     "images": [],
@@ -5994,8 +5712,7 @@ module.exports = [
   },
   {
     "name": "Thomann CTM-700",
-    "categoryId": "accessories",
-    "subCategoryId": "metronomes_tuners",
+    "categoryPath": ["accessories", "metronomes_tuners"],
     "brand": "thomann",
     "slug": "thomann-ctm-700",
     "images": [],
@@ -6025,8 +5742,7 @@ module.exports = [
   },
   {
     "name": "Wittner Metronome 813M with Bell",
-    "categoryId": "accessories",
-    "subCategoryId": "metronomes_tuners",
+    "categoryPath": ["accessories", "metronomes_tuners"],
     "brand": "wittner",
     "slug": "wittner-metronome-813m-with-bell",
     "images": [],
@@ -6043,8 +5759,7 @@ module.exports = [
   },
   {
     "name": "Boss DB-90",
-    "categoryId": "accessories",
-    "subCategoryId": "metronomes_tuners",
+    "categoryPath": ["accessories", "metronomes_tuners"],
     "brand": "boss",
     "slug": "boss-db-90",
     "images": [],
@@ -6068,8 +5783,7 @@ module.exports = [
   },
   {
     "name": "Thomann CTG-10 Clip Tuner",
-    "categoryId": "accessories",
-    "subCategoryId": "metronomes_tuners",
+    "categoryPath": ["accessories", "metronomes_tuners"],
     "brand": "thomann",
     "slug": "thomann-ctg-10-clip-tuner",
     "images": [],
@@ -6092,8 +5806,7 @@ module.exports = [
   },
   {
     "name": "Korg TM-70T White",
-    "categoryId": "accessories",
-    "subCategoryId": "metronomes_tuners",
+    "categoryPath": ["accessories", "metronomes_tuners"],
     "brand": "korg",
     "slug": "korg-tm-70t-white",
     "images": [],
@@ -6125,8 +5838,7 @@ module.exports = [
 
   {
     "name": "Audio-Technica ATH-E70",
-    "categoryId": "accessories",
-    "subCategoryId": "headphones",
+    "categoryPath": ["accessories", "headphones"],
     "brand": "audio-technica",
     "slug": "audio-technica-ath-e70",
     "images": [],
@@ -6154,8 +5866,7 @@ module.exports = [
   },
   {
     "name": "Audio-Technica ATH-M50xSTS USB",
-    "categoryId": "accessories",
-    "subCategoryId": "headphones",
+    "categoryPath": ["accessories", "headphones"],
     "brand": "audio-technica",
     "slug": "audio-technica-ath-m50xsts-usb",
     "images": [],
@@ -6177,8 +5888,7 @@ module.exports = [
   },
   {
     "name": "beyerdynamic DT-1990 Pro 250 Ohm",
-    "categoryId": "accessories",
-    "subCategoryId": "headphones",
+    "categoryPath": ["accessories", "headphones"],
     "brand": "beyerdynamic",
     "slug": "beyerdynamic-dt-1990-pro-250-ohm",
     "images": [],
@@ -6202,8 +5912,7 @@ module.exports = [
   },
   {
     "name": "beyerdynamic DT 770 PRO X Limited Edition",
-    "categoryId": "accessories",
-    "subCategoryId": "headphones",
+    "categoryPath": ["accessories", "headphones"],
     "brand": "beyerdynamic",
     "slug": "beyerdynamic-dt-770-pro-x-limited-edition",
     "images": [],
@@ -6227,8 +5936,7 @@ module.exports = [
   },
   {
     "name": "Sennheiser HD 600",
-    "categoryId": "accessories",
-    "subCategoryId": "headphones",
+    "categoryPath": ["accessories", "headphones"],
     "brand": "sennheiser",
     "slug": "sennheiser-hd-600",
     "images": [],
@@ -6256,8 +5964,7 @@ module.exports = [
   },
   {
     "name": "Sennheiser HD-490 PRO Plus",
-    "categoryId": "accessories",
-    "subCategoryId": "headphones",
+    "categoryPath": ["accessories", "headphones"],
     "brand": "sennheiser",
     "slug": "sennheiser-hd-490-pro-plus",
     "images": [],
@@ -6285,8 +5992,7 @@ module.exports = [
   },
   {
     "name": "Shure SE215-CL",
-    "categoryId": "accessories",
-    "subCategoryId": "headphones",
+    "categoryPath": ["accessories", "headphones"],
     "brand": "shure",
     "slug": "shure-se215-cl",
     "images": [],
@@ -6315,8 +6021,7 @@ module.exports = [
   },
   {
     "name": "Shure SE425-CL",
-    "categoryId": "accessories",
-    "subCategoryId": "headphones",
+    "categoryPath": ["accessories", "headphones"],
     "brand": "shure",
     "slug": "shure-se425-cl",
     "images": [],
@@ -6345,8 +6050,7 @@ module.exports = [
   },
   {
     "name": "Shure SE215-K",
-    "categoryId": "accessories",
-    "subCategoryId": "headphones",
+    "categoryPath": ["accessories", "headphones"],
     "brand": "shure",
     "slug": "shure-se215-k",
     "images": [],
@@ -6375,8 +6079,7 @@ module.exports = [
   },
   {
     "name": "AKG K-240 Studio",
-    "categoryId": "accessories",
-    "subCategoryId": "headphones",
+    "categoryPath": ["accessories", "headphones"],
     "brand": "akg",
     "slug": "akg-k-240-studio",
     "images": [],
@@ -6404,8 +6107,7 @@ module.exports = [
   },
   {
     "name": "AKG K-701",
-    "categoryId": "accessories",
-    "subCategoryId": "headphones",
+    "categoryPath": ["accessories", "headphones"],
     "brand": "akg",
     "slug": "akg-k-701",
     "images": [],
@@ -6433,8 +6135,7 @@ module.exports = [
 
   {
     "name": "Daddario EJ45",
-    "categoryId": "accessories",
-    "subCategoryId": "strings",
+    "categoryPath": ["accessories", "strings"],
     "brand": "daddario",
     "slug": "daddario-ej45",
     "images": [],
@@ -6450,8 +6151,7 @@ module.exports = [
   },
   {
     "name": "Elixir Nanoweb Light Phosphor Bronze",
-    "categoryId": "accessories",
-    "subCategoryId": "strings",
+    "categoryPath": ["accessories", "strings"],
     "brand": "elixir",
     "slug": "elixir-nanoweb-light-phosphor-bronze",
     "images": [],
@@ -6467,8 +6167,7 @@ module.exports = [
   },
   {
     "name": "Daddario EJ16",
-    "categoryId": "accessories",
-    "subCategoryId": "strings",
+    "categoryPath": ["accessories", "strings"],
     "brand": "daddario",
     "slug": "daddario-ej16",
     "images": [],
@@ -6483,8 +6182,7 @@ module.exports = [
   },
   {
     "name": "Elixir Nanoweb Long Scale",
-    "categoryId": "accessories",
-    "subCategoryId": "strings",
+    "categoryPath": ["accessories", "strings"],
     "brand": "elixir",
     "slug": "elixir-nanoweb-long-scale",
     "images": [],
@@ -6503,8 +6201,7 @@ module.exports = [
   },
   {
     "name": "Thomastik JF344",
-    "categoryId": "accessories",
-    "subCategoryId": "strings",
+    "categoryPath": ["accessories", "strings"],
     "brand": "thomastik",
     "slug": "thomastik-jf344",
     "images": [],
@@ -6522,8 +6219,7 @@ module.exports = [
   },
   {
     "name": "Daddario EXL110",
-    "categoryId": "accessories",
-    "subCategoryId": "strings",
+    "categoryPath": ["accessories", "strings"],
     "brand": "daddario",
     "slug": "daddario-exl110",
     "images": [],
@@ -6540,8 +6236,7 @@ module.exports = [
 
   {
     "name": "Neural DSP Quad Cortex",
-    "categoryId": "accessories",
-    "subCategoryId": "effects",
+    "categoryPath": ["accessories", "effects"],
     "brand": "neural-dsp",
     "slug": "neural-dsp-quad-cortex",
     "images": [],
@@ -6575,8 +6270,7 @@ module.exports = [
   },
   {
     "name": "Boss RC-600 Loop Station",
-    "categoryId": "accessories",
-    "subCategoryId": "effects",
+    "categoryPath": ["accessories", "effects"],
     "brand": "boss",
     "slug": "boss-rc-600-loop-station",
     "images": [],
@@ -6597,8 +6291,7 @@ module.exports = [
   },
   {
     "name": "Kemper Profiler Stage",
-    "categoryId": "accessories",
-    "subCategoryId": "effects",
+    "categoryPath": ["accessories", "effects"],
     "brand": "kemper",
     "slug": "kemper-profiler-stage",
     "images": [],
@@ -6632,8 +6325,7 @@ module.exports = [
   },
   {
     "name": "Boss RC-5 Loop Station",
-    "categoryId": "accessories",
-    "subCategoryId": "effects",
+    "categoryPath": ["accessories", "effects"],
     "brand": "boss",
     "slug": "boss-rc-5-loop-station",
     "images": [],
@@ -6652,8 +6344,7 @@ module.exports = [
   },
   {
     "name": "Proco Rat 2 Distortion",
-    "categoryId": "accessories",
-    "subCategoryId": "effects",
+    "categoryPath": ["accessories", "effects"],
     "brand": "proco",
     "slug": "proco-rat-2-distortion",
     "images": [],
@@ -6671,8 +6362,7 @@ module.exports = [
   },
   {
     "name": "Boss OC-5",
-    "categoryId": "accessories",
-    "subCategoryId": "effects",
+    "categoryPath": ["accessories", "effects"],
     "brand": "boss",
     "slug": "boss-oc-5",
     "images": [],
@@ -6687,8 +6377,7 @@ module.exports = [
   },
   {
     "name": "Harley Benton DNAfx GiT",
-    "categoryId": "accessories",
-    "subCategoryId": "effects",
+    "categoryPath": ["accessories", "effects"],
     "brand": "harley-benton",
     "slug": "harley-benton-dnafx-git",
     "images": [],
@@ -6713,8 +6402,7 @@ module.exports = [
   },
   {
     "name": "Boss LS-2",
-    "categoryId": "accessories",
-    "subCategoryId": "effects",
+    "categoryPath": ["accessories", "effects"],
     "brand": "boss",
     "slug": "boss-ls-2",
     "images": [],
@@ -6728,8 +6416,7 @@ module.exports = [
   },
   {
     "name": "Digitech The Drop",
-    "categoryId": "accessories",
-    "subCategoryId": "effects",
+    "categoryPath": ["accessories", "effects"],
     "brand": "digitech",
     "slug": "digitech-the-drop",
     "images": [],
@@ -6744,8 +6431,7 @@ module.exports = [
   },
   {
     "name": "Boss CH-1 Chorus",
-    "categoryId": "accessories",
-    "subCategoryId": "effects",
+    "categoryPath": ["accessories", "effects"],
     "brand": "boss",
     "slug": "boss-ch-1-chorus",
     "images": [],
@@ -6761,8 +6447,7 @@ module.exports = [
   },
   {
     "name": "tc electronic Ditto Looper",
-    "categoryId": "accessories",
-    "subCategoryId": "effects",
+    "categoryPath": ["accessories", "effects"],
     "brand": "tc-electronic",
     "slug": "tc-electronic-ditto-looper",
     "images": [],
